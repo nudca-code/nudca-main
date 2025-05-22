@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NuDCA</title>
+    <link>https://nudca.github.io/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 22 May 2025 21:59:15 +0800</lastBuildDate>
+    <atom:link href="https://nudca.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Theory</title>
+      <link>https://nudca.github.io/theory/index.html</link>
+      <pubDate>Thu, 22 May 2025 21:59:15 +0800</pubDate>
+      <guid>https://nudca.github.io/theory/index.html</guid>
+      <description>Decay chains dsasfd</description>
+    </item>
+  </channel>
+</rss>
