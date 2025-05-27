@@ -9,11 +9,11 @@
     <lastBuildDate>Mon, 26 May 2025 15:49:27 +0800</lastBuildDate>
     <atom:link href="https://nudcacode.github.io/nudca.github.io/example/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Example</title>
+      <title>Nuclide</title>
       <link>https://nudcacode.github.io/nudca.github.io/example/example/index.html</link>
       <pubDate>Mon, 26 May 2025 15:49:27 +0800</pubDate>
       <guid>https://nudcacode.github.io/nudca.github.io/example/example/index.html</guid>
-      <description>Importing the package in Python&#xA;DecayDatabase from nudca import load_decay_database fig = decay_database.plot_nuclear_chart() plt.tight_layout() plt.show() dsfa Nuclide Chart</description>
+      <description>Importing the package in Python&#xA;DecayDatabase ​ python from nudca import load_decay_database fig = decay_database.plot_nuclear_chart() plt.tight_layout() plt.show() There may be pirates It is all about the boxes.&#xA;dsfa</description>
     </item>
   </channel>
 </rss>

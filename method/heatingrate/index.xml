@@ -13,7 +13,7 @@
       <link>https://nudcacode.github.io/nudca.github.io/method/heatingrate/thermalization/index.html</link>
       <pubDate>Thu, 22 May 2025 21:59:15 +0800</pubDate>
       <guid>https://nudcacode.github.io/nudca.github.io/method/heatingrate/thermalization/index.html</guid>
-      <description></description>
+      <description>In general, the thermalization fraction, ftherm, is a time-dependent quantity that describes the fraction of energy that is absorbed by the ejecta from radioactive processes that includes fission fragments, α particles, β particles, and γ -rays. We assume that the total thermalization efficiency can be approximately described by Barnes et al. 2016 $$&#xD;f_{tot}(t) = 0.36 \left[\exp(-at) + \frac{\ln\left(1+2bt^{d}\right)}{2bt^{d}} \right]&#xD;$$where $a$, $b$, and $d$ are fit coefficients. The fit coefficients are given in Table 1 of Barnes et al. 2016.</description>
     </item>
     <item>
       <title>Radioactive Decay</title>

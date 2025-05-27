@@ -9,6 +9,13 @@
     <lastBuildDate>Mon, 26 May 2025 15:49:27 +0800</lastBuildDate>
     <atom:link href="https://nudcacode.github.io/nudca.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Introduction</title>
+      <link>https://nudcacode.github.io/nudca.github.io/introduction/index.html</link>
+      <pubDate>Mon, 26 May 2025 15:49:27 +0800</pubDate>
+      <guid>https://nudcacode.github.io/nudca.github.io/introduction/index.html</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Installation</title>
       <link>https://nudcacode.github.io/nudca.github.io/installation/index.html</link>
       <pubDate>Mon, 26 May 2025 15:49:27 +0800</pubDate>
@@ -41,6 +48,13 @@
       <link>https://nudcacode.github.io/nudca.github.io/api/index.html</link>
       <pubDate>Mon, 26 May 2025 15:49:27 +0800</pubDate>
       <guid>https://nudcacode.github.io/nudca.github.io/api/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>References</title>
+      <link>https://nudcacode.github.io/nudca.github.io/references/index.html</link>
+      <pubDate>Mon, 26 May 2025 15:49:27 +0800</pubDate>
+      <guid>https://nudcacode.github.io/nudca.github.io/references/index.html</guid>
       <description></description>
     </item>
   </channel>
