@@ -5,30 +5,30 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.147.6">
     <meta name="generator" content="Relearn 7.6.1+0b83617ee9da5253aafcf11807b256da7d88d709">
-    <meta name="description" content="Nuclide API Reference Info This page documents the nuclide.py module, which provides data structures and utilities for representing and parsing nuclear nuclides. It is part of the NuDCA (Nuclear Decay Chains Astrophysics) package.
-Overview The nuclide.py module defines the Nuclide class for representing nuclear nuclides, as well as supporting functions and exceptions for parsing, validating, and converting nuclide symbols, atomic numbers, and canonical IDs. It enables robust handling of nuclide data in scientific and engineering applications.">
+    <meta name="description" content="Info This page documents the decay_database.py module, which provides access to nuclear decay data and utilities for nuclide analysis. It is part of the NuDCA (Nuclear Decay Chain Astrophysics) package.
+Overview The DecayDatabase class represents a database of nuclear decay data for a set of nuclides. It provides access to half-lives, decay modes, progeny, branching ratios, decay energies, and plotting utilities. The module also includes the load_decay_database function for loading data from disk.">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Nuclide :: NuDCA">
-    <meta name="twitter:description" content="Nuclide API Reference Info This page documents the nuclide.py module, which provides data structures and utilities for representing and parsing nuclear nuclides. It is part of the NuDCA (Nuclear Decay Chains Astrophysics) package.
-Overview The nuclide.py module defines the Nuclide class for representing nuclear nuclides, as well as supporting functions and exceptions for parsing, validating, and converting nuclide symbols, atomic numbers, and canonical IDs. It enables robust handling of nuclide data in scientific and engineering applications.">
-    <meta property="og:url" content="https://nudcacode.github.io/nudca.github.io/api/nuclide/index.html">
+    <meta name="twitter:title" content="DecayDatabase :: NuDCA">
+    <meta name="twitter:description" content="Info This page documents the decay_database.py module, which provides access to nuclear decay data and utilities for nuclide analysis. It is part of the NuDCA (Nuclear Decay Chain Astrophysics) package.
+Overview The DecayDatabase class represents a database of nuclear decay data for a set of nuclides. It provides access to half-lives, decay modes, progeny, branching ratios, decay energies, and plotting utilities. The module also includes the load_decay_database function for loading data from disk.">
+    <meta property="og:url" content="https://nudcacode.github.io/nudca.github.io/api/decaydatabase/index.html">
     <meta property="og:site_name" content="NuDCA">
-    <meta property="og:title" content="Nuclide :: NuDCA">
-    <meta property="og:description" content="Nuclide API Reference Info This page documents the nuclide.py module, which provides data structures and utilities for representing and parsing nuclear nuclides. It is part of the NuDCA (Nuclear Decay Chains Astrophysics) package.
-Overview The nuclide.py module defines the Nuclide class for representing nuclear nuclides, as well as supporting functions and exceptions for parsing, validating, and converting nuclide symbols, atomic numbers, and canonical IDs. It enables robust handling of nuclide data in scientific and engineering applications.">
+    <meta property="og:title" content="DecayDatabase :: NuDCA">
+    <meta property="og:description" content="Info This page documents the decay_database.py module, which provides access to nuclear decay data and utilities for nuclide analysis. It is part of the NuDCA (Nuclear Decay Chain Astrophysics) package.
+Overview The DecayDatabase class represents a database of nuclear decay data for a set of nuclides. It provides access to half-lives, decay modes, progeny, branching ratios, decay energies, and plotting utilities. The module also includes the load_decay_database function for loading data from disk.">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="article">
     <meta property="article:section" content="nudca API">
     <meta property="article:published_time" content="2025-05-26T15:49:27+08:00">
     <meta property="article:modified_time" content="2025-05-26T15:49:27+08:00">
-    <meta itemprop="name" content="Nuclide :: NuDCA">
-    <meta itemprop="description" content="Nuclide API Reference Info This page documents the nuclide.py module, which provides data structures and utilities for representing and parsing nuclear nuclides. It is part of the NuDCA (Nuclear Decay Chains Astrophysics) package.
-Overview The nuclide.py module defines the Nuclide class for representing nuclear nuclides, as well as supporting functions and exceptions for parsing, validating, and converting nuclide symbols, atomic numbers, and canonical IDs. It enables robust handling of nuclide data in scientific and engineering applications.">
+    <meta itemprop="name" content="DecayDatabase :: NuDCA">
+    <meta itemprop="description" content="Info This page documents the decay_database.py module, which provides access to nuclear decay data and utilities for nuclide analysis. It is part of the NuDCA (Nuclear Decay Chain Astrophysics) package.
+Overview The DecayDatabase class represents a database of nuclear decay data for a set of nuclides. It provides access to half-lives, decay modes, progeny, branching ratios, decay energies, and plotting utilities. The module also includes the load_decay_database function for loading data from disk.">
     <meta itemprop="datePublished" content="2025-05-26T15:49:27+08:00">
     <meta itemprop="dateModified" content="2025-05-26T15:49:27+08:00">
-    <meta itemprop="wordCount" content="322">
-    <title>Nuclide :: NuDCA</title>
+    <meta itemprop="wordCount" content="436">
+    <title>DecayDatabase :: NuDCA</title>
     <link href="/nudca.github.io/fonts/fontawesome/css/fontawesome-all.min.css?1748360388" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/nudca.github.io/fonts/fontawesome/css/fontawesome-all.min.css?1748360388" rel="stylesheet"></noscript>
     <link href="/nudca.github.io/css/perfect-scrollbar/perfect-scrollbar.min.css?1748360388" rel="stylesheet">
     <link href="/nudca.github.io/css/theme.min.css?1748360388" rel="stylesheet">
@@ -44,7 +44,7 @@ Overview The nuclide.py module defines the Nuclide class for representing nuclea
       window.relearn = window.relearn || {};
       // configuration
       window.relearn.min = `.min`;
-      window.relearn.path='\/api\/nuclide\/index.html';
+      window.relearn.path='\/api\/decaydatabase\/index.html';
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..\/..';
       window.relearn.absBaseUri='https:\/\/nudcacode.github.io\/nudca.github.io';
@@ -96,7 +96,7 @@ Overview The nuclide.py module defines the Nuclide class for representing nuclea
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
   </head>
-  <body class="mobile-support html" data-url="/nudca.github.io/api/nuclide/index.html">
+  <body class="mobile-support html" data-url="/nudca.github.io/api/decaydatabase/index.html">
     <div id="R-body" class="default-animation">
       <div id="R-body-overlay"></div>
       <nav id="R-topbar">
@@ -111,16 +111,14 @@ Overview The nuclide.py module defines the Nuclide class for representing nuclea
 <nav class="TableOfContents">
   <ul>
     <li><a href="#overview">Overview</a></li>
-    <li><a href="#main-class-nuclide">Main Class: <code>Nuclide</code></a>
+    <li><a href="#class-decaydatabase">Class: <code>DecayDatabase</code></a>
       <ul>
         <li><a href="#constructor">Constructor</a></li>
-        <li><a href="#properties">Properties</a></li>
-        <li><a href="#key-methods">Key Methods</a></li>
       </ul>
     </li>
-    <li><a href="#exception-nuclidestrerror">Exception: <code>NuclideStrError</code></a></li>
-    <li><a href="#utility-functions">Utility Functions</a></li>
-    <li><a href="#usage-example">Usage Example</a></li>
+    <li><a href="#methods">Methods</a></li>
+    <li><a href="#function-load_decay_database">Function: <code>load_decay_database</code></a></li>
+    <li><a href="#example-usage">Example Usage</a></li>
     <li><a href="#notes">Notes</a></li>
     <li><a href="#see-also">See Also</a></li>
   </ul>
@@ -132,12 +130,12 @@ Overview The nuclide.py module defines the Nuclide class for representing nuclea
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
             <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/nudca.github.io/index.html"><span itemprop="name">NuDCA</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
             <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/nudca.github.io/api/index.html"><span itemprop="name">nudca API</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Nuclide</span><meta itemprop="position" content="3"></li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">DecayDatabase</span><meta itemprop="position" content="3"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/nudca.github.io/api/index.html" title="nudca API (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/nudca.github.io/api/nuclide/index.html" title="Nuclide (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/nudca.github.io/api/decaydatabase/index.html" title="DecayDatabase (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/nudca.github.io/api/decaydiagram/index.html" title="DecayDiagram (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -157,74 +155,45 @@ Overview The nuclide.py module defines the Nuclide class for representing nuclea
   <header class="headline">
   </header>
 
-<h1 id="nuclide">Nuclide</h1>
+<h1 id="decaydatabase">DecayDatabase</h1>
 
-<h1 id="nuclide-api-reference">Nuclide API Reference</h1>
 
 <details open class=" box cstyle notices info">
   <summary class="box-label" tabindex="-1">
-    <i class="fa fa-atom"></i> 
+    <i class="fa fa-database"></i> 
     Info
   </summary>
   <div class="box-content">
-<p>This page documents the <code>nuclide.py</code> module, which provides data structures and utilities for representing and parsing nuclear nuclides. It is part of the NuDCA (Nuclear Decay Chains Astrophysics) package.</p>
+<p>This page documents the <code>decay_database.py</code> module, which provides access to nuclear decay data and utilities for nuclide analysis. It is part of the NuDCA (Nuclear Decay Chain Astrophysics) package.</p>
   </div>
 </details>
 <h2 id="overview">Overview</h2>
-<p>The <code>nuclide.py</code> module defines the <code>Nuclide</code> class for representing nuclear nuclides, as well as supporting functions and exceptions for parsing, validating, and converting nuclide symbols, atomic numbers, and canonical IDs. It enables robust handling of nuclide data in scientific and engineering applications.</p>
+<p>The <code>DecayDatabase</code> class represents a database of nuclear decay data for a set of nuclides. It provides access to half-lives, decay modes, progeny, branching ratios, decay energies, and plotting utilities. The module also includes the <code>load_decay_database</code> function for loading data from disk.</p>
 <hr>
-<h2 id="main-class-nuclide">Main Class: <code>Nuclide</code></h2>
-<p>Represents a nuclear nuclide, providing properties for atomic number (Z), mass number (A), neutron number (N), metastable state, and canonical ID. Supports parsing from string or integer formats and provides equality/hash operations.</p>
+<h2 id="class-decaydatabase">Class: <code>DecayDatabase</code></h2>
 <h3 id="constructor">Constructor</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>Nuclide(nuclide: Union[str, int])</span></span></code></pre></div>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>DecayDatabase(
+</span></span><span style="display:flex;"><span>    data_source: str,
+</span></span><span style="display:flex;"><span>    nuclides: np<span style="color:#f92672">.</span>ndarray,
+</span></span><span style="display:flex;"><span>    half_life_data: np<span style="color:#f92672">.</span>ndarray,
+</span></span><span style="display:flex;"><span>    decay_constants_data: np<span style="color:#f92672">.</span>ndarray,
+</span></span><span style="display:flex;"><span>    decay_modes_data: np<span style="color:#f92672">.</span>ndarray,
+</span></span><span style="display:flex;"><span>    progeny_data: np<span style="color:#f92672">.</span>ndarray,
+</span></span><span style="display:flex;"><span>    branching_ratios_data: np<span style="color:#f92672">.</span>ndarray,
+</span></span><span style="display:flex;"><span>    decay_energies_data: np<span style="color:#f92672">.</span>ndarray
+</span></span><span style="display:flex;"><span>)</span></span></code></pre></div>
 <ul>
-<li><strong>nuclide</strong> (<code>str</code> or <code>int</code>): Nuclide symbol (e.g. &lsquo;U-235&rsquo;, &lsquo;235U&rsquo;, 922350000) or canonical id.</li>
+<li><strong>data_source</strong> (<code>str</code>): Name of the data source (e.g., &lsquo;ENDF-B-VIII.1_decay&rsquo;).</li>
+<li><strong>nuclides</strong> (<code>np.ndarray</code>): Array of nuclide symbols.</li>
+<li><strong>half_life_data</strong> (<code>np.ndarray</code>): Array of half-life data tuples.</li>
+<li><strong>decay_constants_data</strong> (<code>np.ndarray</code>): Array of decay constants.</li>
+<li><strong>decay_modes_data</strong> (<code>np.ndarray</code>): Array of decay modes for each nuclide.</li>
+<li><strong>progeny_data</strong> (<code>np.ndarray</code>): Array of progeny lists for each nuclide.</li>
+<li><strong>branching_ratios_data</strong> (<code>np.ndarray</code>): Array of branching ratios for each nuclide.</li>
+<li><strong>decay_energies_data</strong> (<code>np.ndarray</code>): Array of decay energies for each nuclide.</li>
 </ul>
 <hr>
-<h3 id="properties">Properties</h3>
-<table>
-  <thead>
-      <tr>
-          <th>Property</th>
-          <th>Type</th>
-          <th>Description</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><code>Z</code></td>
-          <td>int</td>
-          <td>Atomic number (number of protons).</td>
-      </tr>
-      <tr>
-          <td><code>A</code></td>
-          <td>int</td>
-          <td>Mass number (protons + neutrons).</td>
-      </tr>
-      <tr>
-          <td><code>N</code></td>
-          <td>int</td>
-          <td>Neutron number (A - Z).</td>
-      </tr>
-      <tr>
-          <td><code>state</code></td>
-          <td>str</td>
-          <td>Metastable state symbol (&rsquo;&rsquo; for ground, &lsquo;M&rsquo;, &lsquo;N&rsquo;, &hellip;).</td>
-      </tr>
-      <tr>
-          <td><code>id</code></td>
-          <td>int</td>
-          <td>Canonical nuclide ID (zzzaaassss form).</td>
-      </tr>
-      <tr>
-          <td><code>nuclide_symbol</code></td>
-          <td>str</td>
-          <td>Standardized nuclide string (e.g. &lsquo;U-235&rsquo;).</td>
-      </tr>
-  </tbody>
-</table>
-<hr>
-<h3 id="key-methods">Key Methods</h3>
+<h2 id="methods">Methods</h2>
 <table>
   <thead>
       <tr>
@@ -234,80 +203,108 @@ Overview The nuclide.py module defines the Nuclide class for representing nuclea
   </thead>
   <tbody>
       <tr>
-          <td><code>__repr__()</code></td>
-          <td>String representation of the nuclide.</td>
+          <td><code>validate_nuclide_symbol(nuclide)</code></td>
+          <td>Validate and standardize a nuclide symbol. Raises <code>NuclideStrError</code> if invalid or not found.</td>
       </tr>
       <tr>
-          <td><code>__eq__(other)</code></td>
-          <td>Equality comparison.</td>
+          <td><code>get_nuclide_half_life(nuclide, units='readable')</code></td>
+          <td>Get the half-life of a nuclide in the specified units.</td>
       </tr>
       <tr>
-          <td><code>__ne__(other)</code></td>
-          <td>Inequality comparison.</td>
+          <td><code>get_nuclide_progeny(nuclide)</code></td>
+          <td>Get the list of progeny (daughter nuclides) for a nuclide.</td>
       </tr>
       <tr>
-          <td><code>__hash__()</code></td>
-          <td>Hash function for use in sets and dicts.</td>
+          <td><code>get_nuclide_branching_ratios(nuclide)</code></td>
+          <td>Get the branching ratios for all decay modes of a nuclide.</td>
+      </tr>
+      <tr>
+          <td><code>get_nuclide_decay_modes(nuclide)</code></td>
+          <td>Get the decay modes for a nuclide.</td>
+      </tr>
+      <tr>
+          <td><code>get_nuclide_decay_constants(nuclide)</code></td>
+          <td>Get the decay constant (lambda) for a nuclide.</td>
+      </tr>
+      <tr>
+          <td><code>get_proton_numbers()</code></td>
+          <td>Get the array of proton numbers (Z) for all nuclides.</td>
+      </tr>
+      <tr>
+          <td><code>get_neutron_numbers()</code></td>
+          <td>Get the array of neutron numbers (N) for all nuclides.</td>
+      </tr>
+      <tr>
+          <td><code>get_nuclide_decay_energy(nuclide, energy_type)</code></td>
+          <td>Get a specific type of decay energy for a nuclide.</td>
+      </tr>
+      <tr>
+          <td><code>get_nuclide_electromagnetic_energy(nuclide)</code></td>
+          <td>Get the electromagnetic decay energy for a nuclide.</td>
+      </tr>
+      <tr>
+          <td><code>get_nuclide_light_particle_energy(nuclide)</code></td>
+          <td>Get the light particle decay energy for a nuclide.</td>
+      </tr>
+      <tr>
+          <td><code>get_nuclide_heavy_particle_energy(nuclide)</code></td>
+          <td>Get the heavy particle decay energy for a nuclide.</td>
+      </tr>
+      <tr>
+          <td><code>get_nuclide_neutrino_energy(nuclide)</code></td>
+          <td>Get the neutrino decay energy for a nuclide.</td>
+      </tr>
+      <tr>
+          <td><code>get_nuclide_total_decay_energy(nuclide)</code></td>
+          <td>Get the total decay energy released (sum of EM, LP, HP, and Neutrino energies).</td>
+      </tr>
+      <tr>
+          <td><code>plot_nuclear_chart(...)</code></td>
+          <td>Plot the nuclear chart (N vs Z) colored by half-life, with magic numbers highlighted.</td>
+      </tr>
+      <tr>
+          <td><code>__eq__(other)</code> / <code>__ne__(other)</code></td>
+          <td>Compare two <code>DecayDatabase</code> objects for equality or inequality.</td>
       </tr>
   </tbody>
 </table>
 <hr>
-<h2 id="exception-nuclidestrerror">Exception: <code>NuclideStrError</code></h2>
-<p>Custom exception for invalid nuclide strings, providing context on the error.</p>
+<h2 id="function-load_decay_database">Function: <code>load_decay_database</code></h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">load_decay_database</span>(data_source: str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;ENDF-B-VIII.1_decay&#39;</span>) <span style="color:#f92672">-&gt;</span> DecayDatabase</span></span></code></pre></div>
+<ul>
+<li><strong>data_source</strong> (<code>str</code>): Name of the decay data source.</li>
+<li><strong>Returns:</strong> <code>DecayDatabase</code> — Loaded decay database object.</li>
+</ul>
 <hr>
-<h2 id="utility-functions">Utility Functions</h2>
-<table>
-  <thead>
-      <tr>
-          <th>Function</th>
-          <th>Description</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><code>parse_nuclide(nuclide)</code></td>
-          <td>Parse a nuclide string or canonical id to standardized format.</td>
-      </tr>
-      <tr>
-          <td><code>Z_to_element(Z)</code></td>
-          <td>Convert atomic number to element symbol.</td>
-      </tr>
-      <tr>
-          <td><code>element_to_Z(element_symbol)</code></td>
-          <td>Convert element symbol to atomic number.</td>
-      </tr>
-      <tr>
-          <td><code>get_metastable_symbols()</code></td>
-          <td>Get allowed metastable state symbols.</td>
-      </tr>
-  </tbody>
-</table>
-<hr>
-<h2 id="usage-example">Usage Example</h2>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> nudca.nuclide <span style="color:#f92672">import</span> Nuclide, parse_nuclide
+<h2 id="example-usage">Example Usage</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> nudca.decay_database <span style="color:#f92672">import</span> load_decay_database
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>n <span style="color:#f92672">=</span> Nuclide(<span style="color:#e6db74">&#39;U-235&#39;</span>)
-</span></span><span style="display:flex;"><span>print(n<span style="color:#f92672">.</span>Z)  <span style="color:#75715e"># 92</span>
-</span></span><span style="display:flex;"><span>print(n<span style="color:#f92672">.</span>A)  <span style="color:#75715e"># 235</span>
-</span></span><span style="display:flex;"><span>print(n<span style="color:#f92672">.</span>state)  <span style="color:#75715e"># &#39;&#39;</span>
-</span></span><span style="display:flex;"><span>print(n<span style="color:#f92672">.</span>id)  <span style="color:#75715e"># 922350000</span>
+</span></span><span style="display:flex;"><span>db <span style="color:#f92672">=</span> load_decay_database(<span style="color:#e6db74">&#34;ENDF-B-VIII.1_decay&#34;</span>)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Parse from canonical id</span>
-</span></span><span style="display:flex;"><span>n2 <span style="color:#f92672">=</span> Nuclide(<span style="color:#ae81ff">922350000</span>)
-</span></span><span style="display:flex;"><span>print(n2<span style="color:#f92672">.</span>nuclide_symbol)  <span style="color:#75715e"># &#39;U-235&#39;</span></span></span></code></pre></div>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Validate a nuclide symbol</span>
+</span></span><span style="display:flex;"><span>symbol <span style="color:#f92672">=</span> db<span style="color:#f92672">.</span>validate_nuclide_symbol(<span style="color:#e6db74">&#34;U-235&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Get half-life</span>
+</span></span><span style="display:flex;"><span>half_life <span style="color:#f92672">=</span> db<span style="color:#f92672">.</span>get_nuclide_half_life(<span style="color:#e6db74">&#34;U-235&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Get decay modes</span>
+</span></span><span style="display:flex;"><span>modes <span style="color:#f92672">=</span> db<span style="color:#f92672">.</span>get_nuclide_decay_modes(<span style="color:#e6db74">&#34;U-235&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Plot nuclear chart</span>
+</span></span><span style="display:flex;"><span>fig <span style="color:#f92672">=</span> db<span style="color:#f92672">.</span>plot_nuclear_chart()
+</span></span><span style="display:flex;"><span>fig<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
 <hr>
 <h2 id="notes">Notes</h2>
 <ul>
-<li>Supports flexible parsing from various nuclide string formats and canonical IDs.</li>
-<li>Provides robust error handling for invalid nuclide representations.</li>
-<li>Includes mappings for all known elements and allowed metastable states.</li>
+<li>The database is typically loaded from a compressed NumPy file using <code>load_decay_database</code>.</li>
+<li>Methods provide both raw data access and scientific utilities for nuclear analysis.</li>
+<li>Plotting requires <code>matplotlib</code>.</li>
 </ul>
 <hr>
 <h2 id="see-also">See Also</h2>
 <ul>
-<li><a href="/nudca.github.io/api/decaydatabase/index.html">DecayDatabase API</a></li>
+<li><a href="/nudca.github.io/api/decaydiagram/index.html">DecayDiagram API</a></li>
 <li><a href="/nudca.github.io/api/decaymatrix/index.html">DecayMatrix API</a></li>
-<li><a href="/nudca.github.io/api/nucleodecay/index.html">NucleoDecay API</a></li>
 </ul>
 
   <footer class="footline">
@@ -362,8 +359,8 @@ Overview The nuclide.py module defines the Nuclide class for representing nuclea
             <li class="" data-nav-id="/nudca.github.io/tutorial/index.html"><a class="padding" href="/nudca.github.io/tutorial/index.html">Tutorials</a><ul id="R-subsections-b6c4d52bffb23fb821243181492a16b3" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/nudca.github.io/method/index.html"><a class="padding" href="/nudca.github.io/method/index.html">Methods</a><ul id="R-subsections-b0dfd9172d2c4a50d3f7070c503628fc" class="collapsible-menu"></ul></li>
             <li class="parent " data-nav-id="/nudca.github.io/api/index.html"><a class="padding" href="/nudca.github.io/api/index.html">nudca API</a><ul id="R-subsections-944da21c517df0c48dfbef7af28f3093" class="collapsible-menu">
-            <li class="active " data-nav-id="/nudca.github.io/api/nuclide/index.html"><a class="padding" href="/nudca.github.io/api/nuclide/index.html">Nuclide</a></li>
-            <li class="" data-nav-id="/nudca.github.io/api/decaydatabase/index.html"><a class="padding" href="/nudca.github.io/api/decaydatabase/index.html">DecayDatabase</a></li>
+            <li class="" data-nav-id="/nudca.github.io/api/nuclide/index.html"><a class="padding" href="/nudca.github.io/api/nuclide/index.html">Nuclide</a></li>
+            <li class="active " data-nav-id="/nudca.github.io/api/decaydatabase/index.html"><a class="padding" href="/nudca.github.io/api/decaydatabase/index.html">DecayDatabase</a></li>
             <li class="" data-nav-id="/nudca.github.io/api/decaydiagram/index.html"><a class="padding" href="/nudca.github.io/api/decaydiagram/index.html">DecayDiagram</a></li>
             <li class="" data-nav-id="/nudca.github.io/api/decaymatrix/index.html"><a class="padding" href="/nudca.github.io/api/decaymatrix/index.html">DecayMatrix</a></li>
             <li class="" data-nav-id="/nudca.github.io/api/nucleodecay/index.html"><a class="padding" href="/nudca.github.io/api/nucleodecay/index.html">NucleoDecay</a></li>

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://nudcacode.github.io/nudca.github.io/api/kilonovae/geometry/index.html</loc>
+    <lastmod>2025-05-26T15:49:27+08:00</lastmod>
+  </url>
+  <url>
     <loc>https://nudcacode.github.io/nudca.github.io/installation/installation/index.html</loc>
     <lastmod>2025-05-26T15:49:27+08:00</lastmod>
   </url>
@@ -13,12 +17,12 @@
     <lastmod>2025-05-26T15:49:27+08:00</lastmod>
   </url>
   <url>
-    <loc>https://nudcacode.github.io/nudca.github.io/references/references/index.html</loc>
+    <loc>https://nudcacode.github.io/nudca.github.io/tutorial/nuclide/index.html</loc>
     <lastmod>2025-05-26T15:49:27+08:00</lastmod>
   </url>
   <url>
-    <loc>https://nudcacode.github.io/nudca.github.io/tutorial/two/index.html</loc>
-    <lastmod>2025-05-26T15:49:22+08:00</lastmod>
+    <loc>https://nudcacode.github.io/nudca.github.io/references/references/index.html</loc>
+    <lastmod>2025-05-26T15:49:27+08:00</lastmod>
   </url>
   <url>
     <loc>https://nudcacode.github.io/nudca.github.io/method/heatingrate/index.html</loc>
@@ -33,15 +37,15 @@
     <lastmod>2025-05-22T21:59:15+08:00</lastmod>
   </url>
   <url>
+    <loc>https://nudcacode.github.io/nudca.github.io/tutorial/decaydatabase/index.html</loc>
+    <lastmod>2025-05-26T15:49:27+08:00</lastmod>
+  </url>
+  <url>
     <loc>https://nudcacode.github.io/nudca.github.io/installation/index.html</loc>
     <lastmod>2025-05-26T15:49:27+08:00</lastmod>
   </url>
   <url>
-    <loc>https://nudcacode.github.io/nudca.github.io/tutorial/three/index.html</loc>
-    <lastmod>2025-05-26T15:49:27+08:00</lastmod>
-  </url>
-  <url>
-    <loc>https://nudcacode.github.io/nudca.github.io/tutorial/index.html</loc>
+    <loc>https://nudcacode.github.io/nudca.github.io/api/kilonovae/opacity/index.html</loc>
     <lastmod>2025-05-26T15:49:27+08:00</lastmod>
   </url>
   <url>
@@ -57,19 +61,11 @@
     <lastmod>2025-05-22T21:59:15+08:00</lastmod>
   </url>
   <url>
-    <loc>https://nudcacode.github.io/nudca.github.io/tutorial/heating_rate/index.html</loc>
-    <lastmod>2025-05-26T15:49:10+08:00</lastmod>
-  </url>
-  <url>
-    <loc>https://nudcacode.github.io/nudca.github.io/method/index.html</loc>
-    <lastmod>2025-05-22T21:59:15+08:00</lastmod>
-  </url>
-  <url>
-    <loc>https://nudcacode.github.io/nudca.github.io/example/index.html</loc>
+    <loc>https://nudcacode.github.io/nudca.github.io/tutorial/decaydiagram/index.html</loc>
     <lastmod>2025-05-26T15:49:27+08:00</lastmod>
   </url>
   <url>
-    <loc>https://nudcacode.github.io/nudca.github.io/api/index.html</loc>
+    <loc>https://nudcacode.github.io/nudca.github.io/api/kilonovae/heatingrate/index.html</loc>
     <lastmod>2025-05-26T15:49:27+08:00</lastmod>
   </url>
   <url>
@@ -77,11 +73,55 @@
     <lastmod>2025-05-26T15:49:27+08:00</lastmod>
   </url>
   <url>
-    <loc>https://nudcacode.github.io/nudca.github.io/example/example/index.html</loc>
+    <loc>https://nudcacode.github.io/nudca.github.io/tutorial/index.html</loc>
+    <lastmod>2025-05-26T15:49:27+08:00</lastmod>
+  </url>
+  <url>
+    <loc>https://nudcacode.github.io/nudca.github.io/method/heatingrate/heatingrate/index.html</loc>
+    <lastmod>2025-05-22T21:59:15+08:00</lastmod>
+  </url>
+  <url>
+    <loc>https://nudcacode.github.io/nudca.github.io/api/decaydatabase/index.html</loc>
+    <lastmod>2025-05-26T15:49:27+08:00</lastmod>
+  </url>
+  <url>
+    <loc>https://nudcacode.github.io/nudca.github.io/tutorial/decaymatrix/index.html</loc>
+    <lastmod>2025-05-26T15:49:27+08:00</lastmod>
+  </url>
+  <url>
+    <loc>https://nudcacode.github.io/nudca.github.io/api/kilonovae/lightcurve/index.html</loc>
+    <lastmod>2025-05-26T15:49:27+08:00</lastmod>
+  </url>
+  <url>
+    <loc>https://nudcacode.github.io/nudca.github.io/method/index.html</loc>
+    <lastmod>2025-05-22T21:59:15+08:00</lastmod>
+  </url>
+  <url>
+    <loc>https://nudcacode.github.io/nudca.github.io/api/decaydiagram/index.html</loc>
+    <lastmod>2025-05-26T15:49:27+08:00</lastmod>
+  </url>
+  <url>
+    <loc>https://nudcacode.github.io/nudca.github.io/tutorial/nucleodecay/index.html</loc>
+    <lastmod>2025-05-26T15:49:27+08:00</lastmod>
+  </url>
+  <url>
+    <loc>https://nudcacode.github.io/nudca.github.io/api/index.html</loc>
+    <lastmod>2025-05-26T15:49:27+08:00</lastmod>
+  </url>
+  <url>
+    <loc>https://nudcacode.github.io/nudca.github.io/api/decaymatrix/index.html</loc>
+    <lastmod>2025-05-26T15:49:27+08:00</lastmod>
+  </url>
+  <url>
+    <loc>https://nudcacode.github.io/nudca.github.io/api/nucleodecay/index.html</loc>
     <lastmod>2025-05-26T15:49:27+08:00</lastmod>
   </url>
   <url>
     <loc>https://nudcacode.github.io/nudca.github.io/references/index.html</loc>
+    <lastmod>2025-05-26T15:49:27+08:00</lastmod>
+  </url>
+  <url>
+    <loc>https://nudcacode.github.io/nudca.github.io/api/kilonovae/index.html</loc>
     <lastmod>2025-05-26T15:49:27+08:00</lastmod>
   </url>
   <url>

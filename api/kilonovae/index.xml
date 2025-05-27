@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>kilonovae :: NuDCA</title>
+    <link>https://nudcacode.github.io/nudca.github.io/api/kilonovae/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 26 May 2025 15:49:27 +0800</lastBuildDate>
+    <atom:link href="https://nudcacode.github.io/nudca.github.io/api/kilonovae/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>geometry</title>
+      <link>https://nudcacode.github.io/nudca.github.io/api/kilonovae/geometry/index.html</link>
+      <pubDate>Mon, 26 May 2025 15:49:27 +0800</pubDate>
+      <guid>https://nudcacode.github.io/nudca.github.io/api/kilonovae/geometry/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>opacity</title>
+      <link>https://nudcacode.github.io/nudca.github.io/api/kilonovae/opacity/index.html</link>
+      <pubDate>Mon, 26 May 2025 15:49:27 +0800</pubDate>
+      <guid>https://nudcacode.github.io/nudca.github.io/api/kilonovae/opacity/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>heating_rate</title>
+      <link>https://nudcacode.github.io/nudca.github.io/api/kilonovae/heatingrate/index.html</link>
+      <pubDate>Mon, 26 May 2025 15:49:27 +0800</pubDate>
+      <guid>https://nudcacode.github.io/nudca.github.io/api/kilonovae/heatingrate/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>lightcurve</title>
+      <link>https://nudcacode.github.io/nudca.github.io/api/kilonovae/lightcurve/index.html</link>
+      <pubDate>Mon, 26 May 2025 15:49:27 +0800</pubDate>
+      <guid>https://nudcacode.github.io/nudca.github.io/api/kilonovae/lightcurve/index.html</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

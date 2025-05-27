@@ -22,5 +22,12 @@
       <guid>https://nudcacode.github.io/nudca.github.io/method/heatingrate/radioactivedecay/index.html</guid>
       <description>Decay Chains Radioactive decay chains describe the sequential transformation of unstable nuclei into more stable ones through a series of radioactive decays. Each nuclide in the chain decays into the next, until a stable nuclide is reached. The mathematical description of these chains is essential for understanding the time evolution of the number of nuclei of each type.&#xA;System of Differential Equations The time evolution of the number of nuclei in each stage of the decay chain can be described by a system of coupled first-order differential equations:</description>
     </item>
+    <item>
+      <title>Heating Rate</title>
+      <link>https://nudcacode.github.io/nudca.github.io/method/heatingrate/heatingrate/index.html</link>
+      <pubDate>Thu, 22 May 2025 21:59:15 +0800</pubDate>
+      <guid>https://nudcacode.github.io/nudca.github.io/method/heatingrate/heatingrate/index.html</guid>
+      <description>Radioactive Heating Rate $$ \dot{q}_{\mathrm{p}}(t) = \sum_{i} N_{A} \lambda_{i}Y_{i}(t)E_{i} \text{ p} \in \{\alpha, \beta, \gamma\} $$Analytical $$ \dot{q}(t) = \dot{\epsilon}_{0}\left( \frac{1}{2} - \frac{1}{\pi}\arctan\left[\frac{t-t_{0}}{\sigma}\right] \right)^{\alpha} $$$$ \dot{q}(t) = \dot{\epsilon}_{0}\left( \frac{1}{2} - \frac{1}{\pi}\arctan\left[\frac{t-t_{0}}{\sigma}\right] \right)^{\alpha} \left( \frac{1}{2} + \frac{1}{\pi}\arctan\left[\frac{t-t_{1}}{\sigma_{1}}\right] \right)^{\alpha_{1}} + C_{1}e^{-t/\tau_{1}} + C_{2}e^{-t/\tau_{2}} + C_{3}e^{-t/\tau_{3}} $$Effective Heating Rate $$ \dot{Q}(t) = \sum_{\mathrm{p}}f_{\mathrm{p}}(t)\dot{q}_{\mathrm{p}}(t) \text{ p} \in \{\alpha, \beta, \gamma\} $$</description>
+    </item>
   </channel>
 </rss>
