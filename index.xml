@@ -6,14 +6,42 @@
     <description></description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 May 2025 21:59:15 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 26 May 2025 15:49:27 +0800</lastBuildDate>
     <atom:link href="https://nudcacode.github.io/nudca.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Theory</title>
-      <link>https://nudcacode.github.io/nudca.github.io/theory/index.html</link>
+      <title>Installation</title>
+      <link>https://nudcacode.github.io/nudca.github.io/installation/index.html</link>
+      <pubDate>Mon, 26 May 2025 15:49:27 +0800</pubDate>
+      <guid>https://nudcacode.github.io/nudca.github.io/installation/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tutorials</title>
+      <link>https://nudcacode.github.io/nudca.github.io/tutorial/index.html</link>
+      <pubDate>Mon, 26 May 2025 15:49:27 +0800</pubDate>
+      <guid>https://nudcacode.github.io/nudca.github.io/tutorial/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Methods</title>
+      <link>https://nudcacode.github.io/nudca.github.io/method/index.html</link>
       <pubDate>Thu, 22 May 2025 21:59:15 +0800</pubDate>
-      <guid>https://nudcacode.github.io/nudca.github.io/theory/index.html</guid>
-      <description>Decay chains $$ \begin{cases} \frac{\mathrm{d}N_{1}(t)}{\mathrm{d}t} &amp;= -\lambda_{1}N_{1}(t) \\ \frac{\mathrm{d}N_{2}(t)}{\mathrm{d}t} &amp;= b_{12}\lambda_{1}N_{1}(t) - \lambda_{2}N_{2}(t) \\ \frac{\mathrm{d}N_{3}(t)}{\mathrm{d}t} &amp;= b_{13}\lambda_{1}N_{1}(t) + b_{23}\lambda_{2}N_{2}(t) - \lambda_{3}N_{3}(t) \\ &amp;\vdots \\ \frac{\mathrm{d}N_{n}(t)}{\mathrm{d}t} &amp;= b_{1n}\lambda_{1}N_{1}(t) + b_{2n}\lambda_{2}N_{2}(t) + \cdots + b_{n-1,n}\lambda_{n-1}N_{n-1}(t) - \lambda_{n}N_{n}(t) \end{cases} $$and $$ \frac{\mathrm{d}}{\mathrm{d}t} \begin{bmatrix} N_{1}(t) \\ N_{2}(t) \\ N_{3}(t) \\ \vdots \\ N_{i}(t) \\ \vdots \\ N_{n}(t) \end{bmatrix} = \begin{bmatrix} -\lambda_{1} &amp; &amp; &amp; &amp; &amp; &amp; \\ b_{12}\lambda_{1} &amp; -\lambda_{2} &amp; &amp; &amp; &amp; &amp; \\ b_{13}\lambda_{1} &amp; b_{23}\lambda_{2} &amp; -\lambda_{3} &amp; &amp; &amp; &amp; \\ \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; &amp; &amp; &amp; \\ b_{1i}\lambda_{1} &amp; b_{2i}\lambda_{2} &amp; b_{3i}\lambda_{3} &amp; \cdots &amp; -\lambda_{i} &amp; &amp; \\ \vdots &amp; \vdots &amp; \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \\ b_{1n}\lambda_{1} &amp; b_{2n}\lambda_{2} &amp; b_{3n}\lambda_{3} &amp; \cdots &amp; b_{in}\lambda_{i} &amp; \cdots &amp; -\lambda_{n} \end{bmatrix} \times \begin{bmatrix} N_{1}(t) \\ N_{2}(t) \\ N_{3}(t) \\ \vdots \\ N_{i}(t) \\ \vdots \\ N_{n}(t) \end{bmatrix} $$matrix A reads:</description>
+      <guid>https://nudcacode.github.io/nudca.github.io/method/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Examples</title>
+      <link>https://nudcacode.github.io/nudca.github.io/example/index.html</link>
+      <pubDate>Mon, 26 May 2025 15:49:27 +0800</pubDate>
+      <guid>https://nudcacode.github.io/nudca.github.io/example/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>API</title>
+      <link>https://nudcacode.github.io/nudca.github.io/api/index.html</link>
+      <pubDate>Mon, 26 May 2025 15:49:27 +0800</pubDate>
+      <guid>https://nudcacode.github.io/nudca.github.io/api/index.html</guid>
+      <description></description>
     </item>
   </channel>
 </rss>
