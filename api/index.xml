@@ -3,51 +3,51 @@
   <channel>
     <title>nudca API :: NuDCA</title>
     <link>https://nudcacode.github.io/nudca.github.io/api/index.html</link>
-    <description>NuDCA Nuclide DecayDatabase DecayDiagram DecayMatrix NucleoDecay kilonovae</description>
+    <description>NuDCA nudca.nuclide nudca.decay_database nudca.decay_diagram nudca.decay_matrix nudca.nucleo_decay nudca.kilonovae nudca.kilonovae.geometry nudca.kilonovae.opacity nudca.kilonovae.heating_rate nudca.kilonovae.lightcurve</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://nudcacode.github.io/nudca.github.io/api/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Nuclide</title>
+      <title>nudca.nuclide</title>
       <link>https://nudcacode.github.io/nudca.github.io/api/nuclide/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nudcacode.github.io/nudca.github.io/api/nuclide/index.html</guid>
-      <description>Nuclide API Reference Info This page documents the nuclide.py module, which provides data structures and utilities for representing and parsing nuclear nuclides. It is part of the NuDCA (Nuclear Decay Chains Astrophysics) package.&#xA;Overview The nuclide.py module defines the Nuclide class for representing nuclear nuclides, as well as supporting functions and exceptions for parsing, validating, and converting nuclide symbols, atomic numbers, and canonical IDs. It enables robust handling of nuclide data in scientific and engineering applications.</description>
+      <description>Info This page documents the nuclide.py module, which provides data structures and utilities for representing and parsing nuclear nuclides. It is part of the NuDCA (Nuclear Decay Chains Astrophysics) package.&#xA;Overview The nuclide.py module defines the Nuclide class for representing nuclear nuclides, as well as supporting functions and exceptions for parsing, validating, and converting nuclide symbols, atomic numbers, and canonical IDs. It enables robust handling of nuclide data in scientific and engineering applications.</description>
     </item>
     <item>
-      <title>DecayDatabase</title>
+      <title>nudca.decay_database</title>
       <link>https://nudcacode.github.io/nudca.github.io/api/decaydatabase/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nudcacode.github.io/nudca.github.io/api/decaydatabase/index.html</guid>
       <description>Where our lookout pretends to spot land while actually napping</description>
     </item>
     <item>
-      <title>DecayDiagram</title>
+      <title>nudca.decay_diagram</title>
       <link>https://nudcacode.github.io/nudca.github.io/api/decaydiagram/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nudcacode.github.io/nudca.github.io/api/decaydiagram/index.html</guid>
       <description>Info This page documents the decay_diagram.py module, which provides visualization and analysis tools for nuclide decay chains. It is part of the NuDCA (Nuclear Decay Chain Astrophysics) package.&#xA;Overview The DecayDiagram class enables the construction and visualization of nuclear decay chains and their reverse (parent) relationships using networkx and matplotlib. It provides methods to query decay properties and plot decay diagrams for any nuclide in a given decay database.</description>
     </item>
     <item>
-      <title>DecayMatrix</title>
+      <title>nudca.decay_matrix</title>
       <link>https://nudcacode.github.io/nudca.github.io/api/decaymatrix/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nudcacode.github.io/nudca.github.io/api/decaymatrix/index.html</guid>
       <description>DecayMatrix API Reference Info This page documents the decay_matrix.py module, which provides core data structures and utilities for nuclide decay chain calculations. It is part of the NuDCA (Nuclear Decay Chain Astrophysics) package.&#xA;Overview The decay_matrix.py module defines classes and functions to construct, store, and manipulate decay matrices for nuclear decay networks. It is designed for scientific computing and supports analytical and numerical solutions to the Bateman equations.</description>
     </item>
     <item>
-      <title>NucleoDecay</title>
+      <title>nudca.nucleo_decay</title>
       <link>https://nudcacode.github.io/nudca.github.io/api/nucleodecay/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nudcacode.github.io/nudca.github.io/api/nucleodecay/index.html</guid>
       <description>Info This page documents the nucleo_decay.py module, which provides tools for modeling radioactive decay, heating rates, and nuclide abundance evolution in nuclear astrophysics. It is part of the NuDCA (Nuclear Decay Chain Astrophysics) package.&#xA;Overview The nucleo_decay.py module offers a comprehensive class and utilities for simulating radioactive decay processes, calculating decay heating rates, and managing nuclide abundances in large nuclear decay networks. It supports matrix-based solutions to the Bateman equations and provides import/export and visualization capabilities for scientific workflows.</description>
     </item>
     <item>
-      <title>kilonovae</title>
+      <title>nudca.kilonovae</title>
       <link>https://nudcacode.github.io/nudca.github.io/api/kilonovae/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nudcacode.github.io/nudca.github.io/api/kilonovae/index.html</guid>
-      <description>geometry opacity heating_rate lightcurve</description>
+      <description>nudca.kilonovae.geometry nudca.kilonovae.opacity nudca.kilonovae.heating_rate nudca.kilonovae.lightcurve</description>
     </item>
   </channel>
 </rss>

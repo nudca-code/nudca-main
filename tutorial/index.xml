@@ -3,51 +3,51 @@
   <channel>
     <title>Tutorials :: NuDCA</title>
     <link>https://nudcacode.github.io/nudca.github.io/tutorial/index.html</link>
-    <description>Nuclide DecayDatabase DecayDiagram DecayMatrix NucleoDecay kilonovae</description>
+    <description>class:Nuclide class:DecayDatabase class:DecayDiagram class:DecayMatrix class:RadioactiveDecay Submodule:kilonovae</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://nudcacode.github.io/nudca.github.io/tutorial/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Nuclide</title>
+      <title>class:Nuclide</title>
       <link>https://nudcacode.github.io/nudca.github.io/tutorial/nuclide/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nudcacode.github.io/nudca.github.io/tutorial/nuclide/index.html</guid>
       <description>from nudca import Nuclide Nuclide(&#39;Ag-95O&#39;).A</description>
     </item>
     <item>
-      <title>DecayDatabase</title>
+      <title>class:DecayDatabase</title>
       <link>https://nudcacode.github.io/nudca.github.io/tutorial/decaydatabase/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nudcacode.github.io/nudca.github.io/tutorial/decaydatabase/index.html</guid>
       <description>DecayDatabase ​ python import matplotlib.pyplot as plt from nudca import load_decay_database decay_database = load_decay_database(data_source=&#39;ENDF-B-VIII.1_decay&#39;) fig = decay_database.plot_nuclear_chart() plt.tight_layout() plt.show() There may be pirates It is all about the boxes.</description>
     </item>
     <item>
-      <title>DecayDiagram</title>
+      <title>class:DecayDiagram</title>
       <link>https://nudcacode.github.io/nudca.github.io/tutorial/decaydiagram/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nudcacode.github.io/nudca.github.io/tutorial/decaydiagram/index.html</guid>
       <description>DecayDiagram ​ python from nudca.decay_database import load_decay_database from nudca.decay_diagram import DecayDiagram nuclide = &#39;Ni56&#39; decay_database = load_decay_database(data_source=&#39;ENDF-B-VIII.1_decay&#39;) decay_diagram = DecayDiagram(nuclide, decay_database) radionuclide = decay_diagram.nuclide half_life = decay_diagram.half_life decay_modes = decay_diagram.decay_modes progeny = decay_diagram.progeny branching_ratios = decay_diagram.branching_ratios Details Radionuclide: Ni-56 Half life: 6.08 d Progeny: [&#39;Co-56&#39;] Decay modes: [&#39;β+&amp;EC&#39;] Branching ratios: [1.0] decay_diagram = DecayDiagram(&#39;Ni56&#39;, decay_database) fig, axes = decay_diagram.plot_decay_chains() fig.tight_layout()</description>
     </item>
     <item>
-      <title>DecayMatrix</title>
+      <title>class:DecayMatrix</title>
       <link>https://nudcacode.github.io/nudca.github.io/tutorial/decaymatrix/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nudcacode.github.io/nudca.github.io/tutorial/decaymatrix/index.html</guid>
       <description>from nudca.decay_database import load_decay_database from nudca.decay_matrix import MatrixBuilder decay_database = load_decay_database() matrix_builder = MatrixBuilder(decay_database) matrix_A = matrix_builder.build_matrix_A() matrix_P = matrix_builder.build_matrix_P(matrix_A) matrix_P_inv = matrix_builder.build_matrix_P_inv(matrix_A, matrix_P) from nudca.decay_matrix import load_decay_matrix decay_matrix = load_decay_matrix() print(decay_matrix)</description>
     </item>
     <item>
-      <title>NucleoDecay</title>
+      <title>class:RadioactiveDecay</title>
       <link>https://nudcacode.github.io/nudca.github.io/tutorial/nucleodecay/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nudcacode.github.io/nudca.github.io/tutorial/nucleodecay/index.html</guid>
       <description>import numpy as np import matplotlib.pyplot as plt from nudca import load_decay_database, load_decay_matrix, RadioactiveDecay decay_database = load_decay_database(data_source=&#39;ENDF-B-VIII.1_decay&#39;) decay_matrix = load_decay_matrix(data_source=&#39;ENDF-B-VIII.1_decay&#39;) init_Y = {&#39;Ni56&#39;: 1.e-5, &#39;Co56&#39;:1.e-7, &#39;Fe56&#39;:1.e-9} radioactive_decay = RadioactiveDecay( init_Y, decay_database, decay_matrix ) times = np.geomspace(1.e-2, 1.e3, 10000) * 86400 nuclides, Y = radioactive_decay.decay_nuclide_abundances(times) fig, ax = plt.subplots(figsize=(8, 6), dpi=300) ax.plot(times/86400, Y[:, 0], label=f&#39;{nuclides[0]}&#39;) ax.plot(times/86400, Y[:, 1], label=f&#39;{nuclides[1]}&#39;) ax.plot(times/86400, Y[:, 2], label=f&#39;{nuclides[2]}&#39;) ax.set_xlim(1.e-2, 1.e3) ax.set_ylim(1e-10, 1e-3) ax.set_xscale(&#39;log&#39;) ax.set_yscale(&#39;log&#39;) ax.set_xlabel(&#39;Time [days]&#39;, fontsize=14) ax.set_ylabel(&#39;Y&#39;, fontsize=14) ax.legend() plt.show() import numpy as np import matplotlib.pyplot as plt from nudca import load_decay_database, load_decay_matrix, RadioactiveDecay decay_database = load_decay_database(data_source=&#39;ENDF-B-VIII.1_decay&#39;) decay_matrix = load_decay_matrix(data_source=&#39;ENDF-B-VIII.1_decay&#39;) init_Y = {&#39;Ni56&#39;: 1.e-5, &#39;Co56&#39;:1.e-7, &#39;Fe56&#39;:1.e-9} radioactive_decay = RadioactiveDecay( init_Y, decay_database, decay_matrix ) times = np.geomspace(1.e-2, 1.e3, 10000) * 86400 q_EM = radioactive_decay.decay_heating_rates(times, energy_type=&#39;EM&#39;) q_LP = radioactive_decay.decay_heating_rates(times, energy_type=&#39;LP&#39;) q_HP = radioactive_decay.decay_heating_rates(times, energy_type=&#39;HP&#39;) q = radioactive_decay.decay_heating_rates(times) fig, ax = plt.subplots(figsize=(8, 6), dpi=300) ax.plot(times/86400, q_EM, ls=&#39;--&#39;, lw=1, label=&#39;Electromagnetic&#39;) ax.plot(times/86400, q_LP, ls=&#39;--&#39;, lw=1, label=&#39;Light particle&#39;) # ax.plot(times/86400, q_HP, ls=&#39;--&#39;, lw=1, label=&#39;Heavy particle&#39;) ax.plot(times/86400, q, ls=&#39;-&#39;, lw=2, color=&#39;b&#39;, label=&#39;Total&#39;) ax.set_xlim(1.e-2, 1.e3) ax.set_ylim(1e4, 1e9) ax.set_xscale(&#39;log&#39;) ax.set_yscale(&#39;log&#39;) ax.set_xlabel(&#39;Time [days]&#39;, fontsize=14) ax.set_ylabel(&#39;Heating Rate [erg / g / s]&#39;, fontsize=14) ax.legend() plt.show()</description>
     </item>
     <item>
-      <title>kilonovae</title>
+      <title>Submodule:kilonovae</title>
       <link>https://nudcacode.github.io/nudca.github.io/tutorial/kilonovae/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nudcacode.github.io/nudca.github.io/tutorial/kilonovae/index.html</guid>
-      <description>Geometry Opacity KNeLightCurve</description>
+      <description>class:Geometry class:KNOpacity class:KNeLightCurve</description>
     </item>
   </channel>
 </rss>
