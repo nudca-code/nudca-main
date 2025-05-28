@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>kilonovae :: NuDCA</title>
+    <link>https://nudcacode.github.io/nudca.github.io/tutorial/kilonovae/index.html</link>
+    <description>Geometry Opacity KNeLightCurve</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://nudcacode.github.io/nudca.github.io/tutorial/kilonovae/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Geometry</title>
+      <link>https://nudcacode.github.io/nudca.github.io/tutorial/kilonovae/geometry/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nudcacode.github.io/nudca.github.io/tutorial/kilonovae/geometry/index.html</guid>
+      <description>import numpy as np import matplotlib.pyplot as plt from matplotlib.colors import LogNorm from matplotlib import cm from nudca.kilonovae import Geometry, DensityProfile, VelocityProfile geometry = Geometry( velocity_scheme=&#34;Default&#34;, # density_scheme=&#34;Metzger2017&#34;, density_scheme=&#34;Kasen2017&#34;, mass_ejecta=2.e-2, vel_ejecta=0.15 ) vel_profile = VelocityProfile(velocity_scheme=&#39;Other&#39;, vel_min=-0.3, vel_max=0.3) vel_x, vel_y = np.meshgrid( vel_profile.velocity_distribution(500), vel_profile.velocity_distribution(500) ) # vel_x, vel_y = np.meshgrid( # np.linspace(0, 0.3, 500), # np.linspace(0, 0.3, 500) # ) times = 86400.0 vel_shells = np.sqrt(vel_x**2 + vel_y**2) vel_min, vel_max = 0.1, 0.3 rho_shells = geometry.density_shells(times, vel_shells) rho_shells[(vel_shells &lt; vel_min) | (vel_shells &gt; vel_max)] = np.nan norm = LogNorm(vmin=np.nanmin(rho_shells), vmax=np.nanmax(rho_shells)) fig, ax = plt.subplots(figsize=(8, 8)) cax = ax.imshow( rho_shells, origin=&#39;lower&#39;, aspect=&#39;equal&#39;, cmap=cm.plasma, extent=[vel_x.min(), vel_x.max(), vel_y.min(), vel_y.max()], norm=norm ) # ax.set_xlim(-0.3, 0.3) # ax.set_ylim(-0.3, 0.3) ax.set_xlim(0, 0.3) ax.set_ylim(0, 0.3) ax.set_xlabel(r&#39;$v_{x}/c$&#39;, fontsize=12) ax.set_ylabel(r&#39;$v_{z}/c$&#39;, fontsize=12) cbar = fig.colorbar(cax, ax=ax, orientation=&#39;vertical&#39;, fraction=0.05, pad=0.05) cbar.set_label(r&#39;$\rho$ [g/ccm]&#39;, fontsize=12) ax.set_title(&#39;Density Distribution&#39;, fontsize=14) plt.show()</description>
+    </item>
+    <item>
+      <title>Opacity</title>
+      <link>https://nudcacode.github.io/nudca.github.io/tutorial/kilonovae/opacity/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nudcacode.github.io/nudca.github.io/tutorial/kilonovae/opacity/index.html</guid>
+      <description>import numpy as np import matplotlib.pyplot as plt from nudca.kilonovae.opacity import KNOpacity Ye = np.linspace(0.10, 0.50, 5000) Ye_table = [0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40] kappa_table = [19.5, 32.2, 22.3, 5.60, 5.36, 3.30, 0.96] kappa_tanaka = KNOpacity(opacity_type=&#39;Tabular&#39;, opacity_method=&#39;Tanaka_OneVar&#39;)(Ye) kappa_wu = KNOpacity(opacity_type=&#39;Formula&#39;, opacity_method=&#39;Wu2022&#39;)(Ye) kappa_ekanger = KNOpacity(opacity_type=&#39;Formula&#39;, opacity_method=&#39;Ekanger2023&#39;)(Ye) fig, ax = plt.subplots(figsize=(8,6), dpi=150) ax.plot(Ye, kappa_tanaka, label=&#39;Tanaka2020_OneVar&#39;) ax.plot(Ye, kappa_wu, label=&#39;Wu2022&#39;) ax.plot(Ye, kappa_ekanger, label=&#39;Ekanger2023&#39;) ax.scatter(Ye_table, kappa_table, label=&#39;Tanaka2020_Table&#39;) ax.set_xlim(0.095, 0.5) ax.set_ylim(1.e-1, 100) ax.set_yscale(&#39;log&#39;) ax.set_xlabel(r&#39;$Y_{e}$&#39;) ax.set_ylabel(r&#39;$\kappa \quad [cm^{2} g^{-1}]$&#39;) ax.legend() plt.show()</description>
+    </item>
+    <item>
+      <title>KNeLightCurve</title>
+      <link>https://nudcacode.github.io/nudca.github.io/tutorial/kilonovae/knelightcurve/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nudcacode.github.io/nudca.github.io/tutorial/kilonovae/knelightcurve/index.html</guid>
+      <description>import numpy as np import matplotlib.pyplot as plt from nudca.kilonovae import KNeLightCurve times = np.geomspace(1e-3, 1e2, 5000) * 86400 # days t, Lbol = KNeLightCurve( lightcurve_type = &#39;Luminosity&#39;, # [&#39;Luminosity&#39;, &#39;Magnitude&#39;] velocity_scheme= &#39;Default&#39;, # Uniform distribution density_scheme= &#39;Metzger2017&#39;, # [&#39;Metzger2017&#39;, &#39;Kasen2017&#39;, &#39;Wollaeger2018&#39;] thermal_scheme= &#39;Barnes2016_Default&#39;, # [&#39;Barnes2016_Default&#39;, &#39;Barnes2016_1D&#39;, &#39;Barnes2016_2D&#39;] heating_scheme= &#39;Korobkin2012&#39;, # [&#39;Korobkin2012&#39;, &#39;Rosswog2024&#39;, &#39;Table&#39;] # heating_rate_table = (t, q_dot) mass_ejecta = 2.e-3, # units: M_sun vel_ejecta = 0.15, # units: c opacity = 10.0, # [&#39;Wu2022&#39;, &#39;Ekanger2023&#39;, &#39;Tanaka_OneVar&#39;, &#39;Tanaka_FourVar&#39;] # luminosity_distance # units: Mpc # wavelength # units: cm # **kwargs (n_shells ...) )(times=times) fig, ax = plt.subplots() ax.plot(t/86400, Lbol) ax.set_xlim(-0.5, 30) ax.set_ylim(1e37, 1e42) ax.set_yscale(&#39;log&#39;) ax.set_xlabel(&#39;Time [days]&#39;) ax.set_ylabel(&#39;Lbol [erg]&#39;) plt.show()</description>
+    </item>
+  </channel>
+</rss>

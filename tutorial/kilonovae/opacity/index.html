@@ -5,22 +5,22 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.147.6">
     <meta name="generator" content="Relearn 7.6.1+0b83617ee9da5253aafcf11807b256da7d88d709">
-    <meta name="description" content="DecayDiagram ​ python from nudca.decay_database import load_decay_database from nudca.decay_diagram import DecayDiagram nuclide = &#39;Ni56&#39; decay_database = load_decay_database(data_source=&#39;ENDF-B-VIII.1_decay&#39;) decay_diagram = DecayDiagram(nuclide, decay_database) radionuclide = decay_diagram.nuclide half_life = decay_diagram.half_life decay_modes = decay_diagram.decay_modes progeny = decay_diagram.progeny branching_ratios = decay_diagram.branching_ratios Details Radionuclide: Ni-56 Half life: 6.08 d Progeny: [&#39;Co-56&#39;] Decay modes: [&#39;β&#43;&amp;EC&#39;] Branching ratios: [1.0] decay_diagram = DecayDiagram(&#39;Ni56&#39;, decay_database) fig, axes = decay_diagram.plot_decay_chains() fig.tight_layout()">
+    <meta name="description" content="import numpy as np import matplotlib.pyplot as plt from nudca.kilonovae.opacity import KNOpacity Ye = np.linspace(0.10, 0.50, 5000) Ye_table = [0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40] kappa_table = [19.5, 32.2, 22.3, 5.60, 5.36, 3.30, 0.96] kappa_tanaka = KNOpacity(opacity_type=&#39;Tabular&#39;, opacity_method=&#39;Tanaka_OneVar&#39;)(Ye) kappa_wu = KNOpacity(opacity_type=&#39;Formula&#39;, opacity_method=&#39;Wu2022&#39;)(Ye) kappa_ekanger = KNOpacity(opacity_type=&#39;Formula&#39;, opacity_method=&#39;Ekanger2023&#39;)(Ye) fig, ax = plt.subplots(figsize=(8,6), dpi=150) ax.plot(Ye, kappa_tanaka, label=&#39;Tanaka2020_OneVar&#39;) ax.plot(Ye, kappa_wu, label=&#39;Wu2022&#39;) ax.plot(Ye, kappa_ekanger, label=&#39;Ekanger2023&#39;) ax.scatter(Ye_table, kappa_table, label=&#39;Tanaka2020_Table&#39;) ax.set_xlim(0.095, 0.5) ax.set_ylim(1.e-1, 100) ax.set_yscale(&#39;log&#39;) ax.set_xlabel(r&#39;$Y_{e}$&#39;) ax.set_ylabel(r&#39;$\kappa \quad [cm^{2} g^{-1}]$&#39;) ax.legend() plt.show()">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="DecayDiagram :: NuDCA">
-    <meta name="twitter:description" content="DecayDiagram ​ python from nudca.decay_database import load_decay_database from nudca.decay_diagram import DecayDiagram nuclide = &#39;Ni56&#39; decay_database = load_decay_database(data_source=&#39;ENDF-B-VIII.1_decay&#39;) decay_diagram = DecayDiagram(nuclide, decay_database) radionuclide = decay_diagram.nuclide half_life = decay_diagram.half_life decay_modes = decay_diagram.decay_modes progeny = decay_diagram.progeny branching_ratios = decay_diagram.branching_ratios Details Radionuclide: Ni-56 Half life: 6.08 d Progeny: [&#39;Co-56&#39;] Decay modes: [&#39;β&#43;&amp;EC&#39;] Branching ratios: [1.0] decay_diagram = DecayDiagram(&#39;Ni56&#39;, decay_database) fig, axes = decay_diagram.plot_decay_chains() fig.tight_layout()">
-    <meta property="og:url" content="https://nudcacode.github.io/nudca.github.io/tutorial/decaydiagram/index.html">
+    <meta name="twitter:title" content="Opacity :: NuDCA">
+    <meta name="twitter:description" content="import numpy as np import matplotlib.pyplot as plt from nudca.kilonovae.opacity import KNOpacity Ye = np.linspace(0.10, 0.50, 5000) Ye_table = [0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40] kappa_table = [19.5, 32.2, 22.3, 5.60, 5.36, 3.30, 0.96] kappa_tanaka = KNOpacity(opacity_type=&#39;Tabular&#39;, opacity_method=&#39;Tanaka_OneVar&#39;)(Ye) kappa_wu = KNOpacity(opacity_type=&#39;Formula&#39;, opacity_method=&#39;Wu2022&#39;)(Ye) kappa_ekanger = KNOpacity(opacity_type=&#39;Formula&#39;, opacity_method=&#39;Ekanger2023&#39;)(Ye) fig, ax = plt.subplots(figsize=(8,6), dpi=150) ax.plot(Ye, kappa_tanaka, label=&#39;Tanaka2020_OneVar&#39;) ax.plot(Ye, kappa_wu, label=&#39;Wu2022&#39;) ax.plot(Ye, kappa_ekanger, label=&#39;Ekanger2023&#39;) ax.scatter(Ye_table, kappa_table, label=&#39;Tanaka2020_Table&#39;) ax.set_xlim(0.095, 0.5) ax.set_ylim(1.e-1, 100) ax.set_yscale(&#39;log&#39;) ax.set_xlabel(r&#39;$Y_{e}$&#39;) ax.set_ylabel(r&#39;$\kappa \quad [cm^{2} g^{-1}]$&#39;) ax.legend() plt.show()">
+    <meta property="og:url" content="https://nudcacode.github.io/nudca.github.io/tutorial/kilonovae/opacity/index.html">
     <meta property="og:site_name" content="NuDCA">
-    <meta property="og:title" content="DecayDiagram :: NuDCA">
-    <meta property="og:description" content="DecayDiagram ​ python from nudca.decay_database import load_decay_database from nudca.decay_diagram import DecayDiagram nuclide = &#39;Ni56&#39; decay_database = load_decay_database(data_source=&#39;ENDF-B-VIII.1_decay&#39;) decay_diagram = DecayDiagram(nuclide, decay_database) radionuclide = decay_diagram.nuclide half_life = decay_diagram.half_life decay_modes = decay_diagram.decay_modes progeny = decay_diagram.progeny branching_ratios = decay_diagram.branching_ratios Details Radionuclide: Ni-56 Half life: 6.08 d Progeny: [&#39;Co-56&#39;] Decay modes: [&#39;β&#43;&amp;EC&#39;] Branching ratios: [1.0] decay_diagram = DecayDiagram(&#39;Ni56&#39;, decay_database) fig, axes = decay_diagram.plot_decay_chains() fig.tight_layout()">
+    <meta property="og:title" content="Opacity :: NuDCA">
+    <meta property="og:description" content="import numpy as np import matplotlib.pyplot as plt from nudca.kilonovae.opacity import KNOpacity Ye = np.linspace(0.10, 0.50, 5000) Ye_table = [0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40] kappa_table = [19.5, 32.2, 22.3, 5.60, 5.36, 3.30, 0.96] kappa_tanaka = KNOpacity(opacity_type=&#39;Tabular&#39;, opacity_method=&#39;Tanaka_OneVar&#39;)(Ye) kappa_wu = KNOpacity(opacity_type=&#39;Formula&#39;, opacity_method=&#39;Wu2022&#39;)(Ye) kappa_ekanger = KNOpacity(opacity_type=&#39;Formula&#39;, opacity_method=&#39;Ekanger2023&#39;)(Ye) fig, ax = plt.subplots(figsize=(8,6), dpi=150) ax.plot(Ye, kappa_tanaka, label=&#39;Tanaka2020_OneVar&#39;) ax.plot(Ye, kappa_wu, label=&#39;Wu2022&#39;) ax.plot(Ye, kappa_ekanger, label=&#39;Ekanger2023&#39;) ax.scatter(Ye_table, kappa_table, label=&#39;Tanaka2020_Table&#39;) ax.set_xlim(0.095, 0.5) ax.set_ylim(1.e-1, 100) ax.set_yscale(&#39;log&#39;) ax.set_xlabel(r&#39;$Y_{e}$&#39;) ax.set_ylabel(r&#39;$\kappa \quad [cm^{2} g^{-1}]$&#39;) ax.legend() plt.show()">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="article">
     <meta property="article:section" content="Tutorials">
-    <meta itemprop="name" content="DecayDiagram :: NuDCA">
-    <meta itemprop="description" content="DecayDiagram ​ python from nudca.decay_database import load_decay_database from nudca.decay_diagram import DecayDiagram nuclide = &#39;Ni56&#39; decay_database = load_decay_database(data_source=&#39;ENDF-B-VIII.1_decay&#39;) decay_diagram = DecayDiagram(nuclide, decay_database) radionuclide = decay_diagram.nuclide half_life = decay_diagram.half_life decay_modes = decay_diagram.decay_modes progeny = decay_diagram.progeny branching_ratios = decay_diagram.branching_ratios Details Radionuclide: Ni-56 Half life: 6.08 d Progeny: [&#39;Co-56&#39;] Decay modes: [&#39;β&#43;&amp;EC&#39;] Branching ratios: [1.0] decay_diagram = DecayDiagram(&#39;Ni56&#39;, decay_database) fig, axes = decay_diagram.plot_decay_chains() fig.tight_layout()">
-    <meta itemprop="wordCount" content="69">
-    <title>DecayDiagram :: NuDCA</title>
+    <meta itemprop="name" content="Opacity :: NuDCA">
+    <meta itemprop="description" content="import numpy as np import matplotlib.pyplot as plt from nudca.kilonovae.opacity import KNOpacity Ye = np.linspace(0.10, 0.50, 5000) Ye_table = [0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40] kappa_table = [19.5, 32.2, 22.3, 5.60, 5.36, 3.30, 0.96] kappa_tanaka = KNOpacity(opacity_type=&#39;Tabular&#39;, opacity_method=&#39;Tanaka_OneVar&#39;)(Ye) kappa_wu = KNOpacity(opacity_type=&#39;Formula&#39;, opacity_method=&#39;Wu2022&#39;)(Ye) kappa_ekanger = KNOpacity(opacity_type=&#39;Formula&#39;, opacity_method=&#39;Ekanger2023&#39;)(Ye) fig, ax = plt.subplots(figsize=(8,6), dpi=150) ax.plot(Ye, kappa_tanaka, label=&#39;Tanaka2020_OneVar&#39;) ax.plot(Ye, kappa_wu, label=&#39;Wu2022&#39;) ax.plot(Ye, kappa_ekanger, label=&#39;Ekanger2023&#39;) ax.scatter(Ye_table, kappa_table, label=&#39;Tanaka2020_Table&#39;) ax.set_xlim(0.095, 0.5) ax.set_ylim(1.e-1, 100) ax.set_yscale(&#39;log&#39;) ax.set_xlabel(r&#39;$Y_{e}$&#39;) ax.set_ylabel(r&#39;$\kappa \quad [cm^{2} g^{-1}]$&#39;) ax.legend() plt.show()">
+    <meta itemprop="wordCount" content="76">
+    <title>Opacity :: NuDCA</title>
     <link href="/nudca.github.io/fonts/fontawesome/css/fontawesome-all.min.css?1748404655" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/nudca.github.io/fonts/fontawesome/css/fontawesome-all.min.css?1748404655" rel="stylesheet"></noscript>
     <link href="/nudca.github.io/css/perfect-scrollbar/perfect-scrollbar.min.css?1748404655" rel="stylesheet">
     <link href="/nudca.github.io/css/theme.min.css?1748404655" rel="stylesheet">
@@ -36,9 +36,9 @@
       window.relearn = window.relearn || {};
       // configuration
       window.relearn.min = `.min`;
-      window.relearn.path='\/tutorial\/decaydiagram\/index.html';
-      window.relearn.relBasePath='..\/..';
-      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.path='\/tutorial\/kilonovae\/opacity\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..\/..';
       window.relearn.absBaseUri='https:\/\/nudcacode.github.io\/nudca.github.io';
       window.relearn.contentLangs=['en'];
       window.relearn.index_js_url="/nudca.github.io/searchindex.en.js?1748404655";
@@ -88,7 +88,7 @@
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
   </head>
-  <body class="mobile-support html" data-url="/nudca.github.io/tutorial/decaydiagram/index.html">
+  <body class="mobile-support html" data-url="/nudca.github.io/tutorial/kilonovae/opacity/index.html">
     <div id="R-body" class="default-animation">
       <div id="R-body-overlay"></div>
       <nav id="R-topbar">
@@ -99,12 +99,7 @@
             </div>
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
               <div class="topbar-content">
-                <div class="topbar-content-wrapper">
-<nav class="TableOfContents">
-  <ul>
-    <li><a href="#decaydiagram">DecayDiagram</a></li>
-  </ul>
-</nav>
+                <div class="topbar-content-wrapper"> 
                 </div>
               </div>
             </div>
@@ -112,12 +107,13 @@
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
             <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/nudca.github.io/index.html"><span itemprop="name">NuDCA</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
             <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/nudca.github.io/tutorial/index.html"><span itemprop="name">Tutorials</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">DecayDiagram</span><meta itemprop="position" content="3"></li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/nudca.github.io/tutorial/kilonovae/index.html"><span itemprop="name">kilonovae</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Opacity</span><meta itemprop="position" content="4"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/nudca.github.io/tutorial/decaydatabase/index.html" title="DecayDatabase (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/nudca.github.io/tutorial/kilonovae/geometry/index.html" title="Geometry (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/nudca.github.io/tutorial/decaymatrix/index.html" title="DecayMatrix (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/nudca.github.io/tutorial/kilonovae/knelightcurve/index.html" title="KNeLightCurve (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -137,63 +133,38 @@
   <header class="headline">
   </header>
 
-<h1 id="decaydiagram">DecayDiagram</h1>
+<h1 id="opacity">Opacity</h1>
 
-<h2 id="decaydiagram">DecayDiagram</h2>
-<div class="tab-panel" data-tab-group="df9977d7040638ba9307970466756669">
-  <div class="tab-nav">
-    <div class="tab-nav-title">&#8203;</div>
-    <button
-      data-tab-item="python"
-      class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
-      onclick="switchTab('df9977d7040638ba9307970466756669','python')"
-    >
-      <span class="tab-nav-text">python</span>
-    </button>
-  </div>
-  <div class="tab-content-container">
-    <div
-      data-tab-item="python"
-      class="tab-content tab-panel-style cstyle initial active">
-      <div class="tab-content-text">
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#f92672">from</span> nudca.decay_database <span style="color:#f92672">import</span> load_decay_database
-</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> nudca.decay_diagram <span style="color:#f92672">import</span> DecayDiagram
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> nudca.kilonovae.opacity <span style="color:#f92672">import</span> KNOpacity
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>nuclide <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Ni56&#39;</span>
-</span></span><span style="display:flex;"><span>decay_database <span style="color:#f92672">=</span> load_decay_database(data_source<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;ENDF-B-VIII.1_decay&#39;</span>)
-</span></span><span style="display:flex;"><span>decay_diagram <span style="color:#f92672">=</span> DecayDiagram(nuclide, decay_database)
+</span></span><span style="display:flex;"><span>Ye <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>linspace(<span style="color:#ae81ff">0.10</span>, <span style="color:#ae81ff">0.50</span>, <span style="color:#ae81ff">5000</span>)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>radionuclide     <span style="color:#f92672">=</span> decay_diagram<span style="color:#f92672">.</span>nuclide
-</span></span><span style="display:flex;"><span>half_life        <span style="color:#f92672">=</span> decay_diagram<span style="color:#f92672">.</span>half_life
-</span></span><span style="display:flex;"><span>decay_modes      <span style="color:#f92672">=</span> decay_diagram<span style="color:#f92672">.</span>decay_modes
-</span></span><span style="display:flex;"><span>progeny          <span style="color:#f92672">=</span> decay_diagram<span style="color:#f92672">.</span>progeny
-</span></span><span style="display:flex;"><span>branching_ratios <span style="color:#f92672">=</span> decay_diagram<span style="color:#f92672">.</span>branching_ratios</span></span></code></pre></div>
-      </div>
-    </div>
-  </div>
-</div>
-<details open class=" box cstyle notices accent">
-  <summary class="box-label a11y-only" tabindex="-1">
-    <span class="a11y-only">Details</span>
-  </summary>
-  <div class="box-content">
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Radionuclide:  Ni-56
-Half life:  6.08 d
-Progeny:  [&#39;Co-56&#39;]
-Decay modes: [&#39;β+&amp;EC&#39;]
-Branching ratios:  [1.0]</code></pre></div>
-  </div>
-</details>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>decay_diagram <span style="color:#f92672">=</span> DecayDiagram(<span style="color:#e6db74">&#39;Ni56&#39;</span>, decay_database)
-</span></span><span style="display:flex;"><span>fig, axes <span style="color:#f92672">=</span> decay_diagram<span style="color:#f92672">.</span>plot_decay_chains()
-</span></span><span style="display:flex;"><span>fig<span style="color:#f92672">.</span>tight_layout()</span></span></code></pre></div>
-<p><a href="#R-image-768f8cd3296f6c5d32d22ec5f3935477" class="lightbox-link"><img alt="DecayChainsNi56" class="lazy lightbox figure-image" loading="lazy" src="../../images/Tutorial/DecayChains_Ni56.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-768f8cd3296f6c5d32d22ec5f3935477"><img alt="DecayChainsNi56" class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Tutorial/DecayChains_Ni56.png"></a></p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>decay_diagram <span style="color:#f92672">=</span> DecayDiagram(<span style="color:#e6db74">&#39;Fe56&#39;</span>, decay_database)
-</span></span><span style="display:flex;"><span>fig, axes <span style="color:#f92672">=</span> decay_diagram<span style="color:#f92672">.</span>plot_reverse_decay_chains()
-</span></span><span style="display:flex;"><span>fig<span style="color:#f92672">.</span>tight_layout()</span></span></code></pre></div>
-<p><a href="#R-image-e7bf32f6680f7ada3cf55e6aa729eb63" class="lightbox-link"><img alt="ReverseDecayChainsFe56" class="lazy lightbox figure-image" loading="lazy" src="../../images/Tutorial/ReverseDecayChains_Fe56.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-e7bf32f6680f7ada3cf55e6aa729eb63"><img alt="ReverseDecayChainsFe56" class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Tutorial/ReverseDecayChains_Fe56.png"></a></p>
+</span></span><span style="display:flex;"><span>Ye_table <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0.10</span>, <span style="color:#ae81ff">0.15</span>, <span style="color:#ae81ff">0.20</span>, <span style="color:#ae81ff">0.25</span>, <span style="color:#ae81ff">0.30</span>, <span style="color:#ae81ff">0.35</span>, <span style="color:#ae81ff">0.40</span>]
+</span></span><span style="display:flex;"><span>kappa_table <span style="color:#f92672">=</span> [<span style="color:#ae81ff">19.5</span>, <span style="color:#ae81ff">32.2</span>, <span style="color:#ae81ff">22.3</span>, <span style="color:#ae81ff">5.60</span>, <span style="color:#ae81ff">5.36</span>, <span style="color:#ae81ff">3.30</span>, <span style="color:#ae81ff">0.96</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>kappa_tanaka <span style="color:#f92672">=</span> KNOpacity(opacity_type<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Tabular&#39;</span>, opacity_method<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Tanaka_OneVar&#39;</span>)(Ye)
+</span></span><span style="display:flex;"><span>kappa_wu <span style="color:#f92672">=</span> KNOpacity(opacity_type<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Formula&#39;</span>, opacity_method<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Wu2022&#39;</span>)(Ye)
+</span></span><span style="display:flex;"><span>kappa_ekanger <span style="color:#f92672">=</span> KNOpacity(opacity_type<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Formula&#39;</span>, opacity_method<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Ekanger2023&#39;</span>)(Ye)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>fig, ax <span style="color:#f92672">=</span> plt<span style="color:#f92672">.</span>subplots(figsize<span style="color:#f92672">=</span>(<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">6</span>), dpi<span style="color:#f92672">=</span><span style="color:#ae81ff">150</span>)
+</span></span><span style="display:flex;"><span>ax<span style="color:#f92672">.</span>plot(Ye, kappa_tanaka, label<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Tanaka2020_OneVar&#39;</span>)
+</span></span><span style="display:flex;"><span>ax<span style="color:#f92672">.</span>plot(Ye, kappa_wu, label<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Wu2022&#39;</span>)
+</span></span><span style="display:flex;"><span>ax<span style="color:#f92672">.</span>plot(Ye, kappa_ekanger, label<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Ekanger2023&#39;</span>)
+</span></span><span style="display:flex;"><span>ax<span style="color:#f92672">.</span>scatter(Ye_table, kappa_table, label<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Tanaka2020_Table&#39;</span>)
+</span></span><span style="display:flex;"><span>ax<span style="color:#f92672">.</span>set_xlim(<span style="color:#ae81ff">0.095</span>, <span style="color:#ae81ff">0.5</span>)
+</span></span><span style="display:flex;"><span>ax<span style="color:#f92672">.</span>set_ylim(<span style="color:#ae81ff">1.e-1</span>, <span style="color:#ae81ff">100</span>)
+</span></span><span style="display:flex;"><span>ax<span style="color:#f92672">.</span>set_yscale(<span style="color:#e6db74">&#39;log&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ax<span style="color:#f92672">.</span>set_xlabel(<span style="color:#e6db74">r</span><span style="color:#e6db74">&#39;$Y_</span><span style="color:#e6db74">{e}</span><span style="color:#e6db74">$&#39;</span>)
+</span></span><span style="display:flex;"><span>ax<span style="color:#f92672">.</span>set_ylabel(<span style="color:#e6db74">r</span><span style="color:#e6db74">&#39;$\kappa \quad [cm^</span><span style="color:#e6db74">{2}</span><span style="color:#e6db74"> g^{-1}]$&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ax<span style="color:#f92672">.</span>legend()
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
+<p><a href="#R-image-797bfe60e5800795ec808d902674054e" class="lightbox-link"><img alt="Opacity" class="lazy lightbox figure-image" loading="lazy" src="../../../images/Tutorial/Opacity.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-797bfe60e5800795ec808d902674054e"><img alt="Opacity" class="lazy lightbox lightbox-image" loading="lazy" src="../../../images/Tutorial/Opacity.png"></a></p>
 
   <footer class="footline">
   </footer>
@@ -246,10 +217,13 @@ Branching ratios:  [1.0]</code></pre></div>
             <li class="parent " data-nav-id="/nudca.github.io/tutorial/index.html"><a class="padding" href="/nudca.github.io/tutorial/index.html">Tutorials</a><ul id="R-subsections-b6c4d52bffb23fb821243181492a16b3" class="collapsible-menu">
             <li class="" data-nav-id="/nudca.github.io/tutorial/nuclide/index.html"><a class="padding" href="/nudca.github.io/tutorial/nuclide/index.html">Nuclide</a></li>
             <li class="" data-nav-id="/nudca.github.io/tutorial/decaydatabase/index.html"><a class="padding" href="/nudca.github.io/tutorial/decaydatabase/index.html">DecayDatabase</a></li>
-            <li class="active " data-nav-id="/nudca.github.io/tutorial/decaydiagram/index.html"><a class="padding" href="/nudca.github.io/tutorial/decaydiagram/index.html">DecayDiagram</a></li>
+            <li class="" data-nav-id="/nudca.github.io/tutorial/decaydiagram/index.html"><a class="padding" href="/nudca.github.io/tutorial/decaydiagram/index.html">DecayDiagram</a></li>
             <li class="" data-nav-id="/nudca.github.io/tutorial/decaymatrix/index.html"><a class="padding" href="/nudca.github.io/tutorial/decaymatrix/index.html">DecayMatrix</a></li>
             <li class="" data-nav-id="/nudca.github.io/tutorial/nucleodecay/index.html"><a class="padding" href="/nudca.github.io/tutorial/nucleodecay/index.html">NucleoDecay</a></li>
-            <li class="alwaysopen " data-nav-id="/nudca.github.io/tutorial/kilonovae/index.html"><a class="padding" href="/nudca.github.io/tutorial/kilonovae/index.html">kilonovae</a><ul id="R-subsections-4f7a22d8f6f545dd87546865a0515ba4" class="collapsible-menu"></ul></li></ul></li>
+            <li class="parent alwaysopen " data-nav-id="/nudca.github.io/tutorial/kilonovae/index.html"><a class="padding" href="/nudca.github.io/tutorial/kilonovae/index.html">kilonovae</a><ul id="R-subsections-4f7a22d8f6f545dd87546865a0515ba4" class="collapsible-menu">
+            <li class="" data-nav-id="/nudca.github.io/tutorial/kilonovae/geometry/index.html"><a class="padding" href="/nudca.github.io/tutorial/kilonovae/geometry/index.html">Geometry</a></li>
+            <li class="active " data-nav-id="/nudca.github.io/tutorial/kilonovae/opacity/index.html"><a class="padding" href="/nudca.github.io/tutorial/kilonovae/opacity/index.html">Opacity</a></li>
+            <li class="" data-nav-id="/nudca.github.io/tutorial/kilonovae/knelightcurve/index.html"><a class="padding" href="/nudca.github.io/tutorial/kilonovae/knelightcurve/index.html">KNeLightCurve</a></li></ul></li></ul></li>
             <li class="" data-nav-id="/nudca.github.io/method/index.html"><a class="padding" href="/nudca.github.io/method/index.html">Methods</a><ul id="R-subsections-b0dfd9172d2c4a50d3f7070c503628fc" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/nudca.github.io/api/index.html"><a class="padding" href="/nudca.github.io/api/index.html">nudca API</a><ul id="R-subsections-944da21c517df0c48dfbef7af28f3093" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/nudca.github.io/references/index.html"><a class="padding" href="/nudca.github.io/references/index.html">References</a><ul id="R-subsections-26caf0e43dd165bcbddd8eb517876f9e" class="collapsible-menu"></ul></li>
