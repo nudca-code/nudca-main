@@ -12,7 +12,7 @@
       <link>https://nudcacode.github.io/nudca.github.io/theoretic/radioactivedecay/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nudcacode.github.io/nudca.github.io/theoretic/radioactivedecay/index.html</guid>
-      <description>Decay Chains Radioactive decay chains describe the sequential transformation of unstable nuclei into more stable ones through a series of radioactive decays. Each nuclide in the chain decays into the next, until a stable nuclide is reached. The mathematical description of these chains is essential for understanding the time evolution of the number of nuclei of each type.&#xA;System of Differential Equations The time evolution of the number of nuclei in each stage of the decay chain can be described by a system of coupled first-order differential equations:</description>
+      <description>Radioactive Decay Radioactive decay chains describe the sequential transformation of unstable nuclei into more stable ones through a series of radioactive decays. Each nuclide in the chain decays into the next, until a stable nuclide is reached. The mathematical description of these chains is essential for understanding the time evolution of the number of nuclei of each type.&#xA;The decay chain equations A decay process with branching decay chains can be described as:</description>
     </item>
     <item>
       <title>Kilonovae Model</title>

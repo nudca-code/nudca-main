@@ -19,14 +19,14 @@
       <link>https://nudcacode.github.io/nudca.github.io/api/decaydatabase/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nudcacode.github.io/nudca.github.io/api/decaydatabase/index.html</guid>
-      <description>Where our lookout pretends to spot land while actually napping</description>
+      <description>Comprehensive API reference for nudca/decay_database.py</description>
     </item>
     <item>
       <title>nudca.decay_diagram</title>
       <link>https://nudcacode.github.io/nudca.github.io/api/decaydiagram/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://nudcacode.github.io/nudca.github.io/api/decaydiagram/index.html</guid>
-      <description>Info This page documents the decay_diagram.py module, which provides visualization and analysis tools for nuclide decay chains. It is part of the NuDCA (Nuclear Decay Chain Astrophysics) package.&#xA;Overview The DecayDiagram class enables the construction and visualization of nuclear decay chains and their reverse (parent) relationships using networkx and matplotlib. It provides methods to query decay properties and plot decay diagrams for any nuclide in a given decay database.</description>
+      <description>Info This page documents the DecayDiagram class from nudca.decay_diagram, providing tools to visualize decay chains and reverse decay chains for nuclides.&#xA;Overview DecayDiagram represents a decay diagram for a specific nuclide, offering methods to visualize decay chains and reverse decay chains using networkx and matplotlib. It provides both programmatic access to decay data and publication-quality plotting.&#xA;Class: DecayDiagram from nudca.decay_diagram import DecayDiagram Constructor DecayDiagram(nuclide: str, decay_database: DecayDatabase) nuclide: Nuclide symbol or string (e.g., ‘Ni56’, ‘U-238’) decay_database: An instance of DecayDatabase containing decay data Properties Property Type Description nuclide str Standardized nuclide symbol half_life str or float Half-life in readable format (default) or seconds progeny list[str] List of daughter nuclides branching_ratios list[float] Branching ratios for each decay mode decay_modes list[str] Decay modes for the nuclide Methods find_parents def find_parents(nuclide: str) -&gt; List[str] Find all possible parent nuclides that can decay to the given nuclide.</description>
     </item>
     <item>
       <title>nudca.decay_matrix</title>

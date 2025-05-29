@@ -5,37 +5,41 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.147.6">
     <meta name="generator" content="Relearn 7.6.1+0b83617ee9da5253aafcf11807b256da7d88d709">
-    <meta name="description" content="Info This page documents the decay_diagram.py module, which provides visualization and analysis tools for nuclide decay chains. It is part of the NuDCA (Nuclear Decay Chain Astrophysics) package.
-Overview The DecayDiagram class enables the construction and visualization of nuclear decay chains and their reverse (parent) relationships using networkx and matplotlib. It provides methods to query decay properties and plot decay diagrams for any nuclide in a given decay database.">
+    <meta name="description" content="Info This page documents the DecayDiagram class from nudca.decay_diagram, providing tools to visualize decay chains and reverse decay chains for nuclides.
+Overview DecayDiagram represents a decay diagram for a specific nuclide, offering methods to visualize decay chains and reverse decay chains using networkx and matplotlib. It provides both programmatic access to decay data and publication-quality plotting.
+Class: DecayDiagram from nudca.decay_diagram import DecayDiagram Constructor DecayDiagram(nuclide: str, decay_database: DecayDatabase) nuclide: Nuclide symbol or string (e.g., ‘Ni56’, ‘U-238’) decay_database: An instance of DecayDatabase containing decay data Properties Property Type Description nuclide str Standardized nuclide symbol half_life str or float Half-life in readable format (default) or seconds progeny list[str] List of daughter nuclides branching_ratios list[float] Branching ratios for each decay mode decay_modes list[str] Decay modes for the nuclide Methods find_parents def find_parents(nuclide: str) -&gt; List[str] Find all possible parent nuclides that can decay to the given nuclide.">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="nudca.decay_diagram :: NuDCA">
-    <meta name="twitter:description" content="Info This page documents the decay_diagram.py module, which provides visualization and analysis tools for nuclide decay chains. It is part of the NuDCA (Nuclear Decay Chain Astrophysics) package.
-Overview The DecayDiagram class enables the construction and visualization of nuclear decay chains and their reverse (parent) relationships using networkx and matplotlib. It provides methods to query decay properties and plot decay diagrams for any nuclide in a given decay database.">
+    <meta name="twitter:description" content="Info This page documents the DecayDiagram class from nudca.decay_diagram, providing tools to visualize decay chains and reverse decay chains for nuclides.
+Overview DecayDiagram represents a decay diagram for a specific nuclide, offering methods to visualize decay chains and reverse decay chains using networkx and matplotlib. It provides both programmatic access to decay data and publication-quality plotting.
+Class: DecayDiagram from nudca.decay_diagram import DecayDiagram Constructor DecayDiagram(nuclide: str, decay_database: DecayDatabase) nuclide: Nuclide symbol or string (e.g., ‘Ni56’, ‘U-238’) decay_database: An instance of DecayDatabase containing decay data Properties Property Type Description nuclide str Standardized nuclide symbol half_life str or float Half-life in readable format (default) or seconds progeny list[str] List of daughter nuclides branching_ratios list[float] Branching ratios for each decay mode decay_modes list[str] Decay modes for the nuclide Methods find_parents def find_parents(nuclide: str) -&gt; List[str] Find all possible parent nuclides that can decay to the given nuclide.">
     <meta property="og:url" content="https://nudcacode.github.io/nudca.github.io/api/decaydiagram/index.html">
     <meta property="og:site_name" content="NuDCA">
     <meta property="og:title" content="nudca.decay_diagram :: NuDCA">
-    <meta property="og:description" content="Info This page documents the decay_diagram.py module, which provides visualization and analysis tools for nuclide decay chains. It is part of the NuDCA (Nuclear Decay Chain Astrophysics) package.
-Overview The DecayDiagram class enables the construction and visualization of nuclear decay chains and their reverse (parent) relationships using networkx and matplotlib. It provides methods to query decay properties and plot decay diagrams for any nuclide in a given decay database.">
+    <meta property="og:description" content="Info This page documents the DecayDiagram class from nudca.decay_diagram, providing tools to visualize decay chains and reverse decay chains for nuclides.
+Overview DecayDiagram represents a decay diagram for a specific nuclide, offering methods to visualize decay chains and reverse decay chains using networkx and matplotlib. It provides both programmatic access to decay data and publication-quality plotting.
+Class: DecayDiagram from nudca.decay_diagram import DecayDiagram Constructor DecayDiagram(nuclide: str, decay_database: DecayDatabase) nuclide: Nuclide symbol or string (e.g., ‘Ni56’, ‘U-238’) decay_database: An instance of DecayDatabase containing decay data Properties Property Type Description nuclide str Standardized nuclide symbol half_life str or float Half-life in readable format (default) or seconds progeny list[str] List of daughter nuclides branching_ratios list[float] Branching ratios for each decay mode decay_modes list[str] Decay modes for the nuclide Methods find_parents def find_parents(nuclide: str) -&gt; List[str] Find all possible parent nuclides that can decay to the given nuclide.">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="article">
     <meta property="article:section" content="nudca API">
     <meta itemprop="name" content="nudca.decay_diagram :: NuDCA">
-    <meta itemprop="description" content="Info This page documents the decay_diagram.py module, which provides visualization and analysis tools for nuclide decay chains. It is part of the NuDCA (Nuclear Decay Chain Astrophysics) package.
-Overview The DecayDiagram class enables the construction and visualization of nuclear decay chains and their reverse (parent) relationships using networkx and matplotlib. It provides methods to query decay properties and plot decay diagrams for any nuclide in a given decay database.">
-    <meta itemprop="wordCount" content="299">
+    <meta itemprop="description" content="Info This page documents the DecayDiagram class from nudca.decay_diagram, providing tools to visualize decay chains and reverse decay chains for nuclides.
+Overview DecayDiagram represents a decay diagram for a specific nuclide, offering methods to visualize decay chains and reverse decay chains using networkx and matplotlib. It provides both programmatic access to decay data and publication-quality plotting.
+Class: DecayDiagram from nudca.decay_diagram import DecayDiagram Constructor DecayDiagram(nuclide: str, decay_database: DecayDatabase) nuclide: Nuclide symbol or string (e.g., ‘Ni56’, ‘U-238’) decay_database: An instance of DecayDatabase containing decay data Properties Property Type Description nuclide str Standardized nuclide symbol half_life str or float Half-life in readable format (default) or seconds progeny list[str] List of daughter nuclides branching_ratios list[float] Branching ratios for each decay mode decay_modes list[str] Decay modes for the nuclide Methods find_parents def find_parents(nuclide: str) -&gt; List[str] Find all possible parent nuclides that can decay to the given nuclide.">
+    <meta itemprop="wordCount" content="403">
     <title>nudca.decay_diagram :: NuDCA</title>
-    <link href="/nudca.github.io/fonts/fontawesome/css/fontawesome-all.min.css?1748423723" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/nudca.github.io/fonts/fontawesome/css/fontawesome-all.min.css?1748423723" rel="stylesheet"></noscript>
-    <link href="/nudca.github.io/css/perfect-scrollbar/perfect-scrollbar.min.css?1748423723" rel="stylesheet">
-    <link href="/nudca.github.io/css/theme.min.css?1748423723" rel="stylesheet">
-    <link href="/nudca.github.io/css/format-html.min.css?1748423723" rel="stylesheet" id="R-format-style">
-    <link href="/nudca.github.io/css/auto-complete/auto-complete.min.css?1748423723" rel="stylesheet">
-    <script src="/nudca.github.io/js/auto-complete/auto-complete.min.js?1748423723" defer></script>
-    <script src="/nudca.github.io/js/lunr/lunr.min.js?1748423723" defer></script>
-    <script src="/nudca.github.io/js/lunr/lunr.stemmer.support.min.js?1748423723" defer></script>
-    <script src="/nudca.github.io/js/lunr/lunr.multi.min.js?1748423723" defer></script>
-    <script src="/nudca.github.io/js/lunr/lunr.en.min.js?1748423723" defer></script>
-    <script src="/nudca.github.io/js/search.min.js?1748423723" defer></script>
+    <link href="/nudca.github.io/fonts/fontawesome/css/fontawesome-all.min.css?1748496272" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/nudca.github.io/fonts/fontawesome/css/fontawesome-all.min.css?1748496272" rel="stylesheet"></noscript>
+    <link href="/nudca.github.io/css/perfect-scrollbar/perfect-scrollbar.min.css?1748496272" rel="stylesheet">
+    <link href="/nudca.github.io/css/theme.min.css?1748496272" rel="stylesheet">
+    <link href="/nudca.github.io/css/format-html.min.css?1748496272" rel="stylesheet" id="R-format-style">
+    <link href="/nudca.github.io/css/auto-complete/auto-complete.min.css?1748496272" rel="stylesheet">
+    <script src="/nudca.github.io/js/auto-complete/auto-complete.min.js?1748496272" defer></script>
+    <script src="/nudca.github.io/js/lunr/lunr.min.js?1748496272" defer></script>
+    <script src="/nudca.github.io/js/lunr/lunr.stemmer.support.min.js?1748496272" defer></script>
+    <script src="/nudca.github.io/js/lunr/lunr.multi.min.js?1748496272" defer></script>
+    <script src="/nudca.github.io/js/lunr/lunr.en.min.js?1748496272" defer></script>
+    <script src="/nudca.github.io/js/search.min.js?1748496272" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -45,7 +49,7 @@ Overview The DecayDiagram class enables the construction and visualization of nu
       window.relearn.relBaseUri='..\/..\/..';
       window.relearn.absBaseUri='https:\/\/nudcacode.github.io\/nudca.github.io';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/nudca.github.io/searchindex.en.js?1748423723";
+      window.relearn.index_js_url="/nudca.github.io/searchindex.en.js?1748496272";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -107,7 +111,7 @@ Overview The DecayDiagram class enables the construction and visualization of nu
 <nav class="TableOfContents">
   <ul>
     <li><a href="#overview">Overview</a></li>
-    <li><a href="#class-decaydiagram">Class: <code>DecayDiagram</code></a>
+    <li><a href="#class-decaydiagram">Class: DecayDiagram</a>
       <ul>
         <li><a href="#constructor">Constructor</a></li>
       </ul>
@@ -115,14 +119,14 @@ Overview The DecayDiagram class enables the construction and visualization of nu
     <li><a href="#properties">Properties</a></li>
     <li><a href="#methods">Methods</a>
       <ul>
-        <li><a href="#find_parents"><code>find_parents</code></a></li>
-        <li><a href="#get_decay_info"><code>get_decay_info</code></a></li>
-        <li><a href="#plot_decay_chains"><code>plot_decay_chains</code></a></li>
-        <li><a href="#plot_reverse_decay_chains"><code>plot_reverse_decay_chains</code></a></li>
-        <li><a href="#plot"><code>plot</code></a></li>
+        <li><a href="#find_parents">find_parents</a></li>
+        <li><a href="#get_decay_info">get_decay_info</a></li>
+        <li><a href="#plot_decay_chains">plot_decay_chains</a></li>
+        <li><a href="#plot_reverse_decay_chains">plot_reverse_decay_chains</a></li>
+        <li><a href="#plot">plot</a></li>
       </ul>
     </li>
-    <li><a href="#example-usage">Example Usage</a></li>
+    <li><a href="#usage-examples">Usage Examples</a></li>
     <li><a href="#notes">Notes</a></li>
     <li><a href="#see-also">See Also</a></li>
   </ul>
@@ -168,19 +172,20 @@ Overview The DecayDiagram class enables the construction and visualization of nu
     Info
   </summary>
   <div class="box-content">
-<p>This page documents the <code>decay_diagram.py</code> module, which provides visualization and analysis tools for nuclide decay chains. It is part of the NuDCA (Nuclear Decay Chain Astrophysics) package.</p>
+<p>This page documents the <code>DecayDiagram</code> class from <code>nudca.decay_diagram</code>, providing tools to visualize decay chains and reverse decay chains for nuclides.</p>
   </div>
 </details>
-<h2 id="overview">Overview</h2>
-<p>The <code>DecayDiagram</code> class enables the construction and visualization of nuclear decay chains and their reverse (parent) relationships using <code>networkx</code> and <code>matplotlib</code>. It provides methods to query decay properties and plot decay diagrams for any nuclide in a given decay database.</p>
 <hr>
-<h2 id="class-decaydiagram">Class: <code>DecayDiagram</code></h2>
-<p>Represents a decay diagram for a specific nuclide, providing methods to visualize decay chains and reverse decay chains.</p>
+<h2 id="overview">Overview</h2>
+<p><code>DecayDiagram</code> represents a decay diagram for a specific nuclide, offering methods to visualize decay chains and reverse decay chains using <code>networkx</code> and <code>matplotlib</code>. It provides both programmatic access to decay data and publication-quality plotting.</p>
+<hr>
+<h2 id="class-decaydiagram">Class: DecayDiagram</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> nudca.decay_diagram <span style="color:#f92672">import</span> DecayDiagram</span></span></code></pre></div>
 <h3 id="constructor">Constructor</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>DecayDiagram(nuclide: str, decay_database)</span></span></code></pre></div>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>DecayDiagram(nuclide: str, decay_database: DecayDatabase)</span></span></code></pre></div>
 <ul>
-<li><strong>nuclide</strong> (<code>str</code>): Nuclide symbol (e.g., &lsquo;U-238&rsquo;).</li>
-<li><strong>decay_database</strong> (<code>DecayDatabase</code>): Instance containing decay data.</li>
+<li><strong>nuclide</strong>: Nuclide symbol or string (e.g., &lsquo;Ni56&rsquo;, &lsquo;U-238&rsquo;)</li>
+<li><strong>decay_database</strong>: An instance of <code>DecayDatabase</code> containing decay data</li>
 </ul>
 <hr>
 <h2 id="properties">Properties</h2>
@@ -194,68 +199,108 @@ Overview The DecayDiagram class enables the construction and visualization of nu
   </thead>
   <tbody>
       <tr>
+          <td><code>nuclide</code></td>
+          <td><code>str</code></td>
+          <td>Standardized nuclide symbol</td>
+      </tr>
+      <tr>
           <td><code>half_life</code></td>
-          <td>float or str</td>
-          <td>Half-life of the nuclide (various units).</td>
+          <td><code>str</code> or <code>float</code></td>
+          <td>Half-life in readable format (default) or seconds</td>
       </tr>
       <tr>
           <td><code>progeny</code></td>
-          <td>list[str]</td>
-          <td>Daughter nuclides of the nuclide.</td>
+          <td><code>list[str]</code></td>
+          <td>List of daughter nuclides</td>
       </tr>
       <tr>
           <td><code>branching_ratios</code></td>
-          <td>list[float]</td>
-          <td>Branching ratios for all decay modes.</td>
+          <td><code>list[float]</code></td>
+          <td>Branching ratios for each decay mode</td>
       </tr>
       <tr>
           <td><code>decay_modes</code></td>
-          <td>list[str]</td>
-          <td>Decay modes for the nuclide.</td>
+          <td><code>list[str]</code></td>
+          <td>Decay modes for the nuclide</td>
       </tr>
   </tbody>
 </table>
 <hr>
 <h2 id="methods">Methods</h2>
-<h3 id="find_parents"><code>find_parents</code></h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">find_parents</span>(self, nuclide: str) <span style="color:#f92672">-&gt;</span> List[str]</span></span></code></pre></div>
+<h3 id="find_parents">find_parents</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">find_parents</span>(nuclide: str) <span style="color:#f92672">-&gt;</span> List[str]</span></span></code></pre></div>
 <p>Find all possible parent nuclides that can decay to the given nuclide.</p>
-<h3 id="get_decay_info"><code>get_decay_info</code></h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_decay_info</span>(self, parent: str, daughter: str) <span style="color:#f92672">-&gt;</span> Optional[Tuple[str, float]]</span></span></code></pre></div>
-<p>Get decay mode and branching ratio between a parent and daughter nuclide.</p>
-<h3 id="plot_decay_chains"><code>plot_decay_chains</code></h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">plot_decay_chains</span>(self, <span style="color:#f92672">...</span>)</span></span></code></pre></div>
-<p>Plot the decay chains starting from the nuclide. Returns a matplotlib Figure and Axes.</p>
-<h3 id="plot_reverse_decay_chains"><code>plot_reverse_decay_chains</code></h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">plot_reverse_decay_chains</span>(self, <span style="color:#f92672">...</span>)</span></span></code></pre></div>
-<p>Plot the reverse decay chains (parents) for the nuclide. Returns a matplotlib Figure and Axes.</p>
-<h3 id="plot"><code>plot</code></h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">plot</span>(self, digraph, max_generation, max_xpos, <span style="color:#f92672">...</span>)</span></span></code></pre></div>
-<p>Plot a custom decay diagram using a provided networkx DiGraph.</p>
+<ul>
+<li><strong>nuclide</strong>: Daughter nuclide symbol</li>
+<li><strong>Returns</strong>: List of parent nuclide symbols</li>
+</ul>
+<h3 id="get_decay_info">get_decay_info</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_decay_info</span>(parent: str, daughter: str) <span style="color:#f92672">-&gt;</span> Optional[Tuple[str, float]]</span></span></code></pre></div>
+<p>Get decay information (mode and branching ratio) between a parent and daughter nuclide.</p>
+<ul>
+<li><strong>parent</strong>: Parent nuclide symbol</li>
+<li><strong>daughter</strong>: Daughter nuclide symbol</li>
+<li><strong>Returns</strong>: Tuple <code>(decay_mode, branching_ratio)</code> if found, else <code>None</code></li>
+</ul>
+<h3 id="plot_decay_chains">plot_decay_chains</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">plot_decay_chains</span>(label_pos<span style="color:#f92672">=</span><span style="color:#ae81ff">0.3</span>, fig<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>, axes<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>, kwargs_draw<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>, kwargs_edge_labels<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>) <span style="color:#f92672">-&gt;</span> (Figure, Axes)</span></span></code></pre></div>
+<p>Plot the decay chains starting from the nuclide.</p>
+<ul>
+<li><strong>label_pos</strong>: Position of edge labels along the edge (default 0.3)</li>
+<li><strong>fig, axes</strong>: Optional matplotlib figure/axes</li>
+<li><strong>kwargs_draw</strong>: Additional keyword arguments for <code>nx.draw</code></li>
+<li><strong>kwargs_edge_labels</strong>: Additional keyword arguments for <code>nx.draw_networkx_edge_labels</code></li>
+<li><strong>Returns</strong>: Matplotlib <code>Figure</code> and <code>Axes</code></li>
+</ul>
+<h3 id="plot_reverse_decay_chains">plot_reverse_decay_chains</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">plot_reverse_decay_chains</span>(label_pos<span style="color:#f92672">=</span><span style="color:#ae81ff">0.3</span>, fig<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>, axes<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>, kwargs_draw<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>, kwargs_edge_labels<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>) <span style="color:#f92672">-&gt;</span> (Figure, Axes)</span></span></code></pre></div>
+<p>Plot the reverse decay chains (all parents) for the nuclide.</p>
+<ul>
+<li>Arguments as above</li>
+<li><strong>Returns</strong>: Matplotlib <code>Figure</code> and <code>Axes</code></li>
+</ul>
+<h3 id="plot">plot</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">plot</span>(digraph, max_generation, max_xpos, label_pos<span style="color:#f92672">=</span><span style="color:#ae81ff">0.3</span>, fig<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>, axes<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>, kwargs_draw<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>, kwargs_edge_labels<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>) <span style="color:#f92672">-&gt;</span> (Figure, Axes)</span></span></code></pre></div>
+<p>Low-level method to plot a custom decay digraph. Used internally by the above methods.</p>
 <hr>
-<h2 id="example-usage">Example Usage</h2>
+<h2 id="usage-examples">Usage Examples</h2>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> nudca.decay_database <span style="color:#f92672">import</span> load_decay_database
 </span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> nudca.decay_diagram <span style="color:#f92672">import</span> DecayDiagram
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>db <span style="color:#f92672">=</span> load_decay_database(<span style="color:#e6db74">&#34;ENDF-B-VIII.1_decay&#34;</span>)
-</span></span><span style="display:flex;"><span>diagram <span style="color:#f92672">=</span> DecayDiagram(<span style="color:#e6db74">&#34;U-238&#34;</span>, db)
+</span></span><span style="display:flex;"><span>db <span style="color:#f92672">=</span> load_decay_database()
+</span></span><span style="display:flex;"><span>decay_diagram <span style="color:#f92672">=</span> DecayDiagram(<span style="color:#e6db74">&#39;Ni56&#39;</span>, db)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Access decay data</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#39;Radionuclide:&#39;</span>, decay_diagram<span style="color:#f92672">.</span>nuclide)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#39;Half life:&#39;</span>, decay_diagram<span style="color:#f92672">.</span>half_life)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#39;Progeny:&#39;</span>, decay_diagram<span style="color:#f92672">.</span>progeny)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#39;Decay modes:&#39;</span>, decay_diagram<span style="color:#f92672">.</span>decay_modes)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#39;Branching ratios:&#39;</span>, decay_diagram<span style="color:#f92672">.</span>branching_ratios)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># Plot decay chains</span>
-</span></span><span style="display:flex;"><span>diagram<span style="color:#f92672">.</span>plot_decay_chains()[<span style="color:#ae81ff">0</span>]<span style="color:#f92672">.</span>show()
+</span></span><span style="display:flex;"><span>decay_diagram <span style="color:#f92672">=</span> DecayDiagram(<span style="color:#e6db74">&#39;Ni56&#39;</span>, db)
+</span></span><span style="display:flex;"><span>fig, axes <span style="color:#f92672">=</span> decay_diagram<span style="color:#f92672">.</span>plot_decay_chains()
+</span></span><span style="display:flex;"><span>fig<span style="color:#f92672">.</span>tight_layout()
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># plt.show()</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># Plot reverse decay chains</span>
-</span></span><span style="display:flex;"><span>diagram<span style="color:#f92672">.</span>plot_reverse_decay_chains()[<span style="color:#ae81ff">0</span>]<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>decay_diagram <span style="color:#f92672">=</span> DecayDiagram(<span style="color:#e6db74">&#39;Fe56&#39;</span>, db)
+</span></span><span style="display:flex;"><span>fig, axes <span style="color:#f92672">=</span> decay_diagram<span style="color:#f92672">.</span>plot_reverse_decay_chains()
+</span></span><span style="display:flex;"><span>fig<span style="color:#f92672">.</span>tight_layout()
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># plt.show()</span></span></span></code></pre></div>
 <hr>
 <h2 id="notes">Notes</h2>
 <ul>
-<li>Requires <code>networkx</code> and <code>matplotlib</code> for plotting.</li>
-<li>Decay data must be provided via a compatible <code>DecayDatabase</code> instance.</li>
-<li>See inline docstrings in the source code for advanced plotting options.</li>
+<li>Requires <code>networkx</code>, <code>matplotlib</code>, and a valid <code>DecayDatabase</code> instance</li>
+<li>Plots are publication-quality and can be customized via <code>kwargs_draw</code> and <code>kwargs_edge_labels</code></li>
+<li>Nuclide symbols are automatically standardized</li>
+<li>For advanced graph customization, use the <code>plot</code> method directly</li>
 </ul>
 <hr>
 <h2 id="see-also">See Also</h2>
 <ul>
 <li><a href="/nudca.github.io/api/decaydatabase/index.html">DecayDatabase API</a></li>
+<li><a href="/nudca.github.io/api/nuclide/index.html">Nuclide API</a></li>
 <li><a href="/nudca.github.io/api/decaymatrix/index.html">DecayMatrix API</a></li>
 </ul>
 
@@ -334,8 +379,8 @@ Overview The DecayDiagram class enables the construction and visualization of nu
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/nudca.github.io/js/clipboard/clipboard.min.js?1748423723" defer></script>
-    <script src="/nudca.github.io/js/perfect-scrollbar/perfect-scrollbar.min.js?1748423723" defer></script>
+    <script src="/nudca.github.io/js/clipboard/clipboard.min.js?1748496272" defer></script>
+    <script src="/nudca.github.io/js/perfect-scrollbar/perfect-scrollbar.min.js?1748496272" defer></script>
     <script>
       window.MathJax = Object.assign( window.MathJax || {}, {
         tex: {
@@ -347,7 +392,7 @@ Overview The DecayDiagram class enables the construction and visualization of nu
         }
       }, JSON.parse("{}") );
     </script>
-    <script id="MathJax-script" async src="/nudca.github.io/js/mathjax/tex-mml-chtml.js?1748423723"></script>
-    <script src="/nudca.github.io/js/theme.min.js?1748423723" defer></script>
+    <script id="MathJax-script" async src="/nudca.github.io/js/mathjax/tex-mml-chtml.js?1748496272"></script>
+    <script src="/nudca.github.io/js/theme.min.js?1748496272" defer></script>
   </body>
 </html>

@@ -5,33 +5,33 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.147.6">
     <meta name="generator" content="Relearn 7.6.1+0b83617ee9da5253aafcf11807b256da7d88d709">
-    <meta name="description" content="Where our lookout pretends to spot land while actually napping">
+    <meta name="description" content="Comprehensive API reference for nudca/decay_database.py">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="nudca.decay_database :: NuDCA">
-    <meta name="twitter:description" content="Where our lookout pretends to spot land while actually napping">
+    <meta name="twitter:description" content="Comprehensive API reference for nudca/decay_database.py">
     <meta property="og:url" content="https://nudcacode.github.io/nudca.github.io/api/decaydatabase/index.html">
     <meta property="og:site_name" content="NuDCA">
     <meta property="og:title" content="nudca.decay_database :: NuDCA">
-    <meta property="og:description" content="Where our lookout pretends to spot land while actually napping">
+    <meta property="og:description" content="Comprehensive API reference for nudca/decay_database.py">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="article">
     <meta property="article:section" content="nudca API">
     <meta itemprop="name" content="nudca.decay_database :: NuDCA">
-    <meta itemprop="description" content="Where our lookout pretends to spot land while actually napping">
-    <meta itemprop="wordCount" content="481">
+    <meta itemprop="description" content="Comprehensive API reference for nudca/decay_database.py">
+    <meta itemprop="wordCount" content="813">
     <title>nudca.decay_database :: NuDCA</title>
-    <link href="/nudca.github.io/fonts/fontawesome/css/fontawesome-all.min.css?1748423723" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/nudca.github.io/fonts/fontawesome/css/fontawesome-all.min.css?1748423723" rel="stylesheet"></noscript>
-    <link href="/nudca.github.io/css/perfect-scrollbar/perfect-scrollbar.min.css?1748423723" rel="stylesheet">
-    <link href="/nudca.github.io/css/theme.min.css?1748423723" rel="stylesheet">
-    <link href="/nudca.github.io/css/format-html.min.css?1748423723" rel="stylesheet" id="R-format-style">
-    <link href="/nudca.github.io/css/auto-complete/auto-complete.min.css?1748423723" rel="stylesheet">
-    <script src="/nudca.github.io/js/auto-complete/auto-complete.min.js?1748423723" defer></script>
-    <script src="/nudca.github.io/js/lunr/lunr.min.js?1748423723" defer></script>
-    <script src="/nudca.github.io/js/lunr/lunr.stemmer.support.min.js?1748423723" defer></script>
-    <script src="/nudca.github.io/js/lunr/lunr.multi.min.js?1748423723" defer></script>
-    <script src="/nudca.github.io/js/lunr/lunr.en.min.js?1748423723" defer></script>
-    <script src="/nudca.github.io/js/search.min.js?1748423723" defer></script>
+    <link href="/nudca.github.io/fonts/fontawesome/css/fontawesome-all.min.css?1748496272" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/nudca.github.io/fonts/fontawesome/css/fontawesome-all.min.css?1748496272" rel="stylesheet"></noscript>
+    <link href="/nudca.github.io/css/perfect-scrollbar/perfect-scrollbar.min.css?1748496272" rel="stylesheet">
+    <link href="/nudca.github.io/css/theme.min.css?1748496272" rel="stylesheet">
+    <link href="/nudca.github.io/css/format-html.min.css?1748496272" rel="stylesheet" id="R-format-style">
+    <link href="/nudca.github.io/css/auto-complete/auto-complete.min.css?1748496272" rel="stylesheet">
+    <script src="/nudca.github.io/js/auto-complete/auto-complete.min.js?1748496272" defer></script>
+    <script src="/nudca.github.io/js/lunr/lunr.min.js?1748496272" defer></script>
+    <script src="/nudca.github.io/js/lunr/lunr.stemmer.support.min.js?1748496272" defer></script>
+    <script src="/nudca.github.io/js/lunr/lunr.multi.min.js?1748496272" defer></script>
+    <script src="/nudca.github.io/js/lunr/lunr.en.min.js?1748496272" defer></script>
+    <script src="/nudca.github.io/js/search.min.js?1748496272" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -41,7 +41,7 @@
       window.relearn.relBaseUri='..\/..\/..';
       window.relearn.absBaseUri='https:\/\/nudcacode.github.io\/nudca.github.io';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/nudca.github.io/searchindex.en.js?1748423723";
+      window.relearn.index_js_url="/nudca.github.io/searchindex.en.js?1748496272";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -102,16 +102,18 @@
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
   <ul>
+    <li><a href="#table-of-contents">Table of Contents</a></li>
     <li><a href="#overview">Overview</a></li>
-    <li><a href="#class-decaydatabase">Class: DecayDatabase</a>
+    <li><a href="#main-classes--functions">Main Classes &amp; Functions</a>
       <ul>
-        <li><a href="#key-methods">Key Methods</a></li>
+        <li><a href="#decaydatabase">DecayDatabase</a></li>
+        <li><a href="#decaydatabasemanager">DecayDatabaseManager</a></li>
+        <li><a href="#halflifecolormap">HalfLifeColorMap</a></li>
+        <li><a href="#load_decay_database">load_decay_database</a></li>
       </ul>
     </li>
-    <li><a href="#function-load_decay_database">Function: load_decay_database</a></li>
-    <li><a href="#nuclide-string-format">Nuclide String Format</a></li>
-    <li><a href="#related-classes">Related Classes</a></li>
-    <li><a href="#usage-example">Usage Example</a></li>
+    <li><a href="#usage-examples">Usage Examples</a></li>
+    <li><a href="#notes">Notes</a></li>
     <li><a href="#see-also">See Also</a></li>
   </ul>
 </nav>
@@ -149,40 +151,122 @@
 
 <h1 id="nudcadecay_database">nudca.decay_database</h1>
 
-
-<details open class=" box cstyle notices info">
-  <summary class="box-label" tabindex="-1">
-    <i class="fa fa-atom"></i> 
-    Info
-  </summary>
-  <div class="box-content">
-<p>The <code>DecayDatabase</code> class is the core component for accessing and analyzing nuclear decay data in the NuDCA library. It provides efficient access to nuclide properties, decay modes, branching ratios, decay energies, and visualization tools for nuclear charts. This API is designed for scientific computing, nuclear physics, and astrophysics applications.</p>
-  </div>
-</details>
-<h2 id="overview">Overview</h2>
-<p><code>DecayDatabase</code> encapsulates a comprehensive database of nuclear decay data, supporting:</p>
-<ul>
-<li>Querying half-lives, decay modes, progeny, and branching ratios</li>
-<li>Access to decay energies (electromagnetic, light particle, heavy particle, neutrino, etc.)</li>
-<li>Visualization of the nuclear chart (N vs Z) with half-life color mapping</li>
-<li>Fast loading from pre-processed data files (e.g., ENDF-B-VIII.1)</li>
+<blockquote>
+<p>This documentation covers the full API of <code>nudca/decay_database.py</code>. It is intended for developers and users who wish to integrate or extend the nuclear decay database functionalities.</p></blockquote>
+<ul class="children children-li children-sort-">
 </ul>
-<p>The database is typically loaded using the <code>load_decay_database</code> function.</p>
 <hr>
-<h2 id="class-decaydatabase">Class: DecayDatabase</h2>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">DecayDatabase</span>:
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">__init__</span>(
-</span></span><span style="display:flex;"><span>        self,
-</span></span><span style="display:flex;"><span>        data_source: str,
-</span></span><span style="display:flex;"><span>        nuclides: np<span style="color:#f92672">.</span>ndarray,
-</span></span><span style="display:flex;"><span>        half_life_data: np<span style="color:#f92672">.</span>ndarray,
-</span></span><span style="display:flex;"><span>        decay_constants_data: np<span style="color:#f92672">.</span>ndarray,
-</span></span><span style="display:flex;"><span>        decay_modes_data: np<span style="color:#f92672">.</span>ndarray,
-</span></span><span style="display:flex;"><span>        progeny_data: np<span style="color:#f92672">.</span>ndarray,
-</span></span><span style="display:flex;"><span>        branching_ratios_data: np<span style="color:#f92672">.</span>ndarray,
-</span></span><span style="display:flex;"><span>        decay_energies_data: np<span style="color:#f92672">.</span>ndarray
-</span></span><span style="display:flex;"><span>    ) <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">None</span></span></span></code></pre></div>
-<h3 id="key-methods">Key Methods</h3>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="/nudca.github.io/api/decaydatabase/index.html#overview">Overview</a></li>
+<li><a href="/nudca.github.io/api/decaydatabase/index.html#main-classes--functions">Main Classes &amp; Functions</a>
+<ul>
+<li><a href="/nudca.github.io/api/decaydatabase/index.html#decaydatabase">DecayDatabase</a></li>
+<li><a href="/nudca.github.io/api/decaydatabase/index.html#decaydatabasemanager">DecayDatabaseManager</a></li>
+<li><a href="/nudca.github.io/api/decaydatabase/index.html#halflifecolormap">HalfLifeColorMap</a></li>
+<li><a href="/nudca.github.io/api/decaydatabase/index.html#load_decay_database">load_decay_database</a></li>
+</ul>
+</li>
+<li><a href="/nudca.github.io/api/decaydatabase/index.html#usage-examples">Usage Examples</a></li>
+<li><a href="/nudca.github.io/api/decaydatabase/index.html#notes">Notes</a></li>
+</ul>
+<hr>
+<h2 id="overview">Overview</h2>
+<p><code>decay_database.py</code> provides a comprehensive toolkit for loading, querying, processing, and visualizing nuclear decay data. Its core features include:</p>
+<ul>
+<li>Querying half-lives, decay modes, progeny, branching ratios, and decay energies for nuclides</li>
+<li>Sorting nuclides by decay chains and serializing data for efficient access</li>
+<li>Visualizing the nuclear chart (N-Z plot) with customizable color mapping</li>
+</ul>
+<hr>
+<h2 id="main-classes--functions">Main Classes &amp; Functions</h2>
+<h3 id="decaydatabase">DecayDatabase</h3>
+<blockquote>
+<p><strong>class nudca.decay_database.DecayDatabase</strong></p></blockquote>
+<p>The main class representing a nuclear decay database, encapsulating all nuclide decay data and query methods.</p>
+<p><strong>Constructor</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>DecayDatabase(
+</span></span><span style="display:flex;"><span>    data_source: str,
+</span></span><span style="display:flex;"><span>    nuclides: np<span style="color:#f92672">.</span>ndarray,
+</span></span><span style="display:flex;"><span>    half_life_data: np<span style="color:#f92672">.</span>ndarray,
+</span></span><span style="display:flex;"><span>    decay_constants_data: np<span style="color:#f92672">.</span>ndarray,
+</span></span><span style="display:flex;"><span>    decay_modes_data: np<span style="color:#f92672">.</span>ndarray,
+</span></span><span style="display:flex;"><span>    progeny_data: np<span style="color:#f92672">.</span>ndarray,
+</span></span><span style="display:flex;"><span>    branching_ratios_data: np<span style="color:#f92672">.</span>ndarray,
+</span></span><span style="display:flex;"><span>    decay_energies_data: np<span style="color:#f92672">.</span>ndarray
+</span></span><span style="display:flex;"><span>)</span></span></code></pre></div>
+<ul>
+<li><code>data_source</code>: Name of the data source (e.g., &lsquo;ENDF-B-VIII.1_decay&rsquo;)</li>
+<li>Other arguments are numpy arrays for various nuclide properties</li>
+</ul>
+<p><strong>Key Methods</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>Method</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>validate_nuclide_symbol(nuclide)</code></td>
+          <td>Validate and standardize a nuclide symbol. Raises if invalid or not found.</td>
+      </tr>
+      <tr>
+          <td><code>get_nuclide_half_life(nuclide, units='readable')</code></td>
+          <td>Get half-life in readable string, seconds (&rsquo;s&rsquo;), or original units.</td>
+      </tr>
+      <tr>
+          <td><code>get_nuclide_progeny(nuclide)</code></td>
+          <td>Get list of daughter nuclides.</td>
+      </tr>
+      <tr>
+          <td><code>get_nuclide_branching_ratios(nuclide)</code></td>
+          <td>Get branching ratios for all decay modes.</td>
+      </tr>
+      <tr>
+          <td><code>get_nuclide_decay_modes(nuclide)</code></td>
+          <td>Get all decay modes for a nuclide.</td>
+      </tr>
+      <tr>
+          <td><code>get_nuclide_decay_constants(nuclide)</code></td>
+          <td>Get decay constant (lambda) in 1/s.</td>
+      </tr>
+      <tr>
+          <td><code>get_proton_numbers()</code></td>
+          <td>Get array of proton numbers (Z) for all nuclides.</td>
+      </tr>
+      <tr>
+          <td><code>get_neutron_numbers()</code></td>
+          <td>Get array of neutron numbers (N) for all nuclides.</td>
+      </tr>
+      <tr>
+          <td><code>get_nuclide_decay_energy(nuclide, energy_type)</code></td>
+          <td>Get decay energy of a specific type (see below).</td>
+      </tr>
+      <tr>
+          <td><code>get_nuclide_total_decay_energy(nuclide)</code></td>
+          <td>Get total decay energy (sum of EM, LP, HP, Neutrino).</td>
+      </tr>
+      <tr>
+          <td><code>plot_nuclear_chart(...)</code></td>
+          <td>Plot the nuclear chart (N vs Z), with many customization options.</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Decay Energy Types</strong></p>
+<ul>
+<li><code>'EM'</code>: Electromagnetic energy</li>
+<li><code>'LP'</code>: Light particle energy</li>
+<li><code>'HP'</code>: Heavy particle energy</li>
+<li><code>'Neutrino'</code>: Neutrino energy</li>
+<li><code>'Gamma'</code>, <code>'Beta_Minus'</code>, <code>'Beta_Plus'</code>, <code>'Alpha'</code>, <code>'Neutron'</code>, <code>'Proton'</code>, <code>'Effective_Q'</code>: See code for full mapping</li>
+</ul>
+<p><strong>Equality Operators</strong></p>
+<ul>
+<li><code>__eq__(other)</code>: Compare two DecayDatabase objects for equality</li>
+<li><code>__ne__(other)</code>: Inequality comparison</li>
+</ul>
 
 <details open class=" box cstyle notices green expand" name="notice-toggle">
   <summary class="box-label">
@@ -271,42 +355,79 @@
   </div>
 </details>
 <hr>
-<h2 id="function-load_decay_database">Function: load_decay_database</h2>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">load_decay_database</span>(data_source: str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;ENDF-B-VIII.1_decay&#39;</span>) <span style="color:#f92672">-&gt;</span> DecayDatabase</span></span></code></pre></div>
-<p>Loads a <code>DecayDatabase</code> object from a compressed data file for the specified data source.</p>
-<hr>
-<h2 id="nuclide-string-format">Nuclide String Format</h2>
-<p>All nuclide arguments accept standard nuclide strings (e.g., &lsquo;U-238&rsquo;, &lsquo;Fe56&rsquo;). The <code>Nuclide</code> class is used internally for validation and parsing. See the Nuclide API for more details.</p>
-<hr>
-<h2 id="related-classes">Related Classes</h2>
+<h3 id="decaydatabasemanager">DecayDatabaseManager</h3>
+<blockquote>
+<p><strong>class nudca.decay_database.DecayDatabaseManager</strong></p></blockquote>
+<p>A manager class for loading, saving, and processing nuclear decay data files. Handles sorting, conversion, and serialization for use in <code>DecayDatabase</code>.</p>
+<p><strong>Constructor</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>DecayDatabaseManager(data_source: str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;ENDF-B-VIII.1_decay&#39;</span>)</span></span></code></pre></div>
 <ul>
-<li><strong>Nuclide</strong>: Represents a nuclide, providing properties for atomic number (Z), mass number (A), neutron number (N), and metastable state.</li>
-<li><strong>DecayDatabaseManager</strong>: For advanced users, provides tools for loading, sorting, and serializing nuclear decay data files.</li>
+<li><code>data_source</code>: Name of the decay data source</li>
+</ul>
+<p><strong>Key Methods</strong></p>
+<ul>
+<li><code>serialize_decay_database()</code>: Load, sort, and save the decay database in both CSV and compressed NumPy formats for fast loading.</li>
+<li><code>transform_radionuclide_data(df)</code>: Convert a DataFrame of nuclide data into arrays for DecayDatabase.</li>
+<li><code>sort_nuclide_data(df, decay_mode='β-')</code>: Sort nuclides for consistent ordering, prioritizing stability and decay chains.</li>
+<li><code>sort_decay_chains(df, decay_mode='β-')</code>: Sort nuclides so that decay chains (by the specified mode) are in order.</li>
+<li><code>parse_string_to_list(df, column_name)</code>: Convert string representations of lists in a DataFrame column to actual Python lists.</li>
+</ul>
+<p><strong>Constants</strong></p>
+<ul>
+<li>Various string labels for DataFrame columns (e.g., <code>RADIONUCLIDE_LABEL</code>, <code>HALF_LIFE_SECOND_LABEL</code>, etc.)</li>
 </ul>
 <hr>
-<h2 id="usage-example">Usage Example</h2>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> nudca <span style="color:#f92672">import</span> load_decay_database
+<h3 id="halflifecolormap">HalfLifeColorMap</h3>
+<blockquote>
+<p><strong>class nudca.decay_database.HalfLifeColorMap</strong></p></blockquote>
+<p>A configuration and utility class for half-life color mapping in nuclear chart visualizations.</p>
+<p><strong>Constructor</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>HalfLifeColorMap(half_life_data: Optional[np<span style="color:#f92672">.</span>ndarray] <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>)</span></span></code></pre></div>
+<ul>
+<li><code>half_life_data</code>: Array of half-life data for all nuclides</li>
+</ul>
+<p><strong>Key Methods &amp; Properties</strong></p>
+<ul>
+<li><code>min_half_life</code>: Minimum finite half-life in the dataset</li>
+<li><code>max_half_life</code>: Maximum finite half-life in the dataset</li>
+<li><code>get_range_for_half_life(half_life)</code>: Get the appropriate range key for a given half-life value</li>
+<li><code>get_cmap_and_norm(range_key)</code>: Get colormap and normalization for a given range key</li>
+<li>Internal plotting helpers (prefixed with <code>_</code>): figure creation, plotting stable/unstable nuclides, axis/legend setup, etc.</li>
+</ul>
+<hr>
+<h3 id="load_decay_database">load_decay_database</h3>
+<blockquote>
+<p><strong>Function</strong></p></blockquote>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">load_decay_database</span>(data_source: str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;ENDF-B-VIII.1_decay&#39;</span>) <span style="color:#f92672">-&gt;</span> DecayDatabase</span></span></code></pre></div>
+<p>Loads a DecayDatabase object from a compressed NumPy file for the specified data source.</p>
+<ul>
+<li><code>data_source</code>: Name of the decay data source</li>
+<li><strong>Returns</strong>: <code>DecayDatabase</code> instance</li>
+</ul>
+<hr>
+<h2 id="usage-examples">Usage Examples</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> nudca.decay_database <span style="color:#f92672">import</span> load_decay_database
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>db <span style="color:#f92672">=</span> load_decay_database(<span style="color:#e6db74">&#39;ENDF-B-VIII.1_decay&#39;</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Query half-life (as readable string and in seconds)</span>
-</span></span><span style="display:flex;"><span>print(db<span style="color:#f92672">.</span>get_nuclide_half_life(<span style="color:#e6db74">&#39;U-238&#39;</span>))           <span style="color:#75715e"># e.g., &#39;4.468 billion years&#39;</span>
-</span></span><span style="display:flex;"><span>print(db<span style="color:#f92672">.</span>get_nuclide_half_life(<span style="color:#e6db74">&#39;U-238&#39;</span>, <span style="color:#e6db74">&#39;s&#39;</span>))      <span style="color:#75715e"># e.g., 1.409e+17</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Get decay modes and branching ratios</span>
-</span></span><span style="display:flex;"><span>print(db<span style="color:#f92672">.</span>get_nuclide_decay_modes(<span style="color:#e6db74">&#39;U-238&#39;</span>))         <span style="color:#75715e"># e.g., [&#39;α&#39;]</span>
-</span></span><span style="display:flex;"><span>print(db<span style="color:#f92672">.</span>get_nuclide_branching_ratios(<span style="color:#e6db74">&#39;U-238&#39;</span>))    <span style="color:#75715e"># e.g., [1.0]</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Get progeny (daughter nuclides)</span>
-</span></span><span style="display:flex;"><span>print(db<span style="color:#f92672">.</span>get_nuclide_progeny(<span style="color:#e6db74">&#39;U-238&#39;</span>))             <span style="color:#75715e"># e.g., [&#39;Th-234&#39;]</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Get decay energies</span>
-</span></span><span style="display:flex;"><span>print(db<span style="color:#f92672">.</span>get_nuclide_decay_energy(<span style="color:#e6db74">&#39;U-238&#39;</span>, <span style="color:#e6db74">&#39;EM&#39;</span>))  <span style="color:#75715e"># Electromagnetic energy</span>
+</span></span><span style="display:flex;"><span>db <span style="color:#f92672">=</span> load_decay_database()
+</span></span><span style="display:flex;"><span>print(db<span style="color:#f92672">.</span>get_nuclide_half_life(<span style="color:#e6db74">&#39;U-238&#39;</span>))  <span style="color:#75715e"># Readable half-life</span>
+</span></span><span style="display:flex;"><span>print(db<span style="color:#f92672">.</span>get_nuclide_decay_modes(<span style="color:#e6db74">&#39;U-238&#39;</span>))  <span style="color:#75715e"># Decay modes</span>
+</span></span><span style="display:flex;"><span>print(db<span style="color:#f92672">.</span>get_nuclide_progeny(<span style="color:#e6db74">&#39;U-238&#39;</span>))  <span style="color:#75715e"># Daughter nuclides</span>
 </span></span><span style="display:flex;"><span>print(db<span style="color:#f92672">.</span>get_nuclide_total_decay_energy(<span style="color:#e6db74">&#39;U-238&#39;</span>))  <span style="color:#75715e"># Total decay energy</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># Plot the nuclear chart</span>
-</span></span><span style="display:flex;"><span>fig <span style="color:#f92672">=</span> db<span style="color:#f92672">.</span>plot_nuclear_chart()
-</span></span><span style="display:flex;"><span>fig<span style="color:#f92672">.</span>savefig(<span style="color:#e6db74">&#39;nuclear_chart.png&#39;</span>)</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span>fig <span style="color:#f92672">=</span> db<span style="color:#f92672">.</span>plot_nuclear_chart(figsize<span style="color:#f92672">=</span>(<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">7</span>))
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
+<hr>
+<h2 id="notes">Notes</h2>
+<ul>
+<li>Requires <code>numpy</code>, <code>pandas</code>, <code>matplotlib</code>, and related scientific libraries</li>
+<li>Data files must be placed in the <code>nudca/data/</code> directory in the expected format</li>
+<li>Some methods require strict nuclide symbol formats; use <code>validate_nuclide_symbol</code> for safety</li>
+<li><code>plot_nuclear_chart</code> supports many customization options (see source code for details)</li>
+<li>For custom data sources or advanced data processing, refer to <code>DecayDatabaseManager</code></li>
+</ul>
+<hr>
 <h2 id="see-also">See Also</h2>
 <ul>
 <li><a href="/nudca.github.io/api/nuclide/index.html">Nuclide API</a></li>
@@ -389,8 +510,8 @@
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/nudca.github.io/js/clipboard/clipboard.min.js?1748423723" defer></script>
-    <script src="/nudca.github.io/js/perfect-scrollbar/perfect-scrollbar.min.js?1748423723" defer></script>
+    <script src="/nudca.github.io/js/clipboard/clipboard.min.js?1748496272" defer></script>
+    <script src="/nudca.github.io/js/perfect-scrollbar/perfect-scrollbar.min.js?1748496272" defer></script>
     <script>
       window.MathJax = Object.assign( window.MathJax || {}, {
         tex: {
@@ -402,7 +523,7 @@
         }
       }, JSON.parse("{}") );
     </script>
-    <script id="MathJax-script" async src="/nudca.github.io/js/mathjax/tex-mml-chtml.js?1748423723"></script>
-    <script src="/nudca.github.io/js/theme.min.js?1748423723" defer></script>
+    <script id="MathJax-script" async src="/nudca.github.io/js/mathjax/tex-mml-chtml.js?1748496272"></script>
+    <script src="/nudca.github.io/js/theme.min.js?1748496272" defer></script>
   </body>
 </html>

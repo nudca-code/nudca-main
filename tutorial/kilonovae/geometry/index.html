@@ -21,17 +21,17 @@
     <meta itemprop="description" content="import numpy as np import matplotlib.pyplot as plt from matplotlib.colors import LogNorm from matplotlib import cm from nudca.kilonovae import Geometry, DensityProfile, VelocityProfile geometry = Geometry( velocity_scheme=&#34;Default&#34;, # density_scheme=&#34;Metzger2017&#34;, density_scheme=&#34;Kasen2017&#34;, mass_ejecta=2.e-2, vel_ejecta=0.15 ) vel_profile = VelocityProfile(velocity_scheme=&#39;Other&#39;, vel_min=-0.3, vel_max=0.3) vel_x, vel_y = np.meshgrid( vel_profile.velocity_distribution(500), vel_profile.velocity_distribution(500) ) # vel_x, vel_y = np.meshgrid( # np.linspace(0, 0.3, 500), # np.linspace(0, 0.3, 500) # ) times = 86400.0 vel_shells = np.sqrt(vel_x**2 &#43; vel_y**2) vel_min, vel_max = 0.1, 0.3 rho_shells = geometry.density_shells(times, vel_shells) rho_shells[(vel_shells &lt; vel_min) | (vel_shells &gt; vel_max)] = np.nan norm = LogNorm(vmin=np.nanmin(rho_shells), vmax=np.nanmax(rho_shells)) fig, ax = plt.subplots(figsize=(8, 8)) cax = ax.imshow( rho_shells, origin=&#39;lower&#39;, aspect=&#39;equal&#39;, cmap=cm.plasma, extent=[vel_x.min(), vel_x.max(), vel_y.min(), vel_y.max()], norm=norm ) # ax.set_xlim(-0.3, 0.3) # ax.set_ylim(-0.3, 0.3) ax.set_xlim(0, 0.3) ax.set_ylim(0, 0.3) ax.set_xlabel(r&#39;$v_{x}/c$&#39;, fontsize=12) ax.set_ylabel(r&#39;$v_{z}/c$&#39;, fontsize=12) cbar = fig.colorbar(cax, ax=ax, orientation=&#39;vertical&#39;, fraction=0.05, pad=0.05) cbar.set_label(r&#39;$\rho$ [g/ccm]&#39;, fontsize=12) ax.set_title(&#39;Density Distribution&#39;, fontsize=14) plt.show()">
     <meta itemprop="wordCount" content="135">
     <title>class:Geometry :: NuDCA</title>
-    <link href="/nudca.github.io/fonts/fontawesome/css/fontawesome-all.min.css?1748423723" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/nudca.github.io/fonts/fontawesome/css/fontawesome-all.min.css?1748423723" rel="stylesheet"></noscript>
-    <link href="/nudca.github.io/css/perfect-scrollbar/perfect-scrollbar.min.css?1748423723" rel="stylesheet">
-    <link href="/nudca.github.io/css/theme.min.css?1748423723" rel="stylesheet">
-    <link href="/nudca.github.io/css/format-html.min.css?1748423723" rel="stylesheet" id="R-format-style">
-    <link href="/nudca.github.io/css/auto-complete/auto-complete.min.css?1748423723" rel="stylesheet">
-    <script src="/nudca.github.io/js/auto-complete/auto-complete.min.js?1748423723" defer></script>
-    <script src="/nudca.github.io/js/lunr/lunr.min.js?1748423723" defer></script>
-    <script src="/nudca.github.io/js/lunr/lunr.stemmer.support.min.js?1748423723" defer></script>
-    <script src="/nudca.github.io/js/lunr/lunr.multi.min.js?1748423723" defer></script>
-    <script src="/nudca.github.io/js/lunr/lunr.en.min.js?1748423723" defer></script>
-    <script src="/nudca.github.io/js/search.min.js?1748423723" defer></script>
+    <link href="/nudca.github.io/fonts/fontawesome/css/fontawesome-all.min.css?1748496272" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/nudca.github.io/fonts/fontawesome/css/fontawesome-all.min.css?1748496272" rel="stylesheet"></noscript>
+    <link href="/nudca.github.io/css/perfect-scrollbar/perfect-scrollbar.min.css?1748496272" rel="stylesheet">
+    <link href="/nudca.github.io/css/theme.min.css?1748496272" rel="stylesheet">
+    <link href="/nudca.github.io/css/format-html.min.css?1748496272" rel="stylesheet" id="R-format-style">
+    <link href="/nudca.github.io/css/auto-complete/auto-complete.min.css?1748496272" rel="stylesheet">
+    <script src="/nudca.github.io/js/auto-complete/auto-complete.min.js?1748496272" defer></script>
+    <script src="/nudca.github.io/js/lunr/lunr.min.js?1748496272" defer></script>
+    <script src="/nudca.github.io/js/lunr/lunr.stemmer.support.min.js?1748496272" defer></script>
+    <script src="/nudca.github.io/js/lunr/lunr.multi.min.js?1748496272" defer></script>
+    <script src="/nudca.github.io/js/lunr/lunr.en.min.js?1748496272" defer></script>
+    <script src="/nudca.github.io/js/search.min.js?1748496272" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -41,7 +41,7 @@
       window.relearn.relBaseUri='..\/..\/..\/..';
       window.relearn.absBaseUri='https:\/\/nudcacode.github.io\/nudca.github.io';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/nudca.github.io/searchindex.en.js?1748423723";
+      window.relearn.index_js_url="/nudca.github.io/searchindex.en.js?1748496272";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -191,8 +191,8 @@
 </span></span><span style="display:flex;"><span>cbar<span style="color:#f92672">.</span>set_label(<span style="color:#e6db74">r</span><span style="color:#e6db74">&#39;$\rho$ [g/ccm]&#39;</span>, fontsize<span style="color:#f92672">=</span><span style="color:#ae81ff">12</span>)
 </span></span><span style="display:flex;"><span>ax<span style="color:#f92672">.</span>set_title(<span style="color:#e6db74">&#39;Density Distribution&#39;</span>, fontsize<span style="color:#f92672">=</span><span style="color:#ae81ff">14</span>)
 </span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
-<p><a href="#R-image-a80a81b1bb429a30ed20d2285512b21b" class="lightbox-link"><img alt="Geometry" class="lazy lightbox figure-image" loading="lazy" src="../../../images/Tutorial/Geometry.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-a80a81b1bb429a30ed20d2285512b21b"><img alt="Geometry" class="lazy lightbox lightbox-image" loading="lazy" src="../../../images/Tutorial/Geometry.png"></a></p>
+<p><a href="#R-image-258cd99b21d831bbe4d598504a3c0a4b" class="lightbox-link"><img alt="Geometry" class="lazy lightbox figure-image" loading="lazy" src="../../../images/Tutorial/Geometry.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-258cd99b21d831bbe4d598504a3c0a4b"><img alt="Geometry" class="lazy lightbox lightbox-image" loading="lazy" src="../../../images/Tutorial/Geometry.png"></a></p>
 
   <footer class="footline">
   </footer>
@@ -272,8 +272,8 @@
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/nudca.github.io/js/clipboard/clipboard.min.js?1748423723" defer></script>
-    <script src="/nudca.github.io/js/perfect-scrollbar/perfect-scrollbar.min.js?1748423723" defer></script>
+    <script src="/nudca.github.io/js/clipboard/clipboard.min.js?1748496272" defer></script>
+    <script src="/nudca.github.io/js/perfect-scrollbar/perfect-scrollbar.min.js?1748496272" defer></script>
     <script>
       window.MathJax = Object.assign( window.MathJax || {}, {
         tex: {
@@ -285,7 +285,7 @@
         }
       }, JSON.parse("{}") );
     </script>
-    <script id="MathJax-script" async src="/nudca.github.io/js/mathjax/tex-mml-chtml.js?1748423723"></script>
-    <script src="/nudca.github.io/js/theme.min.js?1748423723" defer></script>
+    <script id="MathJax-script" async src="/nudca.github.io/js/mathjax/tex-mml-chtml.js?1748496272"></script>
+    <script src="/nudca.github.io/js/theme.min.js?1748496272" defer></script>
   </body>
 </html>

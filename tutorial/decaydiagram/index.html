@@ -21,17 +21,17 @@
     <meta itemprop="description" content="DecayDiagram ​ python from nudca.decay_database import load_decay_database from nudca.decay_diagram import DecayDiagram nuclide = &#39;Ni56&#39; decay_database = load_decay_database(data_source=&#39;ENDF-B-VIII.1_decay&#39;) decay_diagram = DecayDiagram(nuclide, decay_database) radionuclide = decay_diagram.nuclide half_life = decay_diagram.half_life decay_modes = decay_diagram.decay_modes progeny = decay_diagram.progeny branching_ratios = decay_diagram.branching_ratios Details Radionuclide: Ni-56 Half life: 6.08 d Progeny: [&#39;Co-56&#39;] Decay modes: [&#39;β&#43;&amp;EC&#39;] Branching ratios: [1.0] decay_diagram = DecayDiagram(&#39;Ni56&#39;, decay_database) fig, axes = decay_diagram.plot_decay_chains() fig.tight_layout()">
     <meta itemprop="wordCount" content="69">
     <title>class:DecayDiagram :: NuDCA</title>
-    <link href="/nudca.github.io/fonts/fontawesome/css/fontawesome-all.min.css?1748423723" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/nudca.github.io/fonts/fontawesome/css/fontawesome-all.min.css?1748423723" rel="stylesheet"></noscript>
-    <link href="/nudca.github.io/css/perfect-scrollbar/perfect-scrollbar.min.css?1748423723" rel="stylesheet">
-    <link href="/nudca.github.io/css/theme.min.css?1748423723" rel="stylesheet">
-    <link href="/nudca.github.io/css/format-html.min.css?1748423723" rel="stylesheet" id="R-format-style">
-    <link href="/nudca.github.io/css/auto-complete/auto-complete.min.css?1748423723" rel="stylesheet">
-    <script src="/nudca.github.io/js/auto-complete/auto-complete.min.js?1748423723" defer></script>
-    <script src="/nudca.github.io/js/lunr/lunr.min.js?1748423723" defer></script>
-    <script src="/nudca.github.io/js/lunr/lunr.stemmer.support.min.js?1748423723" defer></script>
-    <script src="/nudca.github.io/js/lunr/lunr.multi.min.js?1748423723" defer></script>
-    <script src="/nudca.github.io/js/lunr/lunr.en.min.js?1748423723" defer></script>
-    <script src="/nudca.github.io/js/search.min.js?1748423723" defer></script>
+    <link href="/nudca.github.io/fonts/fontawesome/css/fontawesome-all.min.css?1748496272" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/nudca.github.io/fonts/fontawesome/css/fontawesome-all.min.css?1748496272" rel="stylesheet"></noscript>
+    <link href="/nudca.github.io/css/perfect-scrollbar/perfect-scrollbar.min.css?1748496272" rel="stylesheet">
+    <link href="/nudca.github.io/css/theme.min.css?1748496272" rel="stylesheet">
+    <link href="/nudca.github.io/css/format-html.min.css?1748496272" rel="stylesheet" id="R-format-style">
+    <link href="/nudca.github.io/css/auto-complete/auto-complete.min.css?1748496272" rel="stylesheet">
+    <script src="/nudca.github.io/js/auto-complete/auto-complete.min.js?1748496272" defer></script>
+    <script src="/nudca.github.io/js/lunr/lunr.min.js?1748496272" defer></script>
+    <script src="/nudca.github.io/js/lunr/lunr.stemmer.support.min.js?1748496272" defer></script>
+    <script src="/nudca.github.io/js/lunr/lunr.multi.min.js?1748496272" defer></script>
+    <script src="/nudca.github.io/js/lunr/lunr.en.min.js?1748496272" defer></script>
+    <script src="/nudca.github.io/js/search.min.js?1748496272" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -41,7 +41,7 @@
       window.relearn.relBaseUri='..\/..\/..';
       window.relearn.absBaseUri='https:\/\/nudcacode.github.io\/nudca.github.io';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/nudca.github.io/searchindex.en.js?1748423723";
+      window.relearn.index_js_url="/nudca.github.io/searchindex.en.js?1748496272";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -140,13 +140,13 @@
 <h1 id="classdecaydiagram">class:DecayDiagram</h1>
 
 <h2 id="decaydiagram">DecayDiagram</h2>
-<div class="tab-panel" data-tab-group="537ebdb05341d456d09b4b1f38d51f77">
+<div class="tab-panel" data-tab-group="5485d9791178ca78ebd5cac92d2c0276">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
     <button
       data-tab-item="python"
       class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
-      onclick="switchTab('537ebdb05341d456d09b4b1f38d51f77','python')"
+      onclick="switchTab('5485d9791178ca78ebd5cac92d2c0276','python')"
     >
       <span class="tab-nav-text">python</span>
     </button>
@@ -187,13 +187,13 @@ Branching ratios:  [1.0]</code></pre></div>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>decay_diagram <span style="color:#f92672">=</span> DecayDiagram(<span style="color:#e6db74">&#39;Ni56&#39;</span>, decay_database)
 </span></span><span style="display:flex;"><span>fig, axes <span style="color:#f92672">=</span> decay_diagram<span style="color:#f92672">.</span>plot_decay_chains()
 </span></span><span style="display:flex;"><span>fig<span style="color:#f92672">.</span>tight_layout()</span></span></code></pre></div>
-<p><a href="#R-image-a9f1ae703ccd05ce57d91f4e99fbb224" class="lightbox-link"><img alt="DecayChainsNi56" class="lazy lightbox figure-image" loading="lazy" src="../../images/Tutorial/DecayChains_Ni56.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-a9f1ae703ccd05ce57d91f4e99fbb224"><img alt="DecayChainsNi56" class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Tutorial/DecayChains_Ni56.png"></a></p>
+<p><a href="#R-image-b8ce9e6a3a5fbed9a7a365bbb83edfa8" class="lightbox-link"><img alt="DecayChainsNi56" class="lazy lightbox figure-image" loading="lazy" src="../../images/Tutorial/DecayChains_Ni56.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b8ce9e6a3a5fbed9a7a365bbb83edfa8"><img alt="DecayChainsNi56" class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Tutorial/DecayChains_Ni56.png"></a></p>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>decay_diagram <span style="color:#f92672">=</span> DecayDiagram(<span style="color:#e6db74">&#39;Fe56&#39;</span>, decay_database)
 </span></span><span style="display:flex;"><span>fig, axes <span style="color:#f92672">=</span> decay_diagram<span style="color:#f92672">.</span>plot_reverse_decay_chains()
 </span></span><span style="display:flex;"><span>fig<span style="color:#f92672">.</span>tight_layout()</span></span></code></pre></div>
-<p><a href="#R-image-ee1953c7ee6cc42d13f9cdd5da19cc73" class="lightbox-link"><img alt="ReverseDecayChainsFe56" class="lazy lightbox figure-image" loading="lazy" src="../../images/Tutorial/ReverseDecayChains_Fe56.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ee1953c7ee6cc42d13f9cdd5da19cc73"><img alt="ReverseDecayChainsFe56" class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Tutorial/ReverseDecayChains_Fe56.png"></a></p>
+<p><a href="#R-image-869ebe072f9093c1d3332c0c89097a99" class="lightbox-link"><img alt="ReverseDecayChainsFe56" class="lazy lightbox figure-image" loading="lazy" src="../../images/Tutorial/ReverseDecayChains_Fe56.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-869ebe072f9093c1d3332c0c89097a99"><img alt="ReverseDecayChainsFe56" class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Tutorial/ReverseDecayChains_Fe56.png"></a></p>
 
   <footer class="footline">
   </footer>
@@ -270,8 +270,8 @@ Branching ratios:  [1.0]</code></pre></div>
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/nudca.github.io/js/clipboard/clipboard.min.js?1748423723" defer></script>
-    <script src="/nudca.github.io/js/perfect-scrollbar/perfect-scrollbar.min.js?1748423723" defer></script>
+    <script src="/nudca.github.io/js/clipboard/clipboard.min.js?1748496272" defer></script>
+    <script src="/nudca.github.io/js/perfect-scrollbar/perfect-scrollbar.min.js?1748496272" defer></script>
     <script>
       window.MathJax = Object.assign( window.MathJax || {}, {
         tex: {
@@ -283,7 +283,7 @@ Branching ratios:  [1.0]</code></pre></div>
         }
       }, JSON.parse("{}") );
     </script>
-    <script id="MathJax-script" async src="/nudca.github.io/js/mathjax/tex-mml-chtml.js?1748423723"></script>
-    <script src="/nudca.github.io/js/theme.min.js?1748423723" defer></script>
+    <script id="MathJax-script" async src="/nudca.github.io/js/mathjax/tex-mml-chtml.js?1748496272"></script>
+    <script src="/nudca.github.io/js/theme.min.js?1748496272" defer></script>
   </body>
 </html>
