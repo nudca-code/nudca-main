@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kilonovae Model :: NuDCA</title>
-    <link>https://nudcacode.github.io/nudca.github.io/theoretic/kilonovae/index.html</link>
+    <link>https://nudcacode.github.io/nudca-main/theoretic/kilonovae/index.html</link>
     <description>Opacity Thermalization Efficiencies Heating Rate Light Curves</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://nudcacode.github.io/nudca.github.io/theoretic/kilonovae/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nudcacode.github.io/nudca-main/theoretic/kilonovae/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Opacity</title>
-      <link>https://nudcacode.github.io/nudca.github.io/theoretic/kilonovae/opacity/index.html</link>
+      <link>https://nudcacode.github.io/nudca-main/theoretic/kilonovae/opacity/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://nudcacode.github.io/nudca.github.io/theoretic/kilonovae/opacity/index.html</guid>
+      <guid>https://nudcacode.github.io/nudca-main/theoretic/kilonovae/opacity/index.html</guid>
       <description>We adopt grey opacity ranging from 1.0 cm2 g−1 to 10.0 cm2 g−1, which we take to be a function of the initial Ye. Our choice is motivated by the study of Tanaka et al. (2018), which showed that bolometric light curves computed assuming grey opacity in this range are in good agreement with those obtained with wavelength-dependent radiation transfer results. We use the following formula to set the opacity: $$ \kappa = 1.0 + \frac{9}{1 + \left(4 Y_{\mathrm{e}} \right)^{12}} \text{ [cm}^{-2}\text{/g]} $$ For $\kappa$, we use the results from Tanaka et al. (2020) for Ye ∼ 0.15 − 0.4 (κ for Ye = 0.1 is likely underestimated due to a lack of atomic data for the actinides). For the typical BHNS dynamical ejecta and the thermal CCSNe cases, we estimate κ in this Ye range by fitting an exponential function to the available opacity data to get</description>
     </item>
     <item>
       <title>Thermalization Efficiencies</title>
-      <link>https://nudcacode.github.io/nudca.github.io/theoretic/kilonovae/thermalization/index.html</link>
+      <link>https://nudcacode.github.io/nudca-main/theoretic/kilonovae/thermalization/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://nudcacode.github.io/nudca.github.io/theoretic/kilonovae/thermalization/index.html</guid>
+      <guid>https://nudcacode.github.io/nudca-main/theoretic/kilonovae/thermalization/index.html</guid>
       <description>Barnes et al. 2016 develop an analytic expression for time-dependent thermalization efficiencies of massive particles under the following assumptions:&#xA;The radioactive energygeneration rate evolves as $t^{-\alpha}$ with $\alpha = 1.0$ (close to the expected values $\alpha = 1.1–1.4$); The density in the ejecta is spatially uniform; The energy-loss rates are independent of particle energy, and depend only on $\rho$; All particles of a given type are emitted at a single energy $E_{0}$. The thermalization efficiency is defined as the ratio of energy emitted by radioactive processes to energy absorbed by the ejecta at any time $t$,</description>
     </item>
     <item>
       <title>Heating Rate</title>
-      <link>https://nudcacode.github.io/nudca.github.io/theoretic/kilonovae/heatingrate/index.html</link>
+      <link>https://nudcacode.github.io/nudca-main/theoretic/kilonovae/heatingrate/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://nudcacode.github.io/nudca.github.io/theoretic/kilonovae/heatingrate/index.html</guid>
+      <guid>https://nudcacode.github.io/nudca-main/theoretic/kilonovae/heatingrate/index.html</guid>
       <description>Radioactive Heating Rate $$ \dot{q}_{\mathrm{p}}(t) = \sum_{i} N_{A} \lambda_{i}Y_{i}(t)E_{i} \text{ p} \in \{\alpha, \beta, \gamma\} $$Analytic description $$ \dot{q}(t) = \dot{\epsilon}_{0}\left( \frac{1}{2} - \frac{1}{\pi}\arctan\left[\frac{t-t_{0}}{\sigma}\right] \right)^{\alpha} $$$$ \dot{q}(t) = \dot{\epsilon}_{0}\left( \frac{1}{2} - \frac{1}{\pi}\arctan\left[\frac{t-t_{0}}{\sigma}\right] \right)^{\alpha} \left( \frac{1}{2} + \frac{1}{\pi}\arctan\left[\frac{t-t_{1}}{\sigma_{1}}\right] \right)^{\alpha_{1}} + C_{1}e^{-t/\tau_{1}} + C_{2}e^{-t/\tau_{2}} + C_{3}e^{-t/\tau_{3}} $$Effective Heating Rate $$ \dot{Q}(t) = \sum_{\mathrm{p}}f_{\mathrm{p}}(t)\dot{q}_{\mathrm{p}}(t) \text{ p} \in \{\alpha, \beta, \gamma\} $$</description>
     </item>
     <item>
       <title>Light Curves</title>
-      <link>https://nudcacode.github.io/nudca.github.io/theoretic/kilonovae/lightcurve/index.html</link>
+      <link>https://nudcacode.github.io/nudca-main/theoretic/kilonovae/lightcurve/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://nudcacode.github.io/nudca.github.io/theoretic/kilonovae/lightcurve/index.html</guid>
+      <guid>https://nudcacode.github.io/nudca-main/theoretic/kilonovae/lightcurve/index.html</guid>
       <description>One-zone Arnett Model we use simple one-zone models of transients within the framework laid out by Arnett (1980) for SN I light curves. For each heating source we assume the following:&#xA;The ejecta are spherically symmetric and undergo homologous expansion, unless otherwise stated. Radiation pressure dominates over electron and gas pressure in the equation of state. The heating source is located in the center of the ejecta, unless otherwise stated. The optical opacity is a constant, unless otherwise stated. The initial radius is small, unless otherwise stated. We can write the first law of thermodynamics as</description>
     </item>
   </channel>

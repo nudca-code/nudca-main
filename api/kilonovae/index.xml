@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>nudca.kilonovae :: NuDCA</title>
-    <link>https://nudcacode.github.io/nudca.github.io/api/kilonovae/index.html</link>
+    <link>https://nudcacode.github.io/nudca-main/api/kilonovae/index.html</link>
     <description>nudca.kilonovae.geometry nudca.kilonovae.opacity nudca.kilonovae.heating_rate nudca.kilonovae.lightcurve</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://nudcacode.github.io/nudca.github.io/api/kilonovae/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nudcacode.github.io/nudca-main/api/kilonovae/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>nudca.kilonovae.geometry</title>
-      <link>https://nudcacode.github.io/nudca.github.io/api/kilonovae/geometry/index.html</link>
+      <link>https://nudcacode.github.io/nudca-main/api/kilonovae/geometry/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://nudcacode.github.io/nudca.github.io/api/kilonovae/geometry/index.html</guid>
+      <guid>https://nudcacode.github.io/nudca-main/api/kilonovae/geometry/index.html</guid>
       <description></description>
     </item>
     <item>
       <title>nudca.kilonovae.opacity</title>
-      <link>https://nudcacode.github.io/nudca.github.io/api/kilonovae/opacity/index.html</link>
+      <link>https://nudcacode.github.io/nudca-main/api/kilonovae/opacity/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://nudcacode.github.io/nudca.github.io/api/kilonovae/opacity/index.html</guid>
+      <guid>https://nudcacode.github.io/nudca-main/api/kilonovae/opacity/index.html</guid>
       <description></description>
     </item>
     <item>
       <title>nudca.kilonovae.heating_rate</title>
-      <link>https://nudcacode.github.io/nudca.github.io/api/kilonovae/heatingrate/index.html</link>
+      <link>https://nudcacode.github.io/nudca-main/api/kilonovae/heatingrate/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://nudcacode.github.io/nudca.github.io/api/kilonovae/heatingrate/index.html</guid>
+      <guid>https://nudcacode.github.io/nudca-main/api/kilonovae/heatingrate/index.html</guid>
       <description></description>
     </item>
     <item>
       <title>nudca.kilonovae.lightcurve</title>
-      <link>https://nudcacode.github.io/nudca.github.io/api/kilonovae/lightcurve/index.html</link>
+      <link>https://nudcacode.github.io/nudca-main/api/kilonovae/lightcurve/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://nudcacode.github.io/nudca.github.io/api/kilonovae/lightcurve/index.html</guid>
+      <guid>https://nudcacode.github.io/nudca-main/api/kilonovae/lightcurve/index.html</guid>
       <description></description>
     </item>
   </channel>

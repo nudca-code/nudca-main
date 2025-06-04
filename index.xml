@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>NuDCA</title>
-    <link>https://nudcacode.github.io/nudca.github.io/index.html</link>
-    <description>NuDCA Core Package Documentation nudca is a Python package for radioactive decay calculations.&#xA;The original goal was to create a light-weight Python package for radioactive decay calculations, with full support for branching decays, multi-step decay chains, and metastable states. By default radioactivedecay uses decay data from ENDF-B-VIII.1. It solves the radioactive decay differential equations analytically using basic linear algebra operations.&#xA;In order to use radioactivedecay, you will need Python 3.9+ with the Matplotlib, NumPy, Pandas, SciPy, NetworkX, Setuptools and Numba packages installed. The code is platform independent and has been tested on Windows, MacOS and Linux systems.</description>
+    <link>https://nudcacode.github.io/nudca-main/index.html</link>
+    <description>NuDCA Core Package Documentation NuDCA is an open-source Python program specifically designed for calculating the decay chains of radioactive nuclides. We have developed a versatile computational framework that efficiently handles decay chains with complex branching ratios. This framework employs a matrix-based numerical solving method, ensuring both analytical accuracy and computational efficiency, enabling rapid resolution of decay chain differential equations.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://nudcacode.github.io/nudca.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nudcacode.github.io/nudca-main/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction</title>
-      <link>https://nudcacode.github.io/nudca.github.io/introduction/index.html</link>
+      <link>https://nudcacode.github.io/nudca-main/introduction/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://nudcacode.github.io/nudca.github.io/introduction/index.html</guid>
+      <guid>https://nudcacode.github.io/nudca-main/introduction/index.html</guid>
       <description>Introduction</description>
     </item>
     <item>
       <title>Installation</title>
-      <link>https://nudcacode.github.io/nudca.github.io/installation/index.html</link>
+      <link>https://nudcacode.github.io/nudca-main/installation/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://nudcacode.github.io/nudca.github.io/installation/index.html</guid>
+      <guid>https://nudcacode.github.io/nudca-main/installation/index.html</guid>
       <description>Installation</description>
     </item>
     <item>
       <title>Tutorials</title>
-      <link>https://nudcacode.github.io/nudca.github.io/tutorial/index.html</link>
+      <link>https://nudcacode.github.io/nudca-main/tutorial/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://nudcacode.github.io/nudca.github.io/tutorial/index.html</guid>
+      <guid>https://nudcacode.github.io/nudca-main/tutorial/index.html</guid>
       <description>class:Nuclide class:DecayDatabase class:DecayDiagram class:DecayMatrix class:RadioactiveDecay Submodule:kilonovae</description>
     </item>
     <item>
       <title>Theoretical Framework</title>
-      <link>https://nudcacode.github.io/nudca.github.io/theoretic/index.html</link>
+      <link>https://nudcacode.github.io/nudca-main/theoretic/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://nudcacode.github.io/nudca.github.io/theoretic/index.html</guid>
+      <guid>https://nudcacode.github.io/nudca-main/theoretic/index.html</guid>
       <description>Radioactive Decay Kilonovae Model</description>
     </item>
     <item>
       <title>nudca API</title>
-      <link>https://nudcacode.github.io/nudca.github.io/api/index.html</link>
+      <link>https://nudcacode.github.io/nudca-main/api/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://nudcacode.github.io/nudca.github.io/api/index.html</guid>
+      <guid>https://nudcacode.github.io/nudca-main/api/index.html</guid>
       <description>NuDCA nudca.nuclide nudca.decay_database nudca.decay_diagram nudca.decay_matrix nudca.nucleo_decay nudca.kilonovae nudca.kilonovae.geometry nudca.kilonovae.opacity nudca.kilonovae.heating_rate nudca.kilonovae.lightcurve</description>
     </item>
     <item>
       <title>References</title>
-      <link>https://nudcacode.github.io/nudca.github.io/references/index.html</link>
+      <link>https://nudcacode.github.io/nudca-main/references/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://nudcacode.github.io/nudca.github.io/references/index.html</guid>
-      <description>References</description>
+      <guid>https://nudcacode.github.io/nudca-main/references/index.html</guid>
+      <description>References [Amaku et al. (2019)]: M. Amaku, P.R. Pascholati, V.R. Vanin, Decay chain differential equations: Solution through matrix algebra, Computer Physics Communications, Volume 181, Issue 1, 2010, Pages 21-23, https://doi.org/10.1016/j.cpc.2009.08.011.&#xA;[Tanaka et al. (2020)]: Masaomi Tanaka, Daiji Kato, Gediminas Gaigalas, Kyohei Kawaguchi, Systematic opacity calculations for kilonovae, Monthly Notices of the Royal Astronomical Society, Volume 496, Issue 2, August 2020, Pages 1369–1392, https://doi.org/10.1093/mnras/staa1576&#xA;[Wu et al. (2022)]: Zhenyu Wu, Giacomo Ricigliano, Rahul Kashyap, Albino Perego, David Radice, Radiation hydrodynamics modelling of kilonovae with SNEC, Monthly Notices of the Royal Astronomical Society, Volume 512, Issue 1, May 2022, Pages 328–347, https://doi.org/10.1093/mnras/stac399</description>
     </item>
   </channel>
 </rss>

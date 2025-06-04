@@ -5,7 +5,7 @@ var relearn_searchindex = [
     "description": "import numpy as np import matplotlib.pyplot as plt from matplotlib.colors import LogNorm from matplotlib import cm from nudca.kilonovae import Geometry, DensityProfile, VelocityProfile geometry = Geometry( velocity_scheme=\"Default\", # density_scheme=\"Metzger2017\", density_scheme=\"Kasen2017\", mass_ejecta=2.e-2, vel_ejecta=0.15 ) vel_profile = VelocityProfile(velocity_scheme='Other', vel_min=-0.3, vel_max=0.3) vel_x, vel_y = np.meshgrid( vel_profile.velocity_distribution(500), vel_profile.velocity_distribution(500) ) # vel_x, vel_y = np.meshgrid( # np.linspace(0, 0.3, 500), # np.linspace(0, 0.3, 500) # ) times = 86400.0 vel_shells = np.sqrt(vel_x**2 + vel_y**2) vel_min, vel_max = 0.1, 0.3 rho_shells = geometry.density_shells(times, vel_shells) rho_shells[(vel_shells \u003c vel_min) | (vel_shells \u003e vel_max)] = np.nan norm = LogNorm(vmin=np.nanmin(rho_shells), vmax=np.nanmax(rho_shells)) fig, ax = plt.subplots(figsize=(8, 8)) cax = ax.imshow( rho_shells, origin='lower', aspect='equal', cmap=cm.plasma, extent=[vel_x.min(), vel_x.max(), vel_y.min(), vel_y.max()], norm=norm ) # ax.set_xlim(-0.3, 0.3) # ax.set_ylim(-0.3, 0.3) ax.set_xlim(0, 0.3) ax.set_ylim(0, 0.3) ax.set_xlabel(r'$v_{x}/c$', fontsize=12) ax.set_ylabel(r'$v_{z}/c$', fontsize=12) cbar = fig.colorbar(cax, ax=ax, orientation='vertical', fraction=0.05, pad=0.05) cbar.set_label(r'$\\rho$ [g/ccm]', fontsize=12) ax.set_title('Density Distribution', fontsize=14) plt.show()",
     "tags": [],
     "title": "class:Geometry",
-    "uri": "/nudca.github.io/tutorial/kilonovae/geometry/index.html"
+    "uri": "/nudca-main/tutorial/kilonovae/geometry/index.html"
   },
   {
     "breadcrumb": "NuDCA \u003e  Tutorials",
@@ -13,15 +13,15 @@ var relearn_searchindex = [
     "description": "from nudca import Nuclide Nuclide('Ag-95O').A",
     "tags": [],
     "title": "class:Nuclide",
-    "uri": "/nudca.github.io/tutorial/nuclide/index.html"
+    "uri": "/nudca-main/tutorial/nuclide/index.html"
   },
   {
     "breadcrumb": "NuDCA \u003e  Installation",
-    "content": "​ bash pip install nudca",
-    "description": "​ bash pip install nudca",
+    "content": "1 2 3 4 5 # the hardest part is to start writing code; here's a kickstart; just copy and paste this print(\"Hello\") print(\" \") print(\"World\") print(\"!\")",
+    "description": "1 2 3 4 5 # the hardest part is to start writing code; here's a kickstart; just copy and paste this print(\"Hello\") print(\" \") print(\"World\") print(\"!\")",
     "tags": [],
     "title": "Installation",
-    "uri": "/nudca.github.io/installation/installation/index.html"
+    "uri": "/nudca-main/installation/installation/index.html"
   },
   {
     "breadcrumb": "NuDCA",
@@ -29,7 +29,7 @@ var relearn_searchindex = [
     "description": "Introduction",
     "tags": [],
     "title": "Introduction",
-    "uri": "/nudca.github.io/introduction/index.html"
+    "uri": "/nudca-main/introduction/index.html"
   },
   {
     "breadcrumb": "NuDCA \u003e  Introduction",
@@ -37,7 +37,7 @@ var relearn_searchindex = [
     "description": "Introduction nudca is a Python package for radioactive decay calculations.\nThe original goal was to create a light-weight Python package for radioactive decay calculations, with full support for branching decays, multi-step decay chains, and metastable states. By default radioactivedecay uses decay data from ENDF-B-VIII.1. It solves the radioactive decay differential equations analytically using basic linear algebra operations.\nIn order to use radioactivedecay, you will need Python 3.9+ with the Matplotlib, NumPy, Pandas, SciPy, NetworkX, Setuptools and Numba packages installed. The code is platform independent and has been tested on Windows, MacOS and Linux systems.",
     "tags": [],
     "title": "Introduction",
-    "uri": "/nudca.github.io/introduction/introduction/index.html"
+    "uri": "/nudca-main/introduction/introduction/index.html"
   },
   {
     "breadcrumb": "NuDCA \u003e  nudca API \u003e  nudca.kilonovae",
@@ -45,31 +45,23 @@ var relearn_searchindex = [
     "description": "",
     "tags": [],
     "title": "nudca.kilonovae.geometry",
-    "uri": "/nudca.github.io/api/kilonovae/geometry/index.html"
+    "uri": "/nudca-main/api/kilonovae/geometry/index.html"
   },
   {
-    "breadcrumb": "NuDCA \u003e  Theoretical Framework \u003e  Kilonovae Model",
+    "breadcrumb": "NuDCA \u003e  Theoretic \u003e  Kilonovae Model",
     "content": "We adopt grey opacity ranging from 1.0 cm2 g−1 to 10.0 cm2 g−1, which we take to be a function of the initial Ye. Our choice is motivated by the study of Tanaka et al. (2018), which showed that bolometric light curves computed assuming grey opacity in this range are in good agreement with those obtained with wavelength-dependent radiation transfer results. We use the following formula to set the opacity: $$ \\kappa = 1.0 + \\frac{9}{1 + \\left(4 Y_{\\mathrm{e}} \\right)^{12}} \\text{ [cm}^{-2}\\text{/g]} $$ For $\\kappa$, we use the results from Tanaka et al. (2020) for Ye ∼ 0.15 − 0.4 (κ for Ye = 0.1 is likely underestimated due to a lack of atomic data for the actinides). For the typical BHNS dynamical ejecta and the thermal CCSNe cases, we estimate κ in this Ye range by fitting an exponential function to the available opacity data to get $$ \\kappa = 211.98 \\exp(-12.33Y_{\\mathrm{e}}) $$",
     "description": "We adopt grey opacity ranging from 1.0 cm2 g−1 to 10.0 cm2 g−1, which we take to be a function of the initial Ye. Our choice is motivated by the study of Tanaka et al. (2018), which showed that bolometric light curves computed assuming grey opacity in this range are in good agreement with those obtained with wavelength-dependent radiation transfer results. We use the following formula to set the opacity: $$ \\kappa = 1.0 + \\frac{9}{1 + \\left(4 Y_{\\mathrm{e}} \\right)^{12}} \\text{ [cm}^{-2}\\text{/g]} $$ For $\\kappa$, we use the results from Tanaka et al. (2020) for Ye ∼ 0.15 − 0.4 (κ for Ye = 0.1 is likely underestimated due to a lack of atomic data for the actinides). For the typical BHNS dynamical ejecta and the thermal CCSNe cases, we estimate κ in this Ye range by fitting an exponential function to the available opacity data to get",
     "tags": [],
     "title": "Opacity",
-    "uri": "/nudca.github.io/theoretic/kilonovae/opacity/index.html"
+    "uri": "/nudca-main/theoretic/kilonovae/opacity/index.html"
   },
   {
-    "breadcrumb": "NuDCA \u003e  Theoretical Framework",
+    "breadcrumb": "NuDCA \u003e  Theoretic",
     "content": "Radioactive Decay Radioactive decay chains describe the sequential transformation of unstable nuclei into more stable ones through a series of radioactive decays. Each nuclide in the chain decays into the next, until a stable nuclide is reached. The mathematical description of these chains is essential for understanding the time evolution of the number of nuclei of each type.\nThe decay chain equations A decay process with branching decay chains can be described as:\n$$ \\begin{cases} \\frac{\\mathrm{d}N_{1}(t)}{\\mathrm{d}t} \u0026= -\\lambda_{1}N_{1}(t) \\\\ \\frac{\\mathrm{d}N_{2}(t)}{\\mathrm{d}t} \u0026= b_{12}\\lambda_{1}N_{1}(t) - \\lambda_{2}N_{2}(t) \\\\ \\frac{\\mathrm{d}N_{3}(t)}{\\mathrm{d}t} \u0026= b_{13}\\lambda_{1}N_{1}(t) + b_{23}\\lambda_{2}N_{2}(t) - \\lambda_{3}N_{3}(t) \\\\ \u0026\\vdots \\\\ \\frac{\\mathrm{d}N_{n}(t)}{\\mathrm{d}t} \u0026= b_{1n}\\lambda_{1}N_{1}(t) + b_{2n}\\lambda_{2}N_{2}(t) + \\cdots + b_{n-1,n}\\lambda_{n-1}N_{n-1}(t) - \\lambda_{n}N_{n}(t) \\end{cases} $$Here:\n$N_i(t)$ is the number of nuclei of type $i$ at time $t$. $\\lambda_i$ is the decay constant for nuclide $i$. $b_{ji}$ is the branching ratio for the decay from nuclide $j$ to nuclide $i$. Matrix Representation The above system can be written in matrix form as:\n$$ \\frac{\\mathrm{d}}{\\mathrm{d}t} \\begin{bmatrix} N_{1}(t) \\\\ N_{2}(t) \\\\ N_{3}(t) \\\\ \\vdots \\\\ N_{i}(t) \\\\ \\vdots \\\\ N_{n}(t) \\end{bmatrix} = \\begin{bmatrix} -\\lambda_{1} \u0026 \u0026 \u0026 \u0026 \u0026 \u0026 \\\\ b_{12}\\lambda_{1} \u0026 -\\lambda_{2} \u0026 \u0026 \u0026 \u0026 \u0026 \\\\ b_{13}\\lambda_{1} \u0026 b_{23}\\lambda_{2} \u0026 -\\lambda_{3} \u0026 \u0026 \u0026 \u0026 \\\\ \\vdots \u0026 \\vdots \u0026 \\vdots \u0026 \\ddots \u0026 \u0026 \u0026 \u0026 \\\\ b_{1i}\\lambda_{1} \u0026 b_{2i}\\lambda_{2} \u0026 b_{3i}\\lambda_{3} \u0026 \\cdots \u0026 -\\lambda_{i} \u0026 \u0026 \\\\ \\vdots \u0026 \\vdots \u0026 \\vdots \u0026 \\vdots \u0026 \\vdots \u0026 \\ddots \u0026 \\\\ b_{1n}\\lambda_{1} \u0026 b_{2n}\\lambda_{2} \u0026 b_{3n}\\lambda_{3} \u0026 \\cdots \u0026 b_{in}\\lambda_{i} \u0026 \\cdots \u0026 -\\lambda_{n} \\end{bmatrix} \\times \\begin{bmatrix} N_{1}(t) \\\\ N_{2}(t) \\\\ N_{3}(t) \\\\ \\vdots \\\\ N_{i}(t) \\\\ \\vdots \\\\ N_{n}(t) \\end{bmatrix} $$where $\\boldsymbol{A}$ is the transition matrix: $$ \\boldsymbol{A} = \\begin{bmatrix} -\\lambda_{1} \u0026 \u0026 \u0026 \u0026 \u0026 \u0026 \\\\ b_{12}\\lambda_{1} \u0026 -\\lambda_{2} \u0026 \u0026 \u0026 \u0026 \u0026 \\\\ b_{13}\\lambda_{1} \u0026 b_{23}\\lambda_{2} \u0026 -\\lambda_{3} \u0026 \u0026 \u0026 \u0026 \\\\ \\vdots \u0026 \\vdots \u0026 \\vdots \u0026 \\ddots \u0026 \u0026 \u0026 \u0026 \\\\ b_{1i}\\lambda_{1} \u0026 b_{2i}\\lambda_{2} \u0026 b_{3i}\\lambda_{3} \u0026 \\cdots \u0026 -\\lambda_{i} \u0026 \u0026 \\\\ \\vdots \u0026 \\vdots \u0026 \\vdots \u0026 \\vdots \u0026 \\vdots \u0026 \\ddots \u0026 \\\\ b_{1n}\\lambda_{1} \u0026 b_{2n}\\lambda_{2} \u0026 b_{3n}\\lambda_{3} \u0026 \\cdots \u0026 b_{in}\\lambda_{i} \u0026 \\cdots \u0026 -\\lambda_{n} \\end{bmatrix} $$The elements of the matrix $A_{ij}$ are defined as:\n$$ A_{ij} = \\begin{cases} 0 \u0026 \\text{if } i \u003c j, \\\\ -\\lambda_{i} \u0026 \\text{if } i = j, \\\\ b_{ji}\\lambda_{j} \u0026 \\text{if } i \u003e j. \\end{cases} $$This lower-triangular structure reflects the fact that each nuclide can only be produced by the decay of its precursors.\nGeneral Solution The system can be compactly written as:\n$$ \\frac{\\mathrm{d}\\boldsymbol{N}}{\\mathrm{d}t} = \\boldsymbol{A} \\boldsymbol{N} $$The general solution involves diagonalizing the matrix $\\boldsymbol{A}$, which requires finding its eigenvalues and eigenvectors.\nEigenvalues and Eigenvectors The eigenvalues $\\alpha_j$ of $\\boldsymbol{A}$ are given by:\n$$ \\alpha_{j} = -\\lambda_{j} = A_{jj} \\quad(j = 1,2,3,\\dots,n) $$The corresponding eigenvectors $\\boldsymbol{p}_j$ have the form:\n$$ \\boldsymbol{p}_{j} = \\begin{bmatrix} P_{1j} \\\\ P_{2j} \\\\ P_{3j} \\\\ \\vdots \\\\ P_{ij} \\\\ \\vdots \\\\ P_{nj} \\end{bmatrix} $$where the components $P_{ij}$ satisfy the following recurrence relations:\n$$ \\begin{cases} (A_{11} - A_{jj})P_{1j} \u0026= 0 \\\\ A_{21}P_{1j} + (A_{22} - A_{jj})P_{2j} \u0026= 0 \\\\ A_{31}P_{1j} + A_{32}P_{2j} + (A_{33} - A_{jj})P_{3j} \u0026= 0 \\\\ \\vdots \\\\ A_{n1}P_{1j} + A_{n2}P_{2j} + A_{n3}P_{3j} + \\cdots + (A_{nn} - A_{jj})P_{nj} \u0026= 0 \\end{cases} $$Or, in matrix form:\n$$ \\begin{bmatrix} A_{11} - A_{jj} \u0026 \u0026 \u0026 \u0026 \u0026 \u0026 \\\\ A_{21} \u0026 A_{22} - A_{jj} \u0026 \u0026 \u0026 \u0026 \u0026 \\\\ A_{31} \u0026 A_{32} \u0026 A_{33} - A_{jj} \u0026 \u0026 \u0026 \u0026 \\\\ \\vdots \u0026 \\vdots \u0026 \\vdots \u0026 \\ddots \u0026 \u0026 \u0026 \u0026 \\\\ A_{i1} \u0026 A_{i2} \u0026 A_{i3} \u0026 \\cdots \u0026 A_{ii} - A_{jj} \u0026 \u0026 \\\\ \\vdots \u0026 \\vdots \u0026 \\vdots \u0026 \\vdots \u0026 \\vdots \u0026 \\ddots \u0026 \\\\ A_{n1} \u0026 A_{n2} \u0026 A_{n3} \u0026 \\cdots \u0026 A_{ni} \u0026 \\cdots \u0026 A_{nn} - A_{jj} \\end{bmatrix} \\begin{bmatrix} P_{1j} \\\\ P_{2j} \\\\ P_{3j} \\\\ \\vdots \\\\ P_{ij} \\\\ \\vdots \\\\ P_{nj} \\end{bmatrix} = \\begin{bmatrix} 0 \\\\ 0 \\\\ 0 \\\\ \\vdots \\\\ 0 \\\\ \\vdots \\\\ 0 \\end{bmatrix} $$The explicit solution for $P_{ij}$ is:\n$$ P_{ij} = \\begin{cases} 0 \u0026 \\text{if } i \u003c j, \\\\ 1 \u0026 \\text{if } i = j, \\\\ \\frac{1}{A_{jj} - A_{ii}} \\sum_{k=j}^{i-1} A_{ik}P_{kj} \u0026 \\text{if } i \u003e j. \\end{cases} $$Similarly, the inverse matrix elements $P^{-1}_{ij}$ are given by:\n$$ P^{-1}_{ij} = \\begin{cases} 0 \u0026 \\text{if } i \u003c j, \\\\ 1 \u0026 \\text{if } i = j, \\\\ -\\sum_{k=j}^{i-1} P_{ik}P^{-1}_{kj} \u0026 \\text{if } i \u003e j. \\end{cases} $$ This formalism provides a general framework for analyzing arbitrary radioactive decay chains, including those with branching decays. The matrix approach is particularly powerful for numerical computation and for understanding the structure of the solutions.",
     "description": "Radioactive Decay Radioactive decay chains describe the sequential transformation of unstable nuclei into more stable ones through a series of radioactive decays. Each nuclide in the chain decays into the next, until a stable nuclide is reached. The mathematical description of these chains is essential for understanding the time evolution of the number of nuclei of each type.\nThe decay chain equations A decay process with branching decay chains can be described as:",
     "tags": [],
     "title": "Radioactive Decay",
-    "uri": "/nudca.github.io/theoretic/radioactivedecay/index.html"
-  },
-  {
-    "breadcrumb": "NuDCA \u003e  References",
-    "content": "References [Amaku et al. (2019)]: M. Amaku, P.R. Pascholati, V.R. Vanin, Decay chain differential equations: Solution through matrix algebra, Computer Physics Communications, Volume 181, Issue 1, 2010, Pages 21-23, https://doi.org/10.1016/j.cpc.2009.08.011.\n[Tanaka et al. (2020)]: Masaomi Tanaka, Daiji Kato, Gediminas Gaigalas, Kyohei Kawaguchi, Systematic opacity calculations for kilonovae, Monthly Notices of the Royal Astronomical Society, Volume 496, Issue 2, August 2020, Pages 1369–1392, https://doi.org/10.1093/mnras/staa1576\n[Wu et al. (2022)]: Zhenyu Wu, Giacomo Ricigliano, Rahul Kashyap, Albino Perego, David Radice, Radiation hydrodynamics modelling of kilonovae with SNEC, Monthly Notices of the Royal Astronomical Society, Volume 512, Issue 1, May 2022, Pages 328–347, https://doi.org/10.1093/mnras/stac399\n[Ekanger et al. (2023)]: Nick Ekanger, Mukul Bhattacharya, Shunsaku Horiuchi, Nucleosynthesis in outflows of compact objects and detection prospects of associated kilonovae, Monthly Notices of the Royal Astronomical Society, Volume 525, Issue 2, October 2023, Pages 2040–2052, https://doi.org/10.1093/mnras/stad2348\n[Barnes et al. (2016)]: Barnes, Jennifer and Kasen, Daniel and Wu, Meng-Ru and Martínez-Pinedo, Gabriel, RADIOACTIVITY AND THERMALIZATION IN THE EJECTA OF COMPACT OBJECT MERGERS AND THEIR IMPACT ON KILONOVA LIGHT CURVES, The Astrophysical Journal, Volume 829, Issue 2, Sep 2016, Pages 110, https://dx.doi.org/10.3847/0004-637X/829/2/110\n[Metzger (2020)]: Metzger, B.D. Kilonovae. Living Rev Relativ 23, 1 (2020). https://doi.org/10.1007/s41114-019-0024-0\n[Hotokezaka \u0026 Nakar (2020)]: Hotokezaka, Kenta and Nakar, Ehud, Radioactive Heating Rate of r-process Elements and Macronova Light Curve, The Astrophysical Journal, Volume 891, Issue 2, Mar 2020, Pages 152, https://dx.doi.org/10.3847/1538-4357/ab6a98\n[Korobkin et al. (2012)]: O. Korobkin, S. Rosswog, A. Arcones, C. Winteler, On the astrophysical robustness of the neutron star merger r-process, Monthly Notices of the Royal Astronomical Society, Volume 426, Issue 3, 1 November 2012, Pages 1940–1949, https://doi.org/10.1111/j.1365-2966.2012.21859.x\n[Rosswog et al. (2024)]: S. Rosswog, O. Korobkin, Heavy Elements and Electromagnetic Transients from Neutron Star Mergers. ANNALEN DER PHYSIK 2024, 536, 2200306. https://doi.org/10.1002/andp.202200306",
-    "description": "References [Amaku et al. (2019)]: M. Amaku, P.R. Pascholati, V.R. Vanin, Decay chain differential equations: Solution through matrix algebra, Computer Physics Communications, Volume 181, Issue 1, 2010, Pages 21-23, https://doi.org/10.1016/j.cpc.2009.08.011.\n[Tanaka et al. (2020)]: Masaomi Tanaka, Daiji Kato, Gediminas Gaigalas, Kyohei Kawaguchi, Systematic opacity calculations for kilonovae, Monthly Notices of the Royal Astronomical Society, Volume 496, Issue 2, August 2020, Pages 1369–1392, https://doi.org/10.1093/mnras/staa1576\n[Wu et al. (2022)]: Zhenyu Wu, Giacomo Ricigliano, Rahul Kashyap, Albino Perego, David Radice, Radiation hydrodynamics modelling of kilonovae with SNEC, Monthly Notices of the Royal Astronomical Society, Volume 512, Issue 1, May 2022, Pages 328–347, https://doi.org/10.1093/mnras/stac399",
-    "tags": [],
-    "title": "References",
-    "uri": "/nudca.github.io/references/references/index.html"
+    "uri": "/nudca-main/theoretic/radioactivedecay/index.html"
   },
   {
     "breadcrumb": "NuDCA \u003e  Tutorials",
@@ -77,7 +69,7 @@ var relearn_searchindex = [
     "description": "DecayDatabase ​ python import matplotlib.pyplot as plt from nudca import load_decay_database decay_database = load_decay_database(data_source='ENDF-B-VIII.1_decay') fig = decay_database.plot_nuclear_chart() plt.tight_layout() plt.show() There may be pirates It is all about the boxes.",
     "tags": [],
     "title": "class:DecayDatabase",
-    "uri": "/nudca.github.io/tutorial/decaydatabase/index.html"
+    "uri": "/nudca-main/tutorial/decaydatabase/index.html"
   },
   {
     "breadcrumb": "NuDCA \u003e  Tutorials \u003e  Submodule:kilonovae",
@@ -85,7 +77,7 @@ var relearn_searchindex = [
     "description": "import numpy as np import matplotlib.pyplot as plt from nudca.kilonovae.opacity import KNOpacity Ye = np.linspace(0.10, 0.50, 5000) Ye_table = [0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40] kappa_table = [19.5, 32.2, 22.3, 5.60, 5.36, 3.30, 0.96] kappa_tanaka = KNOpacity(opacity_type='Tabular', opacity_method='Tanaka_OneVar')(Ye) kappa_wu = KNOpacity(opacity_type='Formula', opacity_method='Wu2022')(Ye) kappa_ekanger = KNOpacity(opacity_type='Formula', opacity_method='Ekanger2023')(Ye) fig, ax = plt.subplots(figsize=(8,6), dpi=150) ax.plot(Ye, kappa_tanaka, label='Tanaka2020_OneVar') ax.plot(Ye, kappa_wu, label='Wu2022') ax.plot(Ye, kappa_ekanger, label='Ekanger2023') ax.scatter(Ye_table, kappa_table, label='Tanaka2020_Table') ax.set_xlim(0.095, 0.5) ax.set_ylim(1.e-1, 100) ax.set_yscale('log') ax.set_xlabel(r'$Y_{e}$') ax.set_ylabel(r'$\\kappa \\quad [cm^{2} g^{-1}]$') ax.legend() plt.show()",
     "tags": [],
     "title": "class:KNOpacity",
-    "uri": "/nudca.github.io/tutorial/kilonovae/opacity/index.html"
+    "uri": "/nudca-main/tutorial/kilonovae/opacity/index.html"
   },
   {
     "breadcrumb": "NuDCA",
@@ -93,15 +85,15 @@ var relearn_searchindex = [
     "description": "Installation",
     "tags": [],
     "title": "Installation",
-    "uri": "/nudca.github.io/installation/index.html"
+    "uri": "/nudca-main/installation/index.html"
   },
   {
-    "breadcrumb": "NuDCA \u003e  Theoretical Framework",
+    "breadcrumb": "NuDCA \u003e  Theoretic",
     "content": "Opacity Thermalization Efficiencies Heating Rate Light Curves",
     "description": "Opacity Thermalization Efficiencies Heating Rate Light Curves",
     "tags": [],
     "title": "Kilonovae Model",
-    "uri": "/nudca.github.io/theoretic/kilonovae/index.html"
+    "uri": "/nudca-main/theoretic/kilonovae/index.html"
   },
   {
     "breadcrumb": "NuDCA \u003e  nudca API \u003e  nudca.kilonovae",
@@ -109,15 +101,15 @@ var relearn_searchindex = [
     "description": "",
     "tags": [],
     "title": "nudca.kilonovae.opacity",
-    "uri": "/nudca.github.io/api/kilonovae/opacity/index.html"
+    "uri": "/nudca-main/api/kilonovae/opacity/index.html"
   },
   {
-    "breadcrumb": "NuDCA \u003e  Theoretical Framework \u003e  Kilonovae Model",
+    "breadcrumb": "NuDCA \u003e  Theoretic \u003e  Kilonovae Model",
     "content": "Barnes et al. 2016 develop an analytic expression for time-dependent thermalization efficiencies of massive particles under the following assumptions:\nThe radioactive energygeneration rate evolves as $t^{-\\alpha}$ with $\\alpha = 1.0$ (close to the expected values $\\alpha = 1.1–1.4$); The density in the ejecta is spatially uniform; The energy-loss rates are independent of particle energy, and depend only on $\\rho$; All particles of a given type are emitted at a single energy $E_{0}$. The thermalization efficiency is defined as the ratio of energy emitted by radioactive processes to energy absorbed by the ejecta at any time $t$,\n$$\rf_{th}(t) = \\frac{\\dot{E}_{th}(t)}{\\dot{E}_{rad}(t)}\r$$In general, the thermalization fraction, $f_{th}$, is a time-dependent quantity that describes the fraction of energy that is absorbed by the ejecta from radioactive processes that includes fission fragments, α particles, β particles, and γ -rays. We assume that the total thermalization efficiency can be approximately described by Barnes et al. 2016 $$\rf_{th}(t) = 0.36 \\left[\\exp(-at) + \\frac{\\ln\\left(1+2bt^{d}\\right)}{2bt^{d}} \\right]\r$$where $a$, $b$, and $d$ are fit coefficients. The fit coefficients are given in Table 1 of Barnes et al. 2016.",
     "description": "Barnes et al. 2016 develop an analytic expression for time-dependent thermalization efficiencies of massive particles under the following assumptions:\nThe radioactive energygeneration rate evolves as $t^{-\\alpha}$ with $\\alpha = 1.0$ (close to the expected values $\\alpha = 1.1–1.4$); The density in the ejecta is spatially uniform; The energy-loss rates are independent of particle energy, and depend only on $\\rho$; All particles of a given type are emitted at a single energy $E_{0}$. The thermalization efficiency is defined as the ratio of energy emitted by radioactive processes to energy absorbed by the ejecta at any time $t$,",
     "tags": [],
     "title": "Thermalization Efficiencies",
-    "uri": "/nudca.github.io/theoretic/kilonovae/thermalization/index.html"
+    "uri": "/nudca-main/theoretic/kilonovae/thermalization/index.html"
   },
   {
     "breadcrumb": "NuDCA \u003e  Tutorials",
@@ -125,15 +117,15 @@ var relearn_searchindex = [
     "description": "DecayDiagram ​ python from nudca.decay_database import load_decay_database from nudca.decay_diagram import DecayDiagram nuclide = 'Ni56' decay_database = load_decay_database(data_source='ENDF-B-VIII.1_decay') decay_diagram = DecayDiagram(nuclide, decay_database) radionuclide = decay_diagram.nuclide half_life = decay_diagram.half_life decay_modes = decay_diagram.decay_modes progeny = decay_diagram.progeny branching_ratios = decay_diagram.branching_ratios Details Radionuclide: Ni-56 Half life: 6.08 d Progeny: ['Co-56'] Decay modes: ['β+\u0026EC'] Branching ratios: [1.0] decay_diagram = DecayDiagram('Ni56', decay_database) fig, axes = decay_diagram.plot_decay_chains() fig.tight_layout()",
     "tags": [],
     "title": "class:DecayDiagram",
-    "uri": "/nudca.github.io/tutorial/decaydiagram/index.html"
+    "uri": "/nudca-main/tutorial/decaydiagram/index.html"
   },
   {
-    "breadcrumb": "NuDCA \u003e  Theoretical Framework \u003e  Kilonovae Model",
+    "breadcrumb": "NuDCA \u003e  Theoretic \u003e  Kilonovae Model",
     "content": "Radioactive Heating Rate $$ \\dot{q}_{\\mathrm{p}}(t) = \\sum_{i} N_{A} \\lambda_{i}Y_{i}(t)E_{i} \\text{ p} \\in \\{\\alpha, \\beta, \\gamma\\} $$Analytic description $$ \\dot{q}(t) = \\dot{\\epsilon}_{0}\\left( \\frac{1}{2} - \\frac{1}{\\pi}\\arctan\\left[\\frac{t-t_{0}}{\\sigma}\\right] \\right)^{\\alpha} $$$$ \\dot{q}(t) = \\dot{\\epsilon}_{0}\\left( \\frac{1}{2} - \\frac{1}{\\pi}\\arctan\\left[\\frac{t-t_{0}}{\\sigma}\\right] \\right)^{\\alpha} \\left( \\frac{1}{2} + \\frac{1}{\\pi}\\arctan\\left[\\frac{t-t_{1}}{\\sigma_{1}}\\right] \\right)^{\\alpha_{1}} + C_{1}e^{-t/\\tau_{1}} + C_{2}e^{-t/\\tau_{2}} + C_{3}e^{-t/\\tau_{3}} $$Effective Heating Rate $$ \\dot{Q}(t) = \\sum_{\\mathrm{p}}f_{\\mathrm{p}}(t)\\dot{q}_{\\mathrm{p}}(t) \\text{ p} \\in \\{\\alpha, \\beta, \\gamma\\} $$",
     "description": "Radioactive Heating Rate $$ \\dot{q}_{\\mathrm{p}}(t) = \\sum_{i} N_{A} \\lambda_{i}Y_{i}(t)E_{i} \\text{ p} \\in \\{\\alpha, \\beta, \\gamma\\} $$Analytic description $$ \\dot{q}(t) = \\dot{\\epsilon}_{0}\\left( \\frac{1}{2} - \\frac{1}{\\pi}\\arctan\\left[\\frac{t-t_{0}}{\\sigma}\\right] \\right)^{\\alpha} $$$$ \\dot{q}(t) = \\dot{\\epsilon}_{0}\\left( \\frac{1}{2} - \\frac{1}{\\pi}\\arctan\\left[\\frac{t-t_{0}}{\\sigma}\\right] \\right)^{\\alpha} \\left( \\frac{1}{2} + \\frac{1}{\\pi}\\arctan\\left[\\frac{t-t_{1}}{\\sigma_{1}}\\right] \\right)^{\\alpha_{1}} + C_{1}e^{-t/\\tau_{1}} + C_{2}e^{-t/\\tau_{2}} + C_{3}e^{-t/\\tau_{3}} $$Effective Heating Rate $$ \\dot{Q}(t) = \\sum_{\\mathrm{p}}f_{\\mathrm{p}}(t)\\dot{q}_{\\mathrm{p}}(t) \\text{ p} \\in \\{\\alpha, \\beta, \\gamma\\} $$",
     "tags": [],
     "title": "Heating Rate",
-    "uri": "/nudca.github.io/theoretic/kilonovae/heatingrate/index.html"
+    "uri": "/nudca-main/theoretic/kilonovae/heatingrate/index.html"
   },
   {
     "breadcrumb": "NuDCA \u003e  nudca API \u003e  nudca.kilonovae",
@@ -141,7 +133,7 @@ var relearn_searchindex = [
     "description": "",
     "tags": [],
     "title": "nudca.kilonovae.heating_rate",
-    "uri": "/nudca.github.io/api/kilonovae/heatingrate/index.html"
+    "uri": "/nudca-main/api/kilonovae/heatingrate/index.html"
   },
   {
     "breadcrumb": "NuDCA \u003e  nudca API",
@@ -149,7 +141,7 @@ var relearn_searchindex = [
     "description": "Info This page documents the nuclide.py module, which provides data structures and utilities for representing and parsing nuclear nuclides. It is part of the NuDCA (Nuclear Decay Chains Astrophysics) package.\nOverview The nuclide.py module defines the Nuclide class for representing nuclear nuclides, as well as supporting functions and exceptions for parsing, validating, and converting nuclide symbols, atomic numbers, and canonical IDs. It enables robust handling of nuclide data in scientific and engineering applications.",
     "tags": [],
     "title": "nudca.nuclide",
-    "uri": "/nudca.github.io/api/nuclide/index.html"
+    "uri": "/nudca-main/api/nuclide/index.html"
   },
   {
     "breadcrumb": "NuDCA",
@@ -157,7 +149,7 @@ var relearn_searchindex = [
     "description": "class:Nuclide class:DecayDatabase class:DecayDiagram class:DecayMatrix class:RadioactiveDecay Submodule:kilonovae",
     "tags": [],
     "title": "Tutorials",
-    "uri": "/nudca.github.io/tutorial/index.html"
+    "uri": "/nudca-main/tutorial/index.html"
   },
   {
     "breadcrumb": "NuDCA \u003e  Tutorials",
@@ -165,7 +157,7 @@ var relearn_searchindex = [
     "description": "from nudca.decay_database import load_decay_database from nudca.decay_matrix import MatrixBuilder decay_database = load_decay_database() matrix_builder = MatrixBuilder(decay_database) matrix_A = matrix_builder.build_matrix_A() matrix_P = matrix_builder.build_matrix_P(matrix_A) matrix_P_inv = matrix_builder.build_matrix_P_inv(matrix_A, matrix_P) from nudca.decay_matrix import load_decay_matrix decay_matrix = load_decay_matrix() print(decay_matrix)",
     "tags": [],
     "title": "class:DecayMatrix",
-    "uri": "/nudca.github.io/tutorial/decaymatrix/index.html"
+    "uri": "/nudca-main/tutorial/decaymatrix/index.html"
   },
   {
     "breadcrumb": "NuDCA \u003e  Tutorials \u003e  Submodule:kilonovae",
@@ -173,15 +165,15 @@ var relearn_searchindex = [
     "description": "import numpy as np import matplotlib.pyplot as plt from nudca.kilonovae import KNeLightCurve times = np.geomspace(1e-3, 1e2, 5000) * 86400 # days t, Lbol = KNeLightCurve( lightcurve_type = 'Luminosity', # ['Luminosity', 'Magnitude'] velocity_scheme= 'Default', # Uniform distribution density_scheme= 'Metzger2017', # ['Metzger2017', 'Kasen2017', 'Wollaeger2018'] thermal_scheme= 'Barnes2016_Default', # ['Barnes2016_Default', 'Barnes2016_1D', 'Barnes2016_2D'] heating_scheme= 'Korobkin2012', # ['Korobkin2012', 'Rosswog2024', 'Table'] # heating_rate_table = (t, q_dot) mass_ejecta = 2.e-3, # units: M_sun vel_ejecta = 0.15, # units: c opacity = 10.0, # ['Wu2022', 'Ekanger2023', 'Tanaka_OneVar', 'Tanaka_FourVar'] # luminosity_distance # units: Mpc # wavelength # units: cm # **kwargs (n_shells ...) )(times=times) fig, ax = plt.subplots() ax.plot(t/86400, Lbol) ax.set_xlim(-0.5, 30) ax.set_ylim(1e37, 1e42) ax.set_yscale('log') ax.set_xlabel('Time [days]') ax.set_ylabel('Lbol [erg]') plt.show()",
     "tags": [],
     "title": "class:KNeLightCurve",
-    "uri": "/nudca.github.io/tutorial/kilonovae/knelightcurve/index.html"
+    "uri": "/nudca-main/tutorial/kilonovae/knelightcurve/index.html"
   },
   {
-    "breadcrumb": "NuDCA \u003e  Theoretical Framework \u003e  Kilonovae Model",
+    "breadcrumb": "NuDCA \u003e  Theoretic \u003e  Kilonovae Model",
     "content": "One-zone Arnett Model we use simple one-zone models of transients within the framework laid out by Arnett (1980) for SN I light curves. For each heating source we assume the following:\nThe ejecta are spherically symmetric and undergo homologous expansion, unless otherwise stated. Radiation pressure dominates over electron and gas pressure in the equation of state. The heating source is located in the center of the ejecta, unless otherwise stated. The optical opacity is a constant, unless otherwise stated. The initial radius is small, unless otherwise stated. We can write the first law of thermodynamics as $$ \\frac{\\mathrm{d}E}{\\mathrm{d}t} = m\\dot{Q}_{\\mathrm{eff}}(t) -p\\frac{\\mathrm{d}V}{\\mathrm{d}t} - L(t) $$ where $E = u V = a T^{4}V$ is the internal energy, $u = a T^{4}$ is the internal energy density, $p = \\frac{1}{3}aT^{4}$ is the pressure density, $V = \\frac{4}{3}\\pi r^{3}$ is the volume, $L$ is the radiated bolometric luminosity, $\\dot{Q}_{\\mathrm{eff}}$ is the energy generation rate of the heating source, $T$ is the temperature, and $\\rho$ is the density. In this framework, all available energy from the heating source supplies either the expansion of the ejecta or observable radiation, and we ignore neutrino losses. Following our assumption of homologous expansion, the radius grows as $r(t) = vt$ (assuming a negligible initial radius), where we approximate $v$ as the photospheric velocity, $v = v_{\\mathrm{ph}}$. This assumption also means that no significant additional kinetic energy is added to the ejecta during the duration of the transient (i.e., the ejecta does not accelerate).\nThe radiative diffusion leads to heat losses from the surface that are approximately given by $$ L(r) \\equiv 4\\pi r^{2} F(r) \\sim -\\frac{4\\pi r^{2}}{\\kappa(r)\\rho(r)}\\frac{\\partial u}{\\partial r} $$where $F(r) \\equiv -\\kappa_{\\gamma} \\frac{\\partial T}{\\partial r}$, and we can approximate the value of a spatial derivative as some quantity over the characteristic length scale $$ \\frac{\\partial u}{\\partial r} \\simeq -\\frac{u}{r} $$We model the bolometric light curve and temperature by adding photons diffusing out from spherical mass shells, where each mass shell is characterized by a mass $m_{i}$, expansion velocity $v_{i}$, and gray opacity $\\kappa$. The internal energy of each mass shell is calculated by solving the first law of thermodynamics of radiation-dominated gas:\n$$ \\frac{\\mathrm{d}E_{i}}{\\mathrm{d}t} = m_{i}\\dot{Q}_{\\mathrm{eff}}(t) -\\frac{E_{i}}{t} - L_{i}(t) $$Optical depth $$ \\tau_{i} = \\int_{R_{i}}^{\\infty} \\kappa(r)\\rho(r, t) \\mathrm{d}r $$Bolometric Luminosity The observed luminosity contributed by the ith layer can be estimated by $$ L_{i} = \\frac{E_{i}}{t_{\\mathrm{lc},i} + t_{\\mathrm{diff}, i}} $$The total bolometric luminosity of the merger ejecta can be obtained by summarizing the contributions of all layers: $$ L_{bol} = \\sum L_{i} $$Apparent Magnitude The effective temperature of kilonova emission can be determined by $$ T_{\\mathrm{eff}} = \\left( \\frac{L_{\\mathrm{bol}}}{4\\pi \\sigma_{\\mathrm{SB}} R_{\\mathrm{ph}}^{2}} \\right)^{1/4} $$where $\\sigma_{SB}$ is the Stefan–Boltzmann constant. The radius of the photosphere $R_{ph}$ is defined by the layer at which the optical depth is unity, i.e. $$ \\tau_{\\mathrm{ph}} = \\int_{R_{\\mathrm{ph}}}^{\\infty} \\kappa(r) \\rho(r, t) \\mathrm{d}r = 1 $$Then, the flux density of the kilonova emission at photon frequency $\\nu$ can be given by $$ F_{\\nu}(t) = \\frac{2\\pi h \\nu^{3}}{c^{2}} \\frac{1}{\\exp{(h\\nu /kT_{\\mathrm{eff}}) - 1}} \\frac{R_{\\mathrm{ph}}^{2}}{D_{L}^{2}} $$Finally, we determine the monochromatic AB magnitude by $$ M_{\\nu}(t) = -2.5 \\log_{10}\\left( \\frac{F_{\\nu}(t)}{3631 \\text{ Jy}} \\right) $$Density Profile $$ \\rho(r, t) = \\rho_{0}(t) \\left( \\frac{r}{R_{\\min}} \\right)^{-n} $$$$ M_{\\mathrm{ej}} = \\int_{R_{\\min}}^{R_{\\max}} 4\\pi r^{2} \\rho(r, t) \\mathrm{d}{r} $$",
     "description": "One-zone Arnett Model we use simple one-zone models of transients within the framework laid out by Arnett (1980) for SN I light curves. For each heating source we assume the following:\nThe ejecta are spherically symmetric and undergo homologous expansion, unless otherwise stated. Radiation pressure dominates over electron and gas pressure in the equation of state. The heating source is located in the center of the ejecta, unless otherwise stated. The optical opacity is a constant, unless otherwise stated. The initial radius is small, unless otherwise stated. We can write the first law of thermodynamics as",
     "tags": [],
     "title": "Light Curves",
-    "uri": "/nudca.github.io/theoretic/kilonovae/lightcurve/index.html"
+    "uri": "/nudca-main/theoretic/kilonovae/lightcurve/index.html"
   },
   {
     "breadcrumb": "NuDCA \u003e  nudca API",
@@ -189,7 +181,7 @@ var relearn_searchindex = [
     "description": "Comprehensive API reference for nudca/decay_database.py",
     "tags": [],
     "title": "nudca.decay_database",
-    "uri": "/nudca.github.io/api/decaydatabase/index.html"
+    "uri": "/nudca-main/api/decaydatabase/index.html"
   },
   {
     "breadcrumb": "NuDCA \u003e  nudca API \u003e  nudca.kilonovae",
@@ -197,7 +189,7 @@ var relearn_searchindex = [
     "description": "",
     "tags": [],
     "title": "nudca.kilonovae.lightcurve",
-    "uri": "/nudca.github.io/api/kilonovae/lightcurve/index.html"
+    "uri": "/nudca-main/api/kilonovae/lightcurve/index.html"
   },
   {
     "breadcrumb": "NuDCA",
@@ -205,7 +197,7 @@ var relearn_searchindex = [
     "description": "Radioactive Decay Kilonovae Model",
     "tags": [],
     "title": "Theoretical Framework",
-    "uri": "/nudca.github.io/theoretic/index.html"
+    "uri": "/nudca-main/theoretic/index.html"
   },
   {
     "breadcrumb": "NuDCA \u003e  Tutorials",
@@ -213,7 +205,7 @@ var relearn_searchindex = [
     "description": "import numpy as np import matplotlib.pyplot as plt from nudca import load_decay_database, load_decay_matrix, RadioactiveDecay decay_database = load_decay_database(data_source='ENDF-B-VIII.1_decay') decay_matrix = load_decay_matrix(data_source='ENDF-B-VIII.1_decay') init_Y = {'Ni56': 1.e-5, 'Co56':1.e-7, 'Fe56':1.e-9} radioactive_decay = RadioactiveDecay( init_Y, decay_database, decay_matrix ) times = np.geomspace(1.e-2, 1.e3, 10000) * 86400 nuclides, Y = radioactive_decay.decay_nuclide_abundances(times) fig, ax = plt.subplots(figsize=(8, 6), dpi=300) ax.plot(times/86400, Y[:, 0], label=f'{nuclides[0]}') ax.plot(times/86400, Y[:, 1], label=f'{nuclides[1]}') ax.plot(times/86400, Y[:, 2], label=f'{nuclides[2]}') ax.set_xlim(1.e-2, 1.e3) ax.set_ylim(1e-10, 1e-3) ax.set_xscale('log') ax.set_yscale('log') ax.set_xlabel('Time [days]', fontsize=14) ax.set_ylabel('Y', fontsize=14) ax.legend() plt.show() import numpy as np import matplotlib.pyplot as plt from nudca import load_decay_database, load_decay_matrix, RadioactiveDecay decay_database = load_decay_database(data_source='ENDF-B-VIII.1_decay') decay_matrix = load_decay_matrix(data_source='ENDF-B-VIII.1_decay') init_Y = {'Ni56': 1.e-5, 'Co56':1.e-7, 'Fe56':1.e-9} radioactive_decay = RadioactiveDecay( init_Y, decay_database, decay_matrix ) times = np.geomspace(1.e-2, 1.e3, 10000) * 86400 q_EM = radioactive_decay.decay_heating_rates(times, energy_type='EM') q_LP = radioactive_decay.decay_heating_rates(times, energy_type='LP') q_HP = radioactive_decay.decay_heating_rates(times, energy_type='HP') q = radioactive_decay.decay_heating_rates(times) fig, ax = plt.subplots(figsize=(8, 6), dpi=300) ax.plot(times/86400, q_EM, ls='--', lw=1, label='Electromagnetic') ax.plot(times/86400, q_LP, ls='--', lw=1, label='Light particle') # ax.plot(times/86400, q_HP, ls='--', lw=1, label='Heavy particle') ax.plot(times/86400, q, ls='-', lw=2, color='b', label='Total') ax.set_xlim(1.e-2, 1.e3) ax.set_ylim(1e4, 1e9) ax.set_xscale('log') ax.set_yscale('log') ax.set_xlabel('Time [days]', fontsize=14) ax.set_ylabel('Heating Rate [erg / g / s]', fontsize=14) ax.legend() plt.show()",
     "tags": [],
     "title": "class:RadioactiveDecay",
-    "uri": "/nudca.github.io/tutorial/nucleodecay/index.html"
+    "uri": "/nudca-main/tutorial/nucleodecay/index.html"
   },
   {
     "breadcrumb": "NuDCA",
@@ -221,7 +213,7 @@ var relearn_searchindex = [
     "description": "NuDCA nudca.nuclide nudca.decay_database nudca.decay_diagram nudca.decay_matrix nudca.nucleo_decay nudca.kilonovae nudca.kilonovae.geometry nudca.kilonovae.opacity nudca.kilonovae.heating_rate nudca.kilonovae.lightcurve",
     "tags": [],
     "title": "nudca API",
-    "uri": "/nudca.github.io/api/index.html"
+    "uri": "/nudca-main/api/index.html"
   },
   {
     "breadcrumb": "NuDCA \u003e  nudca API",
@@ -229,7 +221,7 @@ var relearn_searchindex = [
     "description": "Info This page documents the DecayDiagram class from nudca.decay_diagram, providing tools to visualize decay chains and reverse decay chains for nuclides.\nOverview DecayDiagram represents a decay diagram for a specific nuclide, offering methods to visualize decay chains and reverse decay chains using networkx and matplotlib. It provides both programmatic access to decay data and publication-quality plotting.\nClass: DecayDiagram from nudca.decay_diagram import DecayDiagram Constructor DecayDiagram(nuclide: str, decay_database: DecayDatabase) nuclide: Nuclide symbol or string (e.g., ‘Ni56’, ‘U-238’) decay_database: An instance of DecayDatabase containing decay data Properties Property Type Description nuclide str Standardized nuclide symbol half_life str or float Half-life in readable format (default) or seconds progeny list[str] List of daughter nuclides branching_ratios list[float] Branching ratios for each decay mode decay_modes list[str] Decay modes for the nuclide Methods find_parents def find_parents(nuclide: str) -\u003e List[str] Find all possible parent nuclides that can decay to the given nuclide.",
     "tags": [],
     "title": "nudca.decay_diagram",
-    "uri": "/nudca.github.io/api/decaydiagram/index.html"
+    "uri": "/nudca-main/api/decaydiagram/index.html"
   },
   {
     "breadcrumb": "NuDCA \u003e  nudca API",
@@ -237,7 +229,7 @@ var relearn_searchindex = [
     "description": "DecayMatrix API Reference Info This page documents the decay_matrix.py module, which provides core data structures and utilities for nuclide decay chain calculations. It is part of the NuDCA (Nuclear Decay Chain Astrophysics) package.\nOverview The decay_matrix.py module defines classes and functions to construct, store, and manipulate decay matrices for nuclear decay networks. It is designed for scientific computing and supports analytical and numerical solutions to the Bateman equations.",
     "tags": [],
     "title": "nudca.decay_matrix",
-    "uri": "/nudca.github.io/api/decaymatrix/index.html"
+    "uri": "/nudca-main/api/decaymatrix/index.html"
   },
   {
     "breadcrumb": "NuDCA \u003e  nudca API",
@@ -245,15 +237,15 @@ var relearn_searchindex = [
     "description": "Info This page documents the nucleo_decay.py module, which provides tools for modeling radioactive decay, heating rates, and nuclide abundance evolution in nuclear astrophysics. It is part of the NuDCA (Nuclear Decay Chain Astrophysics) package.\nOverview The nucleo_decay.py module offers a comprehensive class and utilities for simulating radioactive decay processes, calculating decay heating rates, and managing nuclide abundances in large nuclear decay networks. It supports matrix-based solutions to the Bateman equations and provides import/export and visualization capabilities for scientific workflows.",
     "tags": [],
     "title": "nudca.nucleo_decay",
-    "uri": "/nudca.github.io/api/nucleodecay/index.html"
+    "uri": "/nudca-main/api/nucleodecay/index.html"
   },
   {
     "breadcrumb": "NuDCA",
-    "content": "References",
-    "description": "References",
+    "content": "References [Amaku et al. (2019)]: M. Amaku, P.R. Pascholati, V.R. Vanin, Decay chain differential equations: Solution through matrix algebra, Computer Physics Communications, Volume 181, Issue 1, 2010, Pages 21-23, https://doi.org/10.1016/j.cpc.2009.08.011.\n[Tanaka et al. (2020)]: Masaomi Tanaka, Daiji Kato, Gediminas Gaigalas, Kyohei Kawaguchi, Systematic opacity calculations for kilonovae, Monthly Notices of the Royal Astronomical Society, Volume 496, Issue 2, August 2020, Pages 1369–1392, https://doi.org/10.1093/mnras/staa1576\n[Wu et al. (2022)]: Zhenyu Wu, Giacomo Ricigliano, Rahul Kashyap, Albino Perego, David Radice, Radiation hydrodynamics modelling of kilonovae with SNEC, Monthly Notices of the Royal Astronomical Society, Volume 512, Issue 1, May 2022, Pages 328–347, https://doi.org/10.1093/mnras/stac399\n[Ekanger et al. (2023)]: Nick Ekanger, Mukul Bhattacharya, Shunsaku Horiuchi, Nucleosynthesis in outflows of compact objects and detection prospects of associated kilonovae, Monthly Notices of the Royal Astronomical Society, Volume 525, Issue 2, October 2023, Pages 2040–2052, https://doi.org/10.1093/mnras/stad2348\n[Barnes et al. (2016)]: Barnes, Jennifer and Kasen, Daniel and Wu, Meng-Ru and Martínez-Pinedo, Gabriel, RADIOACTIVITY AND THERMALIZATION IN THE EJECTA OF COMPACT OBJECT MERGERS AND THEIR IMPACT ON KILONOVA LIGHT CURVES, The Astrophysical Journal, Volume 829, Issue 2, Sep 2016, Pages 110, https://dx.doi.org/10.3847/0004-637X/829/2/110\n[Metzger (2020)]: Metzger, B.D. Kilonovae. Living Rev Relativ 23, 1 (2020). https://doi.org/10.1007/s41114-019-0024-0\n[Hotokezaka \u0026 Nakar (2020)]: Hotokezaka, Kenta and Nakar, Ehud, Radioactive Heating Rate of r-process Elements and Macronova Light Curve, The Astrophysical Journal, Volume 891, Issue 2, Mar 2020, Pages 152, https://dx.doi.org/10.3847/1538-4357/ab6a98\n[Korobkin et al. (2012)]: O. Korobkin, S. Rosswog, A. Arcones, C. Winteler, On the astrophysical robustness of the neutron star merger r-process, Monthly Notices of the Royal Astronomical Society, Volume 426, Issue 3, 1 November 2012, Pages 1940–1949, https://doi.org/10.1111/j.1365-2966.2012.21859.x\n[Rosswog et al. (2024)]: S. Rosswog, O. Korobkin, Heavy Elements and Electromagnetic Transients from Neutron Star Mergers. ANNALEN DER PHYSIK 2024, 536, 2200306. https://doi.org/10.1002/andp.202200306",
+    "description": "References [Amaku et al. (2019)]: M. Amaku, P.R. Pascholati, V.R. Vanin, Decay chain differential equations: Solution through matrix algebra, Computer Physics Communications, Volume 181, Issue 1, 2010, Pages 21-23, https://doi.org/10.1016/j.cpc.2009.08.011.\n[Tanaka et al. (2020)]: Masaomi Tanaka, Daiji Kato, Gediminas Gaigalas, Kyohei Kawaguchi, Systematic opacity calculations for kilonovae, Monthly Notices of the Royal Astronomical Society, Volume 496, Issue 2, August 2020, Pages 1369–1392, https://doi.org/10.1093/mnras/staa1576\n[Wu et al. (2022)]: Zhenyu Wu, Giacomo Ricigliano, Rahul Kashyap, Albino Perego, David Radice, Radiation hydrodynamics modelling of kilonovae with SNEC, Monthly Notices of the Royal Astronomical Society, Volume 512, Issue 1, May 2022, Pages 328–347, https://doi.org/10.1093/mnras/stac399",
     "tags": [],
     "title": "References",
-    "uri": "/nudca.github.io/references/index.html"
+    "uri": "/nudca-main/references/index.html"
   },
   {
     "breadcrumb": "NuDCA \u003e  Tutorials",
@@ -261,7 +253,7 @@ var relearn_searchindex = [
     "description": "class:Geometry class:KNOpacity class:KNeLightCurve",
     "tags": [],
     "title": "Submodule:kilonovae",
-    "uri": "/nudca.github.io/tutorial/kilonovae/index.html"
+    "uri": "/nudca-main/tutorial/kilonovae/index.html"
   },
   {
     "breadcrumb": "NuDCA \u003e  nudca API",
@@ -269,7 +261,7 @@ var relearn_searchindex = [
     "description": "nudca.kilonovae.geometry nudca.kilonovae.opacity nudca.kilonovae.heating_rate nudca.kilonovae.lightcurve",
     "tags": [],
     "title": "nudca.kilonovae",
-    "uri": "/nudca.github.io/api/kilonovae/index.html"
+    "uri": "/nudca-main/api/kilonovae/index.html"
   },
   {
     "breadcrumb": "NuDCA",
@@ -277,15 +269,15 @@ var relearn_searchindex = [
     "description": "",
     "tags": [],
     "title": "Categories",
-    "uri": "/nudca.github.io/categories/index.html"
+    "uri": "/nudca-main/categories/index.html"
   },
   {
     "breadcrumb": "",
-    "content": "NuDCA Core Package Documentation nudca is a Python package for radioactive decay calculations.\nThe original goal was to create a light-weight Python package for radioactive decay calculations, with full support for branching decays, multi-step decay chains, and metastable states. By default radioactivedecay uses decay data from ENDF-B-VIII.1. It solves the radioactive decay differential equations analytically using basic linear algebra operations.\nIn order to use radioactivedecay, you will need Python 3.9+ with the Matplotlib, NumPy, Pandas, SciPy, NetworkX, Setuptools and Numba packages installed. The code is platform independent and has been tested on Windows, MacOS and Linux systems.\nContents Introduction Introduction Installation Installation Tutorials class:Nuclide class:DecayDatabase class:DecayDiagram class:DecayMatrix class:RadioactiveDecay Submodule:kilonovae class:Geometry class:KNOpacity class:KNeLightCurve Theoretical Framework Radioactive Decay Kilonovae Model Opacity Thermalization Efficiencies Heating Rate Light Curves nudca API nudca.nuclide nudca.decay_database nudca.decay_diagram nudca.decay_matrix nudca.nucleo_decay nudca.kilonovae nudca.kilonovae.geometry nudca.kilonovae.opacity nudca.kilonovae.heating_rate nudca.kilonovae.lightcurve References References",
-    "description": "NuDCA Core Package Documentation nudca is a Python package for radioactive decay calculations.\nThe original goal was to create a light-weight Python package for radioactive decay calculations, with full support for branching decays, multi-step decay chains, and metastable states. By default radioactivedecay uses decay data from ENDF-B-VIII.1. It solves the radioactive decay differential equations analytically using basic linear algebra operations.\nIn order to use radioactivedecay, you will need Python 3.9+ with the Matplotlib, NumPy, Pandas, SciPy, NetworkX, Setuptools and Numba packages installed. The code is platform independent and has been tested on Windows, MacOS and Linux systems.",
+    "content": "NuDCA Core Package Documentation NuDCA is an open-source Python program specifically designed for calculating the decay chains of radioactive nuclides. We have developed a versatile computational framework that efficiently handles decay chains with complex branching ratios. This framework employs a matrix-based numerical solving method, ensuring both analytical accuracy and computational efficiency, enabling rapid resolution of decay chain differential equations.\nThe primary goal of NuDCA is to provide researchers with a flexible and reliable tool for simulating the accumulation, decay, and associated physical phenomena of radioactive nuclides. The program supports a wide range of complex scenarios, including the splitting and merging of multi-branch decay chains and the superposition of various decay modes. This flexibility makes it invaluable across fields such as nuclear science, geochronology, and astrophysics. As an open-source Python-based software, NuDCA offers excellent extensibility, allowing researchers to easily customize its functionality to meet specific requirements.\nIn extreme astrophysical environments like core-collapse supernovae (CCSN) and neutron star mergers (NSM), significant energy is released through radioactive decay, powering transient phenomena such as supernovae (SN) and kilonovae (KN). To address the needs of this research area, NuDCA features a specialized module for calculating the light curves of kilonovae. This capability provides critical support for studying the synthesis of r-process elements, the physical properties of ejecta, and the radiation characteristics of kilonovae.\nFurthermore, the development of NuDCA emphasizes user experience and community collaboration. With its intuitive interface and comprehensive documentation, even beginners can quickly start using the program. As an open-source project, NuDCA fosters collaboration between academia and industry, aiming to drive technological advancements and scientific research, establishing itself as a benchmark tool in the field of radioactive decay simulation.\nBy default NuDCA uses decay data from ENDF-B-VIII.1.\nIn order to use NuDCA, you will need Python 3.9+ with the NumPy, SciPy, Astropy, Pandas, Matplotlib, NetworkX and Numba packages installed. The code is platform independent and has been tested on Windows, MacOS and Linux systems.\nContents Introduction Introduction Installation Installation Tutorials class:Nuclide class:DecayDatabase class:DecayDiagram class:DecayMatrix class:RadioactiveDecay Submodule:kilonovae class:Geometry class:KNOpacity class:KNeLightCurve Theoretic Radioactive Decay Kilonovae Model Opacity Thermalization Efficiencies Heating Rate Light Curves nudca API nudca.nuclide nudca.decay_database nudca.decay_diagram nudca.decay_matrix nudca.nucleo_decay nudca.kilonovae nudca.kilonovae.geometry nudca.kilonovae.opacity nudca.kilonovae.heating_rate nudca.kilonovae.lightcurve References",
+    "description": "NuDCA Core Package Documentation NuDCA is an open-source Python program specifically designed for calculating the decay chains of radioactive nuclides. We have developed a versatile computational framework that efficiently handles decay chains with complex branching ratios. This framework employs a matrix-based numerical solving method, ensuring both analytical accuracy and computational efficiency, enabling rapid resolution of decay chain differential equations.",
     "tags": [],
     "title": "NuDCA",
-    "uri": "/nudca.github.io/index.html"
+    "uri": "/nudca-main/index.html"
   },
   {
     "breadcrumb": "NuDCA",
@@ -293,6 +285,6 @@ var relearn_searchindex = [
     "description": "",
     "tags": [],
     "title": "Tags",
-    "uri": "/nudca.github.io/tags/index.html"
+    "uri": "/nudca-main/tags/index.html"
   }
 ]

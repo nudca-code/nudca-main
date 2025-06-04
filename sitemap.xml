@@ -1,114 +1,111 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://nudcacode.github.io/nudca.github.io/tutorial/kilonovae/geometry/index.html</loc>
+    <loc>https://nudcacode.github.io/nudca-main/tutorial/kilonovae/geometry/index.html</loc>
   </url>
   <url>
-    <loc>https://nudcacode.github.io/nudca.github.io/tutorial/nuclide/index.html</loc>
+    <loc>https://nudcacode.github.io/nudca-main/tutorial/nuclide/index.html</loc>
   </url>
   <url>
-    <loc>https://nudcacode.github.io/nudca.github.io/installation/installation/index.html</loc>
+    <loc>https://nudcacode.github.io/nudca-main/installation/installation/index.html</loc>
   </url>
   <url>
-    <loc>https://nudcacode.github.io/nudca.github.io/introduction/index.html</loc>
+    <loc>https://nudcacode.github.io/nudca-main/introduction/index.html</loc>
   </url>
   <url>
-    <loc>https://nudcacode.github.io/nudca.github.io/introduction/introduction/index.html</loc>
+    <loc>https://nudcacode.github.io/nudca-main/introduction/introduction/index.html</loc>
   </url>
   <url>
-    <loc>https://nudcacode.github.io/nudca.github.io/api/kilonovae/geometry/index.html</loc>
+    <loc>https://nudcacode.github.io/nudca-main/api/kilonovae/geometry/index.html</loc>
   </url>
   <url>
-    <loc>https://nudcacode.github.io/nudca.github.io/theoretic/kilonovae/opacity/index.html</loc>
+    <loc>https://nudcacode.github.io/nudca-main/theoretic/kilonovae/opacity/index.html</loc>
   </url>
   <url>
-    <loc>https://nudcacode.github.io/nudca.github.io/theoretic/radioactivedecay/index.html</loc>
+    <loc>https://nudcacode.github.io/nudca-main/theoretic/radioactivedecay/index.html</loc>
   </url>
   <url>
-    <loc>https://nudcacode.github.io/nudca.github.io/references/references/index.html</loc>
+    <loc>https://nudcacode.github.io/nudca-main/tutorial/decaydatabase/index.html</loc>
   </url>
   <url>
-    <loc>https://nudcacode.github.io/nudca.github.io/tutorial/decaydatabase/index.html</loc>
+    <loc>https://nudcacode.github.io/nudca-main/tutorial/kilonovae/opacity/index.html</loc>
   </url>
   <url>
-    <loc>https://nudcacode.github.io/nudca.github.io/tutorial/kilonovae/opacity/index.html</loc>
+    <loc>https://nudcacode.github.io/nudca-main/installation/index.html</loc>
   </url>
   <url>
-    <loc>https://nudcacode.github.io/nudca.github.io/installation/index.html</loc>
+    <loc>https://nudcacode.github.io/nudca-main/theoretic/kilonovae/index.html</loc>
   </url>
   <url>
-    <loc>https://nudcacode.github.io/nudca.github.io/theoretic/kilonovae/index.html</loc>
+    <loc>https://nudcacode.github.io/nudca-main/api/kilonovae/opacity/index.html</loc>
   </url>
   <url>
-    <loc>https://nudcacode.github.io/nudca.github.io/api/kilonovae/opacity/index.html</loc>
+    <loc>https://nudcacode.github.io/nudca-main/theoretic/kilonovae/thermalization/index.html</loc>
   </url>
   <url>
-    <loc>https://nudcacode.github.io/nudca.github.io/theoretic/kilonovae/thermalization/index.html</loc>
+    <loc>https://nudcacode.github.io/nudca-main/tutorial/decaydiagram/index.html</loc>
   </url>
   <url>
-    <loc>https://nudcacode.github.io/nudca.github.io/tutorial/decaydiagram/index.html</loc>
+    <loc>https://nudcacode.github.io/nudca-main/theoretic/kilonovae/heatingrate/index.html</loc>
   </url>
   <url>
-    <loc>https://nudcacode.github.io/nudca.github.io/theoretic/kilonovae/heatingrate/index.html</loc>
+    <loc>https://nudcacode.github.io/nudca-main/api/kilonovae/heatingrate/index.html</loc>
   </url>
   <url>
-    <loc>https://nudcacode.github.io/nudca.github.io/api/kilonovae/heatingrate/index.html</loc>
+    <loc>https://nudcacode.github.io/nudca-main/api/nuclide/index.html</loc>
   </url>
   <url>
-    <loc>https://nudcacode.github.io/nudca.github.io/api/nuclide/index.html</loc>
+    <loc>https://nudcacode.github.io/nudca-main/tutorial/index.html</loc>
   </url>
   <url>
-    <loc>https://nudcacode.github.io/nudca.github.io/tutorial/index.html</loc>
+    <loc>https://nudcacode.github.io/nudca-main/tutorial/decaymatrix/index.html</loc>
   </url>
   <url>
-    <loc>https://nudcacode.github.io/nudca.github.io/tutorial/decaymatrix/index.html</loc>
+    <loc>https://nudcacode.github.io/nudca-main/tutorial/kilonovae/knelightcurve/index.html</loc>
   </url>
   <url>
-    <loc>https://nudcacode.github.io/nudca.github.io/tutorial/kilonovae/knelightcurve/index.html</loc>
+    <loc>https://nudcacode.github.io/nudca-main/theoretic/kilonovae/lightcurve/index.html</loc>
   </url>
   <url>
-    <loc>https://nudcacode.github.io/nudca.github.io/theoretic/kilonovae/lightcurve/index.html</loc>
+    <loc>https://nudcacode.github.io/nudca-main/api/decaydatabase/index.html</loc>
   </url>
   <url>
-    <loc>https://nudcacode.github.io/nudca.github.io/api/decaydatabase/index.html</loc>
+    <loc>https://nudcacode.github.io/nudca-main/api/kilonovae/lightcurve/index.html</loc>
   </url>
   <url>
-    <loc>https://nudcacode.github.io/nudca.github.io/api/kilonovae/lightcurve/index.html</loc>
+    <loc>https://nudcacode.github.io/nudca-main/theoretic/index.html</loc>
   </url>
   <url>
-    <loc>https://nudcacode.github.io/nudca.github.io/theoretic/index.html</loc>
+    <loc>https://nudcacode.github.io/nudca-main/tutorial/nucleodecay/index.html</loc>
   </url>
   <url>
-    <loc>https://nudcacode.github.io/nudca.github.io/tutorial/nucleodecay/index.html</loc>
+    <loc>https://nudcacode.github.io/nudca-main/api/index.html</loc>
   </url>
   <url>
-    <loc>https://nudcacode.github.io/nudca.github.io/api/index.html</loc>
+    <loc>https://nudcacode.github.io/nudca-main/api/decaydiagram/index.html</loc>
   </url>
   <url>
-    <loc>https://nudcacode.github.io/nudca.github.io/api/decaydiagram/index.html</loc>
+    <loc>https://nudcacode.github.io/nudca-main/api/decaymatrix/index.html</loc>
   </url>
   <url>
-    <loc>https://nudcacode.github.io/nudca.github.io/api/decaymatrix/index.html</loc>
+    <loc>https://nudcacode.github.io/nudca-main/api/nucleodecay/index.html</loc>
   </url>
   <url>
-    <loc>https://nudcacode.github.io/nudca.github.io/api/nucleodecay/index.html</loc>
+    <loc>https://nudcacode.github.io/nudca-main/references/index.html</loc>
   </url>
   <url>
-    <loc>https://nudcacode.github.io/nudca.github.io/references/index.html</loc>
+    <loc>https://nudcacode.github.io/nudca-main/tutorial/kilonovae/index.html</loc>
   </url>
   <url>
-    <loc>https://nudcacode.github.io/nudca.github.io/tutorial/kilonovae/index.html</loc>
+    <loc>https://nudcacode.github.io/nudca-main/api/kilonovae/index.html</loc>
   </url>
   <url>
-    <loc>https://nudcacode.github.io/nudca.github.io/api/kilonovae/index.html</loc>
+    <loc>https://nudcacode.github.io/nudca-main/categories/index.html</loc>
   </url>
   <url>
-    <loc>https://nudcacode.github.io/nudca.github.io/categories/index.html</loc>
+    <loc>https://nudcacode.github.io/nudca-main/index.html</loc>
   </url>
   <url>
-    <loc>https://nudcacode.github.io/nudca.github.io/index.html</loc>
-  </url>
-  <url>
-    <loc>https://nudcacode.github.io/nudca.github.io/tags/index.html</loc>
+    <loc>https://nudcacode.github.io/nudca-main/tags/index.html</loc>
   </url>
 </urlset>
