@@ -3,51 +3,41 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.147.7">
+    <meta name="generator" content="Hugo 0.147.8">
     <meta name="generator" content="Relearn 7.6.1+0b83617ee9da5253aafcf11807b256da7d88d709">
-    <meta name="description" content="DecayMatrix API Reference Info This page documents the decay_matrix.py module, which provides core data structures and utilities for nuclide decay chain calculations. It is part of the NuDCA (Nuclear Decay Chain Astrophysics) package.
-Overview The decay_matrix.py module defines classes and functions to construct, store, and manipulate decay matrices for nuclear decay networks. It is designed for scientific computing and supports analytical and numerical solutions to the Bateman equations.">
+    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+    <meta name="description" content="">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="nudca.decay_matrix :: NuDCA">
-    <meta name="twitter:description" content="DecayMatrix API Reference Info This page documents the decay_matrix.py module, which provides core data structures and utilities for nuclide decay chain calculations. It is part of the NuDCA (Nuclear Decay Chain Astrophysics) package.
-Overview The decay_matrix.py module defines classes and functions to construct, store, and manipulate decay matrices for nuclear decay networks. It is designed for scientific computing and supports analytical and numerical solutions to the Bateman equations.">
-    <meta property="og:url" content="https://nudcacode.github.io/nudca-main/api/decaymatrix/index.html">
+    <meta property="og:url" content="https://nudcacode.github.io/nudca-main/tutorial/decaynetwork/index.html">
     <meta property="og:site_name" content="NuDCA">
-    <meta property="og:title" content="nudca.decay_matrix :: NuDCA">
-    <meta property="og:description" content="DecayMatrix API Reference Info This page documents the decay_matrix.py module, which provides core data structures and utilities for nuclide decay chain calculations. It is part of the NuDCA (Nuclear Decay Chain Astrophysics) package.
-Overview The decay_matrix.py module defines classes and functions to construct, store, and manipulate decay matrices for nuclear decay networks. It is designed for scientific computing and supports analytical and numerical solutions to the Bateman equations.">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="article">
-    <meta property="article:section" content="nudca API">
-    <meta itemprop="name" content="nudca.decay_matrix :: NuDCA">
-    <meta itemprop="description" content="DecayMatrix API Reference Info This page documents the decay_matrix.py module, which provides core data structures and utilities for nuclide decay chain calculations. It is part of the NuDCA (Nuclear Decay Chain Astrophysics) package.
-Overview The decay_matrix.py module defines classes and functions to construct, store, and manipulate decay matrices for nuclear decay networks. It is designed for scientific computing and supports analytical and numerical solutions to the Bateman equations.">
-    <meta itemprop="wordCount" content="346">
-    <title>nudca.decay_matrix :: NuDCA</title>
-    <link href="/nudca-main/images/logo.svg?1749013909" rel="icon" type="image/svg+xml">
-    <link href="/nudca-main/images/logo.png?1749013909" rel="icon" type="image/png">
-    <link href="/nudca-main/fonts/fontawesome/css/fontawesome-all.min.css?1749013909" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/nudca-main/fonts/fontawesome/css/fontawesome-all.min.css?1749013909" rel="stylesheet"></noscript>
-    <link href="/nudca-main/css/perfect-scrollbar/perfect-scrollbar.min.css?1749013909" rel="stylesheet">
-    <link href="/nudca-main/css/theme.min.css?1749013909" rel="stylesheet">
-    <link href="/nudca-main/css/format-html.min.css?1749013909" rel="stylesheet" id="R-format-style">
-    <link href="/nudca-main/css/auto-complete/auto-complete.min.css?1749013909" rel="stylesheet">
-    <script src="/nudca-main/js/auto-complete/auto-complete.min.js?1749013909" defer></script>
-    <script src="/nudca-main/js/lunr/lunr.min.js?1749013909" defer></script>
-    <script src="/nudca-main/js/lunr/lunr.stemmer.support.min.js?1749013909" defer></script>
-    <script src="/nudca-main/js/lunr/lunr.multi.min.js?1749013909" defer></script>
-    <script src="/nudca-main/js/lunr/lunr.en.min.js?1749013909" defer></script>
-    <script src="/nudca-main/js/search.min.js?1749013909" defer></script>
+    <meta property="article:section" content="Tutorials">
+    <title></title>
+    <link href="/nudca-main/images/logo.svg?1749378192" rel="icon" type="image/svg+xml">
+    <link href="/nudca-main/images/logo.png?1749378192" rel="icon" type="image/png">
+    <link href="/nudca-main/fonts/fontawesome/css/fontawesome-all.min.css?1749378192" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/nudca-main/fonts/fontawesome/css/fontawesome-all.min.css?1749378192" rel="stylesheet"></noscript>
+    <link href="/nudca-main/css/perfect-scrollbar/perfect-scrollbar.min.css?1749378192" rel="stylesheet">
+    <link href="/nudca-main/css/theme.min.css?1749378192" rel="stylesheet">
+    <link href="/nudca-main/css/format-html.min.css?1749378192" rel="stylesheet" id="R-format-style">
+    <link href="/nudca-main/css/auto-complete/auto-complete.min.css?1749378192" rel="stylesheet">
+    <script src="/nudca-main/js/auto-complete/auto-complete.min.js?1749378192" defer></script>
+    <script src="/nudca-main/js/lunr/lunr.min.js?1749378192" defer></script>
+    <script src="/nudca-main/js/lunr/lunr.stemmer.support.min.js?1749378192" defer></script>
+    <script src="/nudca-main/js/lunr/lunr.multi.min.js?1749378192" defer></script>
+    <script src="/nudca-main/js/lunr/lunr.en.min.js?1749378192" defer></script>
+    <script src="/nudca-main/js/search.min.js?1749378192" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
       window.relearn.min = `.min`;
-      window.relearn.path='\/api\/decaymatrix\/index.html';
+      window.relearn.path='\/tutorial\/decaynetwork\/index.html';
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..\/..';
       window.relearn.absBaseUri='https:\/\/nudcacode.github.io\/nudca-main';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/nudca-main/searchindex.en.js?1749013909";
+      window.relearn.index_js_url="/nudca-main/searchindex.en.js?1749378192";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -94,7 +84,7 @@ Overview The decay_matrix.py module defines classes and functions to construct, 
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
   </head>
-  <body class="mobile-support html" data-url="/nudca-main/api/decaymatrix/index.html">
+  <body class="mobile-support html" data-url="/nudca-main/tutorial/decaynetwork/index.html">
     <div id="R-body" class="default-animation">
       <div id="R-body-overlay"></div>
       <nav id="R-topbar">
@@ -105,35 +95,19 @@ Overview The decay_matrix.py module defines classes and functions to construct, 
             </div>
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
               <div class="topbar-content">
-                <div class="topbar-content-wrapper">
-<nav class="TableOfContents">
-  <ul>
-    <li><a href="#overview">Overview</a></li>
-    <li><a href="#main-classes">Main Classes</a>
-      <ul>
-        <li><a href="#decaymatrix"><code>DecayMatrix</code></a></li>
-        <li><a href="#matrixbuilder"><code>MatrixBuilder</code></a></li>
-      </ul>
-    </li>
-    <li><a href="#utility-functions">Utility Functions</a></li>
-    <li><a href="#usage-example">Usage Example</a></li>
-    <li><a href="#notes">Notes</a></li>
-    <li><a href="#see-also">See Also</a></li>
-  </ul>
-</nav>
+                <div class="topbar-content-wrapper"> 
                 </div>
               </div>
             </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
             <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/nudca-main/index.html"><span itemprop="name">NuDCA</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/nudca-main/api/index.html"><span itemprop="name">nudca API</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">nudca.decay_matrix</span><meta itemprop="position" content="3"></li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/nudca-main/tutorial/index.html"><span itemprop="name">Tutorials</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/nudca-main/api/decaydiagram/index.html" title="nudca.decay_diagram (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/nudca-main/tutorial/kilonovae/knelightcurve/index.html" title="class:KNeLightCurve (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/nudca-main/api/nucleodecay/index.html" title="nudca.nucleo_decay (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/nudca-main/theoretic/index.html" title="Theoretical Framework (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -147,107 +121,14 @@ Overview The decay_matrix.py module defines classes and functions to construct, 
         </div>
       </nav>
       <div id="R-main-overlay"></div>
-      <main id="R-body-inner" class="highlightable api" tabindex="-1">
+      <main id="R-body-inner" class="highlightable tutorial" tabindex="-1">
         <div class="flex-block-wrapper">
 <article class="default">
   <header class="headline">
   </header>
 
-<h1 id="nudcadecay_matrix">nudca.decay_matrix</h1>
+<h1 id=""></h1>
 
-<h1 id="decaymatrix-api-reference">DecayMatrix API Reference</h1>
-
-<details open class=" box cstyle notices info">
-  <summary class="box-label" tabindex="-1">
-    <i class="fa fa-atom"></i> 
-    Info
-  </summary>
-  <div class="box-content">
-<p>This page documents the <code>decay_matrix.py</code> module, which provides core data structures and utilities for nuclide decay chain calculations. It is part of the NuDCA (Nuclear Decay Chain Astrophysics) package.</p>
-  </div>
-</details>
-<h2 id="overview">Overview</h2>
-<p>The <code>decay_matrix.py</code> module defines classes and functions to construct, store, and manipulate decay matrices for nuclear decay networks. It is designed for scientific computing and supports analytical and numerical solutions to the Bateman equations.</p>
-<hr>
-<h2 id="main-classes">Main Classes</h2>
-<h3 id="decaymatrix"><code>DecayMatrix</code></h3>
-<p>Represents the decay matrix and related structures for nuclide decay calculations.</p>
-<p><strong>Attributes:</strong></p>
-<ul>
-<li><code>decay_constants</code>: <code>np.ndarray</code> — Array of decay constants for each nuclide.</li>
-<li><code>matrix_P</code>: <code>scipy.sparse.csc_matrix</code> — Transformation matrix for Bateman solutions.</li>
-<li><code>matrix_P_inv</code>: <code>scipy.sparse.csc_matrix</code> — Inverse of transformation matrix P.</li>
-<li><code>initial_abundance</code>: <code>np.ndarray</code> — Initial abundance vector (default: zeros).</li>
-<li><code>matrix_Lambda</code>: <code>scipy.sparse.csc_matrix</code> — Diagonal matrix for decay constants (default: zeros).</li>
-</ul>
-<p><strong>Methods:</strong></p>
-<ul>
-<li><code>__init__(decay_constants, matrix_P, matrix_P_inv)</code> — Initialize with decay constants and transformation matrices.</li>
-<li><code>__repr__()</code> — String representation.</li>
-<li><code>__eq__(other)</code> — Equality comparison.</li>
-<li><code>__ne__(other)</code> — Inequality comparison.</li>
-</ul>
-<hr>
-<h3 id="matrixbuilder"><code>MatrixBuilder</code></h3>
-<p>Builds matrices representing the decay of nuclides based on decay constants, branching ratios, and decay chains.</p>
-<p><strong>Attributes:</strong></p>
-<ul>
-<li><code>decay_database</code>: <code>DecayDatabase</code> — Database containing nuclide decay data.</li>
-</ul>
-<p><strong>Properties:</strong></p>
-<ul>
-<li><code>nuclides</code> — List of nuclides.</li>
-<li><code>nuclide_index_map</code> — Mapping of nuclide names to indices.</li>
-<li><code>matrix_size</code> — Number of nuclides.</li>
-</ul>
-<p><strong>Key Methods:</strong></p>
-<ul>
-<li><code>build_decay_matrix()</code> — Returns transformation matrix P and its inverse.</li>
-<li><code>build_matrix_A()</code> — Constructs the decay matrix A (rates between nuclides).</li>
-<li><code>build_matrix_P(matrix_A)</code> — Constructs the transformation matrix P.</li>
-<li><code>build_matrix_P_inv(matrix_A, matrix_P)</code> — Constructs the inverse of P.</li>
-<li><code>_check_identity()</code> — Checks if P and P_inv form an identity matrix.</li>
-</ul>
-<hr>
-<h2 id="utility-functions">Utility Functions</h2>
-<ul>
-<li><code>serialize_decay_matrix(data_source='ENDF-B-VIII.1_decay')</code>
-<ul>
-<li>Saves the decay matrix P and its inverse to disk as <code>.npz</code> files.</li>
-</ul>
-</li>
-<li><code>load_decay_matrix(data_source='ENDF-B-VIII.1_decay') -&gt; DecayMatrix</code>
-<ul>
-<li>Loads the decay matrix P and its inverse from disk and returns a <code>DecayMatrix</code> object.</li>
-</ul>
-</li>
-<li><code>_csc_matrix_equal(matrix_a, matrix_b)</code>
-<ul>
-<li>Helper to compare two sparse matrices for exact equality.</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="usage-example">Usage Example</h2>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> nudca.decay_matrix <span style="color:#f92672">import</span> load_decay_matrix
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>decay_matrix <span style="color:#f92672">=</span> load_decay_matrix()
-</span></span><span style="display:flex;"><span>print(decay_matrix)
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Access transformation matrices:</span>
-</span></span><span style="display:flex;"><span>P <span style="color:#f92672">=</span> decay_matrix<span style="color:#f92672">.</span>matrix_P
-</span></span><span style="display:flex;"><span>P_inv <span style="color:#f92672">=</span> decay_matrix<span style="color:#f92672">.</span>matrix_P_inv</span></span></code></pre></div>
-<hr>
-<h2 id="notes">Notes</h2>
-<ul>
-<li>The module relies on SciPy sparse matrices for efficient storage and computation.</li>
-<li>Decay data is loaded from a <code>DecayDatabase</code> (see related documentation).</li>
-<li>The Bateman solution is supported via transformation matrices P and P_inv.</li>
-</ul>
-<hr>
-<h2 id="see-also">See Also</h2>
-<ul>
-<li><a href="/nudca-main/api/decaydatabase/index.html">DecayDatabase API</a></li>
-</ul>
 
   <footer class="footline">
   </footer>
@@ -299,7 +180,7 @@ Overview The decay_matrix.py module defines classes and functions to construct, 
             <li class="" data-nav-id="/nudca-main/introduction/introduction/index.html"><a class="padding" href="/nudca-main/introduction/introduction/index.html">Introduction</a></li></ul></li>
             <li class="" data-nav-id="/nudca-main/installation/index.html"><input type="checkbox" id="R-section-ff749ccaab053548f690f97bcd6daed0" aria-controls="R-subsections-ff749ccaab053548f690f97bcd6daed0"><label for="R-section-ff749ccaab053548f690f97bcd6daed0"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Installation</span></label><a class="padding" href="/nudca-main/installation/index.html"><i class="fa-brands fa-python"></i> Installation</a><ul id="R-subsections-ff749ccaab053548f690f97bcd6daed0" class="collapsible-menu">
             <li class="" data-nav-id="/nudca-main/installation/installation/index.html"><a class="padding" href="/nudca-main/installation/installation/index.html">Installation</a></li></ul></li>
-            <li class="" data-nav-id="/nudca-main/tutorial/index.html"><input type="checkbox" id="R-section-b6c4d52bffb23fb821243181492a16b3" aria-controls="R-subsections-b6c4d52bffb23fb821243181492a16b3"><label for="R-section-b6c4d52bffb23fb821243181492a16b3"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Tutorials</span></label><a class="padding" href="/nudca-main/tutorial/index.html"><i class="fa-solid fa-code"></i>Tutorials</a><ul id="R-subsections-b6c4d52bffb23fb821243181492a16b3" class="collapsible-menu">
+            <li class="parent " data-nav-id="/nudca-main/tutorial/index.html"><input type="checkbox" id="R-section-b6c4d52bffb23fb821243181492a16b3" aria-controls="R-subsections-b6c4d52bffb23fb821243181492a16b3" checked><label for="R-section-b6c4d52bffb23fb821243181492a16b3"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Tutorials</span></label><a class="padding" href="/nudca-main/tutorial/index.html"><i class="fa-solid fa-code"></i>Tutorials</a><ul id="R-subsections-b6c4d52bffb23fb821243181492a16b3" class="collapsible-menu">
             <li class="" data-nav-id="/nudca-main/tutorial/nuclide/index.html"><a class="padding" href="/nudca-main/tutorial/nuclide/index.html">class:Nuclide</a></li>
             <li class="" data-nav-id="/nudca-main/tutorial/decaydatabase/index.html"><a class="padding" href="/nudca-main/tutorial/decaydatabase/index.html">class:DecayDatabase</a></li>
             <li class="" data-nav-id="/nudca-main/tutorial/decaydiagram/index.html"><a class="padding" href="/nudca-main/tutorial/decaydiagram/index.html">class:DecayDiagram</a></li>
@@ -308,7 +189,8 @@ Overview The decay_matrix.py module defines classes and functions to construct, 
             <li class="" data-nav-id="/nudca-main/tutorial/kilonovae/index.html"><input type="checkbox" id="R-section-4f7a22d8f6f545dd87546865a0515ba4" aria-controls="R-subsections-4f7a22d8f6f545dd87546865a0515ba4"><label for="R-section-4f7a22d8f6f545dd87546865a0515ba4"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Submodule:kilonovae</span></label><a class="padding" href="/nudca-main/tutorial/kilonovae/index.html">Submodule:kilonovae</a><ul id="R-subsections-4f7a22d8f6f545dd87546865a0515ba4" class="collapsible-menu">
             <li class="" data-nav-id="/nudca-main/tutorial/kilonovae/geometry/index.html"><a class="padding" href="/nudca-main/tutorial/kilonovae/geometry/index.html">class:Geometry</a></li>
             <li class="" data-nav-id="/nudca-main/tutorial/kilonovae/opacity/index.html"><a class="padding" href="/nudca-main/tutorial/kilonovae/opacity/index.html">class:KNOpacity</a></li>
-            <li class="" data-nav-id="/nudca-main/tutorial/kilonovae/knelightcurve/index.html"><a class="padding" href="/nudca-main/tutorial/kilonovae/knelightcurve/index.html">class:KNeLightCurve</a></li></ul></li></ul></li>
+            <li class="" data-nav-id="/nudca-main/tutorial/kilonovae/knelightcurve/index.html"><a class="padding" href="/nudca-main/tutorial/kilonovae/knelightcurve/index.html">class:KNeLightCurve</a></li></ul></li>
+            <li class="active hidden " data-nav-id="/nudca-main/tutorial/decaynetwork/index.html"><a class="padding" href="/nudca-main/tutorial/decaynetwork/index.html"></a></li></ul></li>
             <li class="" data-nav-id="/nudca-main/theoretic/index.html"><input type="checkbox" id="R-section-3bce8336bdb03da55f92156724a3a267" aria-controls="R-subsections-3bce8336bdb03da55f92156724a3a267"><label for="R-section-3bce8336bdb03da55f92156724a3a267"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Theoretic</span></label><a class="padding" href="/nudca-main/theoretic/index.html"><i class="fa-brands fa-markdown"></i> Theoretic</a><ul id="R-subsections-3bce8336bdb03da55f92156724a3a267" class="collapsible-menu">
             <li class="" data-nav-id="/nudca-main/theoretic/radioactivedecay/index.html"><a class="padding" href="/nudca-main/theoretic/radioactivedecay/index.html">Radioactive Decay</a></li>
             <li class="" data-nav-id="/nudca-main/theoretic/kilonovae/index.html"><input type="checkbox" id="R-section-750d003680db6f217ea8776a9da6c2ba" aria-controls="R-subsections-750d003680db6f217ea8776a9da6c2ba"><label for="R-section-750d003680db6f217ea8776a9da6c2ba"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Kilonovae Model</span></label><a class="padding" href="/nudca-main/theoretic/kilonovae/index.html">Kilonovae Model</a><ul id="R-subsections-750d003680db6f217ea8776a9da6c2ba" class="collapsible-menu">
@@ -316,12 +198,11 @@ Overview The decay_matrix.py module defines classes and functions to construct, 
             <li class="" data-nav-id="/nudca-main/theoretic/kilonovae/thermalization/index.html"><a class="padding" href="/nudca-main/theoretic/kilonovae/thermalization/index.html">Thermalization Efficiencies</a></li>
             <li class="" data-nav-id="/nudca-main/theoretic/kilonovae/heatingrate/index.html"><a class="padding" href="/nudca-main/theoretic/kilonovae/heatingrate/index.html">Heating Rate</a></li>
             <li class="" data-nav-id="/nudca-main/theoretic/kilonovae/lightcurve/index.html"><a class="padding" href="/nudca-main/theoretic/kilonovae/lightcurve/index.html">Light Curves</a></li></ul></li></ul></li>
-            <li class="parent " data-nav-id="/nudca-main/api/index.html"><input type="checkbox" id="R-section-944da21c517df0c48dfbef7af28f3093" aria-controls="R-subsections-944da21c517df0c48dfbef7af28f3093" checked><label for="R-section-944da21c517df0c48dfbef7af28f3093"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu nudca API</span></label><a class="padding" href="/nudca-main/api/index.html"><i class="fa-brands fa-quinscape"></i> nudca API</a><ul id="R-subsections-944da21c517df0c48dfbef7af28f3093" class="collapsible-menu">
+            <li class="" data-nav-id="/nudca-main/api/index.html"><input type="checkbox" id="R-section-944da21c517df0c48dfbef7af28f3093" aria-controls="R-subsections-944da21c517df0c48dfbef7af28f3093"><label for="R-section-944da21c517df0c48dfbef7af28f3093"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu nudca API</span></label><a class="padding" href="/nudca-main/api/index.html"><i class="fa-brands fa-quinscape"></i> nudca API</a><ul id="R-subsections-944da21c517df0c48dfbef7af28f3093" class="collapsible-menu">
+            <li class="" data-nav-id="/nudca-main/api/io/index.html"><a class="padding" href="/nudca-main/api/io/index.html">nudca.io</a></li>
             <li class="" data-nav-id="/nudca-main/api/nuclide/index.html"><a class="padding" href="/nudca-main/api/nuclide/index.html">nudca.nuclide</a></li>
-            <li class="" data-nav-id="/nudca-main/api/decaydatabase/index.html"><a class="padding" href="/nudca-main/api/decaydatabase/index.html">nudca.decay_database</a></li>
-            <li class="" data-nav-id="/nudca-main/api/decaydiagram/index.html"><a class="padding" href="/nudca-main/api/decaydiagram/index.html">nudca.decay_diagram</a></li>
-            <li class="active " data-nav-id="/nudca-main/api/decaymatrix/index.html"><a class="padding" href="/nudca-main/api/decaymatrix/index.html">nudca.decay_matrix</a></li>
-            <li class="" data-nav-id="/nudca-main/api/nucleodecay/index.html"><a class="padding" href="/nudca-main/api/nucleodecay/index.html">nudca.nucleo_decay</a></li>
+            <li class="" data-nav-id="/nudca-main/api/decaynetwork/index.html"><a class="padding" href="/nudca-main/api/decaynetwork/index.html">nudca.decay_network</a></li>
+            <li class="" data-nav-id="/nudca-main/api/decaycore/index.html"><a class="padding" href="/nudca-main/api/decaycore/index.html">nudca.decay_core</a></li>
             <li class="" data-nav-id="/nudca-main/api/kilonovae/index.html"><input type="checkbox" id="R-section-f64c60b2e35b8001768212130fb12c4e" aria-controls="R-subsections-f64c60b2e35b8001768212130fb12c4e"><label for="R-section-f64c60b2e35b8001768212130fb12c4e"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu nudca.kilonovae</span></label><a class="padding" href="/nudca-main/api/kilonovae/index.html">nudca.kilonovae</a><ul id="R-subsections-f64c60b2e35b8001768212130fb12c4e" class="collapsible-menu">
             <li class="" data-nav-id="/nudca-main/api/kilonovae/geometry/index.html"><a class="padding" href="/nudca-main/api/kilonovae/geometry/index.html">nudca.kilonovae.geometry</a></li>
             <li class="" data-nav-id="/nudca-main/api/kilonovae/opacity/index.html"><a class="padding" href="/nudca-main/api/kilonovae/opacity/index.html">nudca.kilonovae.opacity</a></li>
@@ -348,8 +229,8 @@ Overview The decay_matrix.py module defines classes and functions to construct, 
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/nudca-main/js/clipboard/clipboard.min.js?1749013909" defer></script>
-    <script src="/nudca-main/js/perfect-scrollbar/perfect-scrollbar.min.js?1749013909" defer></script>
+    <script src="/nudca-main/js/clipboard/clipboard.min.js?1749378192" defer></script>
+    <script src="/nudca-main/js/perfect-scrollbar/perfect-scrollbar.min.js?1749378192" defer></script>
     <script>
       window.MathJax = Object.assign( window.MathJax || {}, {
         tex: {
@@ -361,7 +242,7 @@ Overview The decay_matrix.py module defines classes and functions to construct, 
         }
       }, JSON.parse("{}") );
     </script>
-    <script id="MathJax-script" async src="/nudca-main/js/mathjax/tex-mml-chtml.js?1749013909"></script>
-    <script src="/nudca-main/js/theme.min.js?1749013909" defer></script>
+    <script id="MathJax-script" async src="/nudca-main/js/mathjax/tex-mml-chtml.js?1749378192"></script>
+    <script src="/nudca-main/js/theme.min.js?1749378192" defer></script>
   </body>
 </html>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.147.7">
+    <meta name="generator" content="Hugo 0.147.8">
     <meta name="generator" content="Relearn 7.6.1+0b83617ee9da5253aafcf11807b256da7d88d709">
     <meta name="description" content="DecayDiagram ​ python from nudca.decay_database import load_decay_database from nudca.decay_diagram import DecayDiagram nuclide = &#39;Ni56&#39; decay_database = load_decay_database(data_source=&#39;ENDF-B-VIII.1_decay&#39;) decay_diagram = DecayDiagram(nuclide, decay_database) radionuclide = decay_diagram.nuclide half_life = decay_diagram.half_life decay_modes = decay_diagram.decay_modes progeny = decay_diagram.progeny branching_ratios = decay_diagram.branching_ratios Details Radionuclide: Ni-56 Half life: 6.08 d Progeny: [&#39;Co-56&#39;] Decay modes: [&#39;β&#43;&amp;EC&#39;] Branching ratios: [1.0] decay_diagram = DecayDiagram(&#39;Ni56&#39;, decay_database) fig, axes = decay_diagram.plot_decay_chains() fig.tight_layout()">
     <meta name="author" content="">
@@ -21,19 +21,19 @@
     <meta itemprop="description" content="DecayDiagram ​ python from nudca.decay_database import load_decay_database from nudca.decay_diagram import DecayDiagram nuclide = &#39;Ni56&#39; decay_database = load_decay_database(data_source=&#39;ENDF-B-VIII.1_decay&#39;) decay_diagram = DecayDiagram(nuclide, decay_database) radionuclide = decay_diagram.nuclide half_life = decay_diagram.half_life decay_modes = decay_diagram.decay_modes progeny = decay_diagram.progeny branching_ratios = decay_diagram.branching_ratios Details Radionuclide: Ni-56 Half life: 6.08 d Progeny: [&#39;Co-56&#39;] Decay modes: [&#39;β&#43;&amp;EC&#39;] Branching ratios: [1.0] decay_diagram = DecayDiagram(&#39;Ni56&#39;, decay_database) fig, axes = decay_diagram.plot_decay_chains() fig.tight_layout()">
     <meta itemprop="wordCount" content="69">
     <title>class:DecayDiagram :: NuDCA</title>
-    <link href="/nudca-main/images/logo.svg?1749013909" rel="icon" type="image/svg+xml">
-    <link href="/nudca-main/images/logo.png?1749013909" rel="icon" type="image/png">
-    <link href="/nudca-main/fonts/fontawesome/css/fontawesome-all.min.css?1749013909" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/nudca-main/fonts/fontawesome/css/fontawesome-all.min.css?1749013909" rel="stylesheet"></noscript>
-    <link href="/nudca-main/css/perfect-scrollbar/perfect-scrollbar.min.css?1749013909" rel="stylesheet">
-    <link href="/nudca-main/css/theme.min.css?1749013909" rel="stylesheet">
-    <link href="/nudca-main/css/format-html.min.css?1749013909" rel="stylesheet" id="R-format-style">
-    <link href="/nudca-main/css/auto-complete/auto-complete.min.css?1749013909" rel="stylesheet">
-    <script src="/nudca-main/js/auto-complete/auto-complete.min.js?1749013909" defer></script>
-    <script src="/nudca-main/js/lunr/lunr.min.js?1749013909" defer></script>
-    <script src="/nudca-main/js/lunr/lunr.stemmer.support.min.js?1749013909" defer></script>
-    <script src="/nudca-main/js/lunr/lunr.multi.min.js?1749013909" defer></script>
-    <script src="/nudca-main/js/lunr/lunr.en.min.js?1749013909" defer></script>
-    <script src="/nudca-main/js/search.min.js?1749013909" defer></script>
+    <link href="/nudca-main/images/logo.svg?1749378192" rel="icon" type="image/svg+xml">
+    <link href="/nudca-main/images/logo.png?1749378192" rel="icon" type="image/png">
+    <link href="/nudca-main/fonts/fontawesome/css/fontawesome-all.min.css?1749378192" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/nudca-main/fonts/fontawesome/css/fontawesome-all.min.css?1749378192" rel="stylesheet"></noscript>
+    <link href="/nudca-main/css/perfect-scrollbar/perfect-scrollbar.min.css?1749378192" rel="stylesheet">
+    <link href="/nudca-main/css/theme.min.css?1749378192" rel="stylesheet">
+    <link href="/nudca-main/css/format-html.min.css?1749378192" rel="stylesheet" id="R-format-style">
+    <link href="/nudca-main/css/auto-complete/auto-complete.min.css?1749378192" rel="stylesheet">
+    <script src="/nudca-main/js/auto-complete/auto-complete.min.js?1749378192" defer></script>
+    <script src="/nudca-main/js/lunr/lunr.min.js?1749378192" defer></script>
+    <script src="/nudca-main/js/lunr/lunr.stemmer.support.min.js?1749378192" defer></script>
+    <script src="/nudca-main/js/lunr/lunr.multi.min.js?1749378192" defer></script>
+    <script src="/nudca-main/js/lunr/lunr.en.min.js?1749378192" defer></script>
+    <script src="/nudca-main/js/search.min.js?1749378192" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -43,7 +43,7 @@
       window.relearn.relBaseUri='..\/..\/..';
       window.relearn.absBaseUri='https:\/\/nudcacode.github.io\/nudca-main';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/nudca-main/searchindex.en.js?1749013909";
+      window.relearn.index_js_url="/nudca-main/searchindex.en.js?1749378192";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -142,13 +142,13 @@
 <h1 id="classdecaydiagram">class:DecayDiagram</h1>
 
 <h2 id="decaydiagram">DecayDiagram</h2>
-<div class="tab-panel" data-tab-group="091bd3383e89d0b18895edecd4bd2c55">
+<div class="tab-panel" data-tab-group="f8cbb54bfe851f44db60185f80b411a3">
   <div class="tab-nav">
     <div class="tab-nav-title">&#8203;</div>
     <button
       data-tab-item="python"
       class="tab-nav-button tab-panel-style cstyle initial active" tabindex="-1"
-      onclick="switchTab('091bd3383e89d0b18895edecd4bd2c55','python')"
+      onclick="switchTab('f8cbb54bfe851f44db60185f80b411a3','python')"
     >
       <span class="tab-nav-text">python</span>
     </button>
@@ -189,13 +189,13 @@ Branching ratios:  [1.0]</code></pre></div>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>decay_diagram <span style="color:#f92672">=</span> DecayDiagram(<span style="color:#e6db74">&#39;Ni56&#39;</span>, decay_database)
 </span></span><span style="display:flex;"><span>fig, axes <span style="color:#f92672">=</span> decay_diagram<span style="color:#f92672">.</span>plot_decay_chains()
 </span></span><span style="display:flex;"><span>fig<span style="color:#f92672">.</span>tight_layout()</span></span></code></pre></div>
-<p><a href="#R-image-9a3499532308ff701bee2b8509332551" class="lightbox-link"><img alt="DecayChainsNi56" class="lazy lightbox figure-image" loading="lazy" src="../../images/Tutorial/DecayChains_Ni56.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-9a3499532308ff701bee2b8509332551"><img alt="DecayChainsNi56" class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Tutorial/DecayChains_Ni56.png"></a></p>
+<p><a href="#R-image-7b8056573e32bafca2fe9352d1587a50" class="lightbox-link"><img alt="DecayChainsNi56" class="lazy lightbox figure-image" loading="lazy" src="../../images/Tutorial/DecayChains_Ni56.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7b8056573e32bafca2fe9352d1587a50"><img alt="DecayChainsNi56" class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Tutorial/DecayChains_Ni56.png"></a></p>
 <div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>decay_diagram <span style="color:#f92672">=</span> DecayDiagram(<span style="color:#e6db74">&#39;Fe56&#39;</span>, decay_database)
 </span></span><span style="display:flex;"><span>fig, axes <span style="color:#f92672">=</span> decay_diagram<span style="color:#f92672">.</span>plot_reverse_decay_chains()
 </span></span><span style="display:flex;"><span>fig<span style="color:#f92672">.</span>tight_layout()</span></span></code></pre></div>
-<p><a href="#R-image-f7f1a3e09e6af5ec835c53c1bb0ac1ec" class="lightbox-link"><img alt="ReverseDecayChainsFe56" class="lazy lightbox figure-image" loading="lazy" src="../../images/Tutorial/ReverseDecayChains_Fe56.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-f7f1a3e09e6af5ec835c53c1bb0ac1ec"><img alt="ReverseDecayChainsFe56" class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Tutorial/ReverseDecayChains_Fe56.png"></a></p>
+<p><a href="#R-image-d2cb97f0cec777a9e204857fb1255a49" class="lightbox-link"><img alt="ReverseDecayChainsFe56" class="lazy lightbox figure-image" loading="lazy" src="../../images/Tutorial/ReverseDecayChains_Fe56.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d2cb97f0cec777a9e204857fb1255a49"><img alt="ReverseDecayChainsFe56" class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Tutorial/ReverseDecayChains_Fe56.png"></a></p>
 
   <footer class="footline">
   </footer>
@@ -265,11 +265,10 @@ Branching ratios:  [1.0]</code></pre></div>
             <li class="" data-nav-id="/nudca-main/theoretic/kilonovae/heatingrate/index.html"><a class="padding" href="/nudca-main/theoretic/kilonovae/heatingrate/index.html">Heating Rate</a></li>
             <li class="" data-nav-id="/nudca-main/theoretic/kilonovae/lightcurve/index.html"><a class="padding" href="/nudca-main/theoretic/kilonovae/lightcurve/index.html">Light Curves</a></li></ul></li></ul></li>
             <li class="" data-nav-id="/nudca-main/api/index.html"><input type="checkbox" id="R-section-944da21c517df0c48dfbef7af28f3093" aria-controls="R-subsections-944da21c517df0c48dfbef7af28f3093"><label for="R-section-944da21c517df0c48dfbef7af28f3093"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu nudca API</span></label><a class="padding" href="/nudca-main/api/index.html"><i class="fa-brands fa-quinscape"></i> nudca API</a><ul id="R-subsections-944da21c517df0c48dfbef7af28f3093" class="collapsible-menu">
+            <li class="" data-nav-id="/nudca-main/api/io/index.html"><a class="padding" href="/nudca-main/api/io/index.html">nudca.io</a></li>
             <li class="" data-nav-id="/nudca-main/api/nuclide/index.html"><a class="padding" href="/nudca-main/api/nuclide/index.html">nudca.nuclide</a></li>
-            <li class="" data-nav-id="/nudca-main/api/decaydatabase/index.html"><a class="padding" href="/nudca-main/api/decaydatabase/index.html">nudca.decay_database</a></li>
-            <li class="" data-nav-id="/nudca-main/api/decaydiagram/index.html"><a class="padding" href="/nudca-main/api/decaydiagram/index.html">nudca.decay_diagram</a></li>
-            <li class="" data-nav-id="/nudca-main/api/decaymatrix/index.html"><a class="padding" href="/nudca-main/api/decaymatrix/index.html">nudca.decay_matrix</a></li>
-            <li class="" data-nav-id="/nudca-main/api/nucleodecay/index.html"><a class="padding" href="/nudca-main/api/nucleodecay/index.html">nudca.nucleo_decay</a></li>
+            <li class="" data-nav-id="/nudca-main/api/decaynetwork/index.html"><a class="padding" href="/nudca-main/api/decaynetwork/index.html">nudca.decay_network</a></li>
+            <li class="" data-nav-id="/nudca-main/api/decaycore/index.html"><a class="padding" href="/nudca-main/api/decaycore/index.html">nudca.decay_core</a></li>
             <li class="" data-nav-id="/nudca-main/api/kilonovae/index.html"><input type="checkbox" id="R-section-f64c60b2e35b8001768212130fb12c4e" aria-controls="R-subsections-f64c60b2e35b8001768212130fb12c4e"><label for="R-section-f64c60b2e35b8001768212130fb12c4e"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu nudca.kilonovae</span></label><a class="padding" href="/nudca-main/api/kilonovae/index.html">nudca.kilonovae</a><ul id="R-subsections-f64c60b2e35b8001768212130fb12c4e" class="collapsible-menu">
             <li class="" data-nav-id="/nudca-main/api/kilonovae/geometry/index.html"><a class="padding" href="/nudca-main/api/kilonovae/geometry/index.html">nudca.kilonovae.geometry</a></li>
             <li class="" data-nav-id="/nudca-main/api/kilonovae/opacity/index.html"><a class="padding" href="/nudca-main/api/kilonovae/opacity/index.html">nudca.kilonovae.opacity</a></li>
@@ -296,8 +295,8 @@ Branching ratios:  [1.0]</code></pre></div>
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/nudca-main/js/clipboard/clipboard.min.js?1749013909" defer></script>
-    <script src="/nudca-main/js/perfect-scrollbar/perfect-scrollbar.min.js?1749013909" defer></script>
+    <script src="/nudca-main/js/clipboard/clipboard.min.js?1749378192" defer></script>
+    <script src="/nudca-main/js/perfect-scrollbar/perfect-scrollbar.min.js?1749378192" defer></script>
     <script>
       window.MathJax = Object.assign( window.MathJax || {}, {
         tex: {
@@ -309,7 +308,7 @@ Branching ratios:  [1.0]</code></pre></div>
         }
       }, JSON.parse("{}") );
     </script>
-    <script id="MathJax-script" async src="/nudca-main/js/mathjax/tex-mml-chtml.js?1749013909"></script>
-    <script src="/nudca-main/js/theme.min.js?1749013909" defer></script>
+    <script id="MathJax-script" async src="/nudca-main/js/mathjax/tex-mml-chtml.js?1749378192"></script>
+    <script src="/nudca-main/js/theme.min.js?1749378192" defer></script>
   </body>
 </html>

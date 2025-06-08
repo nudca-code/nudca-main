@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.147.7">
+    <meta name="generator" content="Hugo 0.147.8">
     <meta name="generator" content="Relearn 7.6.1+0b83617ee9da5253aafcf11807b256da7d88d709">
     <meta name="description" content="import numpy as np import matplotlib.pyplot as plt from nudca.kilonovae.opacity import KNOpacity Ye = np.linspace(0.10, 0.50, 5000) Ye_table = [0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40] kappa_table = [19.5, 32.2, 22.3, 5.60, 5.36, 3.30, 0.96] kappa_tanaka = KNOpacity(opacity_type=&#39;Tabular&#39;, opacity_method=&#39;Tanaka_OneVar&#39;)(Ye) kappa_wu = KNOpacity(opacity_type=&#39;Formula&#39;, opacity_method=&#39;Wu2022&#39;)(Ye) kappa_ekanger = KNOpacity(opacity_type=&#39;Formula&#39;, opacity_method=&#39;Ekanger2023&#39;)(Ye) fig, ax = plt.subplots(figsize=(8,6), dpi=150) ax.plot(Ye, kappa_tanaka, label=&#39;Tanaka2020_OneVar&#39;) ax.plot(Ye, kappa_wu, label=&#39;Wu2022&#39;) ax.plot(Ye, kappa_ekanger, label=&#39;Ekanger2023&#39;) ax.scatter(Ye_table, kappa_table, label=&#39;Tanaka2020_Table&#39;) ax.set_xlim(0.095, 0.5) ax.set_ylim(1.e-1, 100) ax.set_yscale(&#39;log&#39;) ax.set_xlabel(r&#39;$Y_{e}$&#39;) ax.set_ylabel(r&#39;$\kappa \quad [cm^{2} g^{-1}]$&#39;) ax.legend() plt.show()">
     <meta name="author" content="">
@@ -21,19 +21,19 @@
     <meta itemprop="description" content="import numpy as np import matplotlib.pyplot as plt from nudca.kilonovae.opacity import KNOpacity Ye = np.linspace(0.10, 0.50, 5000) Ye_table = [0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40] kappa_table = [19.5, 32.2, 22.3, 5.60, 5.36, 3.30, 0.96] kappa_tanaka = KNOpacity(opacity_type=&#39;Tabular&#39;, opacity_method=&#39;Tanaka_OneVar&#39;)(Ye) kappa_wu = KNOpacity(opacity_type=&#39;Formula&#39;, opacity_method=&#39;Wu2022&#39;)(Ye) kappa_ekanger = KNOpacity(opacity_type=&#39;Formula&#39;, opacity_method=&#39;Ekanger2023&#39;)(Ye) fig, ax = plt.subplots(figsize=(8,6), dpi=150) ax.plot(Ye, kappa_tanaka, label=&#39;Tanaka2020_OneVar&#39;) ax.plot(Ye, kappa_wu, label=&#39;Wu2022&#39;) ax.plot(Ye, kappa_ekanger, label=&#39;Ekanger2023&#39;) ax.scatter(Ye_table, kappa_table, label=&#39;Tanaka2020_Table&#39;) ax.set_xlim(0.095, 0.5) ax.set_ylim(1.e-1, 100) ax.set_yscale(&#39;log&#39;) ax.set_xlabel(r&#39;$Y_{e}$&#39;) ax.set_ylabel(r&#39;$\kappa \quad [cm^{2} g^{-1}]$&#39;) ax.legend() plt.show()">
     <meta itemprop="wordCount" content="76">
     <title>class:KNOpacity :: NuDCA</title>
-    <link href="/nudca-main/images/logo.svg?1749013909" rel="icon" type="image/svg+xml">
-    <link href="/nudca-main/images/logo.png?1749013909" rel="icon" type="image/png">
-    <link href="/nudca-main/fonts/fontawesome/css/fontawesome-all.min.css?1749013909" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/nudca-main/fonts/fontawesome/css/fontawesome-all.min.css?1749013909" rel="stylesheet"></noscript>
-    <link href="/nudca-main/css/perfect-scrollbar/perfect-scrollbar.min.css?1749013909" rel="stylesheet">
-    <link href="/nudca-main/css/theme.min.css?1749013909" rel="stylesheet">
-    <link href="/nudca-main/css/format-html.min.css?1749013909" rel="stylesheet" id="R-format-style">
-    <link href="/nudca-main/css/auto-complete/auto-complete.min.css?1749013909" rel="stylesheet">
-    <script src="/nudca-main/js/auto-complete/auto-complete.min.js?1749013909" defer></script>
-    <script src="/nudca-main/js/lunr/lunr.min.js?1749013909" defer></script>
-    <script src="/nudca-main/js/lunr/lunr.stemmer.support.min.js?1749013909" defer></script>
-    <script src="/nudca-main/js/lunr/lunr.multi.min.js?1749013909" defer></script>
-    <script src="/nudca-main/js/lunr/lunr.en.min.js?1749013909" defer></script>
-    <script src="/nudca-main/js/search.min.js?1749013909" defer></script>
+    <link href="/nudca-main/images/logo.svg?1749378192" rel="icon" type="image/svg+xml">
+    <link href="/nudca-main/images/logo.png?1749378192" rel="icon" type="image/png">
+    <link href="/nudca-main/fonts/fontawesome/css/fontawesome-all.min.css?1749378192" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/nudca-main/fonts/fontawesome/css/fontawesome-all.min.css?1749378192" rel="stylesheet"></noscript>
+    <link href="/nudca-main/css/perfect-scrollbar/perfect-scrollbar.min.css?1749378192" rel="stylesheet">
+    <link href="/nudca-main/css/theme.min.css?1749378192" rel="stylesheet">
+    <link href="/nudca-main/css/format-html.min.css?1749378192" rel="stylesheet" id="R-format-style">
+    <link href="/nudca-main/css/auto-complete/auto-complete.min.css?1749378192" rel="stylesheet">
+    <script src="/nudca-main/js/auto-complete/auto-complete.min.js?1749378192" defer></script>
+    <script src="/nudca-main/js/lunr/lunr.min.js?1749378192" defer></script>
+    <script src="/nudca-main/js/lunr/lunr.stemmer.support.min.js?1749378192" defer></script>
+    <script src="/nudca-main/js/lunr/lunr.multi.min.js?1749378192" defer></script>
+    <script src="/nudca-main/js/lunr/lunr.en.min.js?1749378192" defer></script>
+    <script src="/nudca-main/js/search.min.js?1749378192" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -43,7 +43,7 @@
       window.relearn.relBaseUri='..\/..\/..\/..';
       window.relearn.absBaseUri='https:\/\/nudcacode.github.io\/nudca-main';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/nudca-main/searchindex.en.js?1749013909";
+      window.relearn.index_js_url="/nudca-main/searchindex.en.js?1749378192";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -165,8 +165,8 @@
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>ax<span style="color:#f92672">.</span>legend()
 </span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
-<p><a href="#R-image-6a0c3deafb91c2e0eec395e1f1e54884" class="lightbox-link"><img alt="Opacity" class="lazy lightbox figure-image" loading="lazy" src="../../../images/Tutorial/Opacity.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-6a0c3deafb91c2e0eec395e1f1e54884"><img alt="Opacity" class="lazy lightbox lightbox-image" loading="lazy" src="../../../images/Tutorial/Opacity.png"></a></p>
+<p><a href="#R-image-a3ec8f80a5182d5a43d7daeea3dffd0d" class="lightbox-link"><img alt="Opacity" class="lazy lightbox figure-image" loading="lazy" src="../../../images/Tutorial/Opacity.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a3ec8f80a5182d5a43d7daeea3dffd0d"><img alt="Opacity" class="lazy lightbox lightbox-image" loading="lazy" src="../../../images/Tutorial/Opacity.png"></a></p>
 
   <footer class="footline">
   </footer>
@@ -236,11 +236,10 @@
             <li class="" data-nav-id="/nudca-main/theoretic/kilonovae/heatingrate/index.html"><a class="padding" href="/nudca-main/theoretic/kilonovae/heatingrate/index.html">Heating Rate</a></li>
             <li class="" data-nav-id="/nudca-main/theoretic/kilonovae/lightcurve/index.html"><a class="padding" href="/nudca-main/theoretic/kilonovae/lightcurve/index.html">Light Curves</a></li></ul></li></ul></li>
             <li class="" data-nav-id="/nudca-main/api/index.html"><input type="checkbox" id="R-section-944da21c517df0c48dfbef7af28f3093" aria-controls="R-subsections-944da21c517df0c48dfbef7af28f3093"><label for="R-section-944da21c517df0c48dfbef7af28f3093"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu nudca API</span></label><a class="padding" href="/nudca-main/api/index.html"><i class="fa-brands fa-quinscape"></i> nudca API</a><ul id="R-subsections-944da21c517df0c48dfbef7af28f3093" class="collapsible-menu">
+            <li class="" data-nav-id="/nudca-main/api/io/index.html"><a class="padding" href="/nudca-main/api/io/index.html">nudca.io</a></li>
             <li class="" data-nav-id="/nudca-main/api/nuclide/index.html"><a class="padding" href="/nudca-main/api/nuclide/index.html">nudca.nuclide</a></li>
-            <li class="" data-nav-id="/nudca-main/api/decaydatabase/index.html"><a class="padding" href="/nudca-main/api/decaydatabase/index.html">nudca.decay_database</a></li>
-            <li class="" data-nav-id="/nudca-main/api/decaydiagram/index.html"><a class="padding" href="/nudca-main/api/decaydiagram/index.html">nudca.decay_diagram</a></li>
-            <li class="" data-nav-id="/nudca-main/api/decaymatrix/index.html"><a class="padding" href="/nudca-main/api/decaymatrix/index.html">nudca.decay_matrix</a></li>
-            <li class="" data-nav-id="/nudca-main/api/nucleodecay/index.html"><a class="padding" href="/nudca-main/api/nucleodecay/index.html">nudca.nucleo_decay</a></li>
+            <li class="" data-nav-id="/nudca-main/api/decaynetwork/index.html"><a class="padding" href="/nudca-main/api/decaynetwork/index.html">nudca.decay_network</a></li>
+            <li class="" data-nav-id="/nudca-main/api/decaycore/index.html"><a class="padding" href="/nudca-main/api/decaycore/index.html">nudca.decay_core</a></li>
             <li class="" data-nav-id="/nudca-main/api/kilonovae/index.html"><input type="checkbox" id="R-section-f64c60b2e35b8001768212130fb12c4e" aria-controls="R-subsections-f64c60b2e35b8001768212130fb12c4e"><label for="R-section-f64c60b2e35b8001768212130fb12c4e"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu nudca.kilonovae</span></label><a class="padding" href="/nudca-main/api/kilonovae/index.html">nudca.kilonovae</a><ul id="R-subsections-f64c60b2e35b8001768212130fb12c4e" class="collapsible-menu">
             <li class="" data-nav-id="/nudca-main/api/kilonovae/geometry/index.html"><a class="padding" href="/nudca-main/api/kilonovae/geometry/index.html">nudca.kilonovae.geometry</a></li>
             <li class="" data-nav-id="/nudca-main/api/kilonovae/opacity/index.html"><a class="padding" href="/nudca-main/api/kilonovae/opacity/index.html">nudca.kilonovae.opacity</a></li>
@@ -267,8 +266,8 @@
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/nudca-main/js/clipboard/clipboard.min.js?1749013909" defer></script>
-    <script src="/nudca-main/js/perfect-scrollbar/perfect-scrollbar.min.js?1749013909" defer></script>
+    <script src="/nudca-main/js/clipboard/clipboard.min.js?1749378192" defer></script>
+    <script src="/nudca-main/js/perfect-scrollbar/perfect-scrollbar.min.js?1749378192" defer></script>
     <script>
       window.MathJax = Object.assign( window.MathJax || {}, {
         tex: {
@@ -280,7 +279,7 @@
         }
       }, JSON.parse("{}") );
     </script>
-    <script id="MathJax-script" async src="/nudca-main/js/mathjax/tex-mml-chtml.js?1749013909"></script>
-    <script src="/nudca-main/js/theme.min.js?1749013909" defer></script>
+    <script id="MathJax-script" async src="/nudca-main/js/mathjax/tex-mml-chtml.js?1749378192"></script>
+    <script src="/nudca-main/js/theme.min.js?1749378192" defer></script>
   </body>
 </html>

@@ -3,51 +3,51 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.147.7">
+    <meta name="generator" content="Hugo 0.147.8">
     <meta name="generator" content="Relearn 7.6.1+0b83617ee9da5253aafcf11807b256da7d88d709">
     <meta name="description" content="Info This page documents the nucleo_decay.py module, which provides tools for modeling radioactive decay, heating rates, and nuclide abundance evolution in nuclear astrophysics. It is part of the NuDCA (Nuclear Decay Chain Astrophysics) package.
 Overview The nucleo_decay.py module offers a comprehensive class and utilities for simulating radioactive decay processes, calculating decay heating rates, and managing nuclide abundances in large nuclear decay networks. It supports matrix-based solutions to the Bateman equations and provides import/export and visualization capabilities for scientific workflows.">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="nudca.nucleo_decay :: NuDCA">
+    <meta name="twitter:title" content="nudca.decay_core :: NuDCA">
     <meta name="twitter:description" content="Info This page documents the nucleo_decay.py module, which provides tools for modeling radioactive decay, heating rates, and nuclide abundance evolution in nuclear astrophysics. It is part of the NuDCA (Nuclear Decay Chain Astrophysics) package.
 Overview The nucleo_decay.py module offers a comprehensive class and utilities for simulating radioactive decay processes, calculating decay heating rates, and managing nuclide abundances in large nuclear decay networks. It supports matrix-based solutions to the Bateman equations and provides import/export and visualization capabilities for scientific workflows.">
-    <meta property="og:url" content="https://nudcacode.github.io/nudca-main/api/nucleodecay/index.html">
+    <meta property="og:url" content="https://nudcacode.github.io/nudca-main/api/decaycore/index.html">
     <meta property="og:site_name" content="NuDCA">
-    <meta property="og:title" content="nudca.nucleo_decay :: NuDCA">
+    <meta property="og:title" content="nudca.decay_core :: NuDCA">
     <meta property="og:description" content="Info This page documents the nucleo_decay.py module, which provides tools for modeling radioactive decay, heating rates, and nuclide abundance evolution in nuclear astrophysics. It is part of the NuDCA (Nuclear Decay Chain Astrophysics) package.
 Overview The nucleo_decay.py module offers a comprehensive class and utilities for simulating radioactive decay processes, calculating decay heating rates, and managing nuclide abundances in large nuclear decay networks. It supports matrix-based solutions to the Bateman equations and provides import/export and visualization capabilities for scientific workflows.">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="article">
     <meta property="article:section" content="nudca API">
-    <meta itemprop="name" content="nudca.nucleo_decay :: NuDCA">
+    <meta itemprop="name" content="nudca.decay_core :: NuDCA">
     <meta itemprop="description" content="Info This page documents the nucleo_decay.py module, which provides tools for modeling radioactive decay, heating rates, and nuclide abundance evolution in nuclear astrophysics. It is part of the NuDCA (Nuclear Decay Chain Astrophysics) package.
 Overview The nucleo_decay.py module offers a comprehensive class and utilities for simulating radioactive decay processes, calculating decay heating rates, and managing nuclide abundances in large nuclear decay networks. It supports matrix-based solutions to the Bateman equations and provides import/export and visualization capabilities for scientific workflows.">
     <meta itemprop="wordCount" content="355">
-    <title>nudca.nucleo_decay :: NuDCA</title>
-    <link href="/nudca-main/images/logo.svg?1749013909" rel="icon" type="image/svg+xml">
-    <link href="/nudca-main/images/logo.png?1749013909" rel="icon" type="image/png">
-    <link href="/nudca-main/fonts/fontawesome/css/fontawesome-all.min.css?1749013909" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/nudca-main/fonts/fontawesome/css/fontawesome-all.min.css?1749013909" rel="stylesheet"></noscript>
-    <link href="/nudca-main/css/perfect-scrollbar/perfect-scrollbar.min.css?1749013909" rel="stylesheet">
-    <link href="/nudca-main/css/theme.min.css?1749013909" rel="stylesheet">
-    <link href="/nudca-main/css/format-html.min.css?1749013909" rel="stylesheet" id="R-format-style">
-    <link href="/nudca-main/css/auto-complete/auto-complete.min.css?1749013909" rel="stylesheet">
-    <script src="/nudca-main/js/auto-complete/auto-complete.min.js?1749013909" defer></script>
-    <script src="/nudca-main/js/lunr/lunr.min.js?1749013909" defer></script>
-    <script src="/nudca-main/js/lunr/lunr.stemmer.support.min.js?1749013909" defer></script>
-    <script src="/nudca-main/js/lunr/lunr.multi.min.js?1749013909" defer></script>
-    <script src="/nudca-main/js/lunr/lunr.en.min.js?1749013909" defer></script>
-    <script src="/nudca-main/js/search.min.js?1749013909" defer></script>
+    <title>nudca.decay_core :: NuDCA</title>
+    <link href="/nudca-main/images/logo.svg?1749378192" rel="icon" type="image/svg+xml">
+    <link href="/nudca-main/images/logo.png?1749378192" rel="icon" type="image/png">
+    <link href="/nudca-main/fonts/fontawesome/css/fontawesome-all.min.css?1749378192" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/nudca-main/fonts/fontawesome/css/fontawesome-all.min.css?1749378192" rel="stylesheet"></noscript>
+    <link href="/nudca-main/css/perfect-scrollbar/perfect-scrollbar.min.css?1749378192" rel="stylesheet">
+    <link href="/nudca-main/css/theme.min.css?1749378192" rel="stylesheet">
+    <link href="/nudca-main/css/format-html.min.css?1749378192" rel="stylesheet" id="R-format-style">
+    <link href="/nudca-main/css/auto-complete/auto-complete.min.css?1749378192" rel="stylesheet">
+    <script src="/nudca-main/js/auto-complete/auto-complete.min.js?1749378192" defer></script>
+    <script src="/nudca-main/js/lunr/lunr.min.js?1749378192" defer></script>
+    <script src="/nudca-main/js/lunr/lunr.stemmer.support.min.js?1749378192" defer></script>
+    <script src="/nudca-main/js/lunr/lunr.multi.min.js?1749378192" defer></script>
+    <script src="/nudca-main/js/lunr/lunr.en.min.js?1749378192" defer></script>
+    <script src="/nudca-main/js/search.min.js?1749378192" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
       window.relearn.min = `.min`;
-      window.relearn.path='\/api\/nucleodecay\/index.html';
+      window.relearn.path='\/api\/decaycore\/index.html';
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..\/..';
       window.relearn.absBaseUri='https:\/\/nudcacode.github.io\/nudca-main';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/nudca-main/searchindex.en.js?1749013909";
+      window.relearn.index_js_url="/nudca-main/searchindex.en.js?1749378192";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -94,7 +94,7 @@ Overview The nucleo_decay.py module offers a comprehensive class and utilities f
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
   </head>
-  <body class="mobile-support html" data-url="/nudca-main/api/nucleodecay/index.html">
+  <body class="mobile-support html" data-url="/nudca-main/api/decaycore/index.html">
     <div id="R-body" class="default-animation">
       <div id="R-body-overlay"></div>
       <nav id="R-topbar">
@@ -129,10 +129,10 @@ Overview The nucleo_decay.py module offers a comprehensive class and utilities f
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
             <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/nudca-main/index.html"><span itemprop="name">NuDCA</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
             <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/nudca-main/api/index.html"><span itemprop="name">nudca API</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">nudca.nucleo_decay</span><meta itemprop="position" content="3"></li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">nudca.decay_core</span><meta itemprop="position" content="3"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/nudca-main/api/decaymatrix/index.html" title="nudca.decay_matrix (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/nudca-main/api/decaynetwork/index.html" title="nudca.decay_network (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
             <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/nudca-main/api/kilonovae/index.html" title="nudca.kilonovae (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
@@ -154,7 +154,7 @@ Overview The nucleo_decay.py module offers a comprehensive class and utilities f
   <header class="headline">
   </header>
 
-<h1 id="nudcanucleo_decay">nudca.nucleo_decay</h1>
+<h1 id="nudcadecay_core">nudca.decay_core</h1>
 
 
 <details open class=" box cstyle notices info">
@@ -287,9 +287,9 @@ Overview The nucleo_decay.py module offers a comprehensive class and utilities f
 <hr>
 <h2 id="see-also">See Also</h2>
 <ul>
-<li><a href="/nudca-main/api/decaydatabase/index.html">DecayDatabase API</a></li>
-<li><a href="/nudca-main/api/decaymatrix/index.html">DecayMatrix API</a></li>
-<li><a href="/nudca-main/api/decaydiagram/index.html">DecayDiagram API</a></li>
+<li><a href="/nudca-main/tutorial/decaydatabase/index.html">DecayDatabase API</a></li>
+<li><a href="/nudca-main/tutorial/decaymatrix/index.html">DecayMatrix API</a></li>
+<li><a href="/nudca-main/tutorial/decaydiagram/index.html">DecayDiagram API</a></li>
 </ul>
 
   <footer class="footline">
@@ -360,11 +360,10 @@ Overview The nucleo_decay.py module offers a comprehensive class and utilities f
             <li class="" data-nav-id="/nudca-main/theoretic/kilonovae/heatingrate/index.html"><a class="padding" href="/nudca-main/theoretic/kilonovae/heatingrate/index.html">Heating Rate</a></li>
             <li class="" data-nav-id="/nudca-main/theoretic/kilonovae/lightcurve/index.html"><a class="padding" href="/nudca-main/theoretic/kilonovae/lightcurve/index.html">Light Curves</a></li></ul></li></ul></li>
             <li class="parent " data-nav-id="/nudca-main/api/index.html"><input type="checkbox" id="R-section-944da21c517df0c48dfbef7af28f3093" aria-controls="R-subsections-944da21c517df0c48dfbef7af28f3093" checked><label for="R-section-944da21c517df0c48dfbef7af28f3093"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu nudca API</span></label><a class="padding" href="/nudca-main/api/index.html"><i class="fa-brands fa-quinscape"></i> nudca API</a><ul id="R-subsections-944da21c517df0c48dfbef7af28f3093" class="collapsible-menu">
+            <li class="" data-nav-id="/nudca-main/api/io/index.html"><a class="padding" href="/nudca-main/api/io/index.html">nudca.io</a></li>
             <li class="" data-nav-id="/nudca-main/api/nuclide/index.html"><a class="padding" href="/nudca-main/api/nuclide/index.html">nudca.nuclide</a></li>
-            <li class="" data-nav-id="/nudca-main/api/decaydatabase/index.html"><a class="padding" href="/nudca-main/api/decaydatabase/index.html">nudca.decay_database</a></li>
-            <li class="" data-nav-id="/nudca-main/api/decaydiagram/index.html"><a class="padding" href="/nudca-main/api/decaydiagram/index.html">nudca.decay_diagram</a></li>
-            <li class="" data-nav-id="/nudca-main/api/decaymatrix/index.html"><a class="padding" href="/nudca-main/api/decaymatrix/index.html">nudca.decay_matrix</a></li>
-            <li class="active " data-nav-id="/nudca-main/api/nucleodecay/index.html"><a class="padding" href="/nudca-main/api/nucleodecay/index.html">nudca.nucleo_decay</a></li>
+            <li class="" data-nav-id="/nudca-main/api/decaynetwork/index.html"><a class="padding" href="/nudca-main/api/decaynetwork/index.html">nudca.decay_network</a></li>
+            <li class="active " data-nav-id="/nudca-main/api/decaycore/index.html"><a class="padding" href="/nudca-main/api/decaycore/index.html">nudca.decay_core</a></li>
             <li class="" data-nav-id="/nudca-main/api/kilonovae/index.html"><input type="checkbox" id="R-section-f64c60b2e35b8001768212130fb12c4e" aria-controls="R-subsections-f64c60b2e35b8001768212130fb12c4e"><label for="R-section-f64c60b2e35b8001768212130fb12c4e"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu nudca.kilonovae</span></label><a class="padding" href="/nudca-main/api/kilonovae/index.html">nudca.kilonovae</a><ul id="R-subsections-f64c60b2e35b8001768212130fb12c4e" class="collapsible-menu">
             <li class="" data-nav-id="/nudca-main/api/kilonovae/geometry/index.html"><a class="padding" href="/nudca-main/api/kilonovae/geometry/index.html">nudca.kilonovae.geometry</a></li>
             <li class="" data-nav-id="/nudca-main/api/kilonovae/opacity/index.html"><a class="padding" href="/nudca-main/api/kilonovae/opacity/index.html">nudca.kilonovae.opacity</a></li>
@@ -391,8 +390,8 @@ Overview The nucleo_decay.py module offers a comprehensive class and utilities f
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/nudca-main/js/clipboard/clipboard.min.js?1749013909" defer></script>
-    <script src="/nudca-main/js/perfect-scrollbar/perfect-scrollbar.min.js?1749013909" defer></script>
+    <script src="/nudca-main/js/clipboard/clipboard.min.js?1749378192" defer></script>
+    <script src="/nudca-main/js/perfect-scrollbar/perfect-scrollbar.min.js?1749378192" defer></script>
     <script>
       window.MathJax = Object.assign( window.MathJax || {}, {
         tex: {
@@ -404,7 +403,7 @@ Overview The nucleo_decay.py module offers a comprehensive class and utilities f
         }
       }, JSON.parse("{}") );
     </script>
-    <script id="MathJax-script" async src="/nudca-main/js/mathjax/tex-mml-chtml.js?1749013909"></script>
-    <script src="/nudca-main/js/theme.min.js?1749013909" defer></script>
+    <script id="MathJax-script" async src="/nudca-main/js/mathjax/tex-mml-chtml.js?1749378192"></script>
+    <script src="/nudca-main/js/theme.min.js?1749378192" defer></script>
   </body>
 </html>

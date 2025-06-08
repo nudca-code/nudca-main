@@ -16,6 +16,9 @@
     <loc>https://nudcacode.github.io/nudca-main/introduction/introduction/index.html</loc>
   </url>
   <url>
+    <loc>https://nudcacode.github.io/nudca-main/api/io/index.html</loc>
+  </url>
+  <url>
     <loc>https://nudcacode.github.io/nudca-main/api/kilonovae/geometry/index.html</loc>
   </url>
   <url>
@@ -40,6 +43,9 @@
     <loc>https://nudcacode.github.io/nudca-main/api/kilonovae/opacity/index.html</loc>
   </url>
   <url>
+    <loc>https://nudcacode.github.io/nudca-main/api/nuclide/index.html</loc>
+  </url>
+  <url>
     <loc>https://nudcacode.github.io/nudca-main/theoretic/kilonovae/thermalization/index.html</loc>
   </url>
   <url>
@@ -49,10 +55,10 @@
     <loc>https://nudcacode.github.io/nudca-main/theoretic/kilonovae/heatingrate/index.html</loc>
   </url>
   <url>
-    <loc>https://nudcacode.github.io/nudca-main/api/kilonovae/heatingrate/index.html</loc>
+    <loc>https://nudcacode.github.io/nudca-main/api/decaynetwork/index.html</loc>
   </url>
   <url>
-    <loc>https://nudcacode.github.io/nudca-main/api/nuclide/index.html</loc>
+    <loc>https://nudcacode.github.io/nudca-main/api/kilonovae/heatingrate/index.html</loc>
   </url>
   <url>
     <loc>https://nudcacode.github.io/nudca-main/tutorial/index.html</loc>
@@ -67,7 +73,7 @@
     <loc>https://nudcacode.github.io/nudca-main/theoretic/kilonovae/lightcurve/index.html</loc>
   </url>
   <url>
-    <loc>https://nudcacode.github.io/nudca-main/api/decaydatabase/index.html</loc>
+    <loc>https://nudcacode.github.io/nudca-main/api/decaycore/index.html</loc>
   </url>
   <url>
     <loc>https://nudcacode.github.io/nudca-main/api/kilonovae/lightcurve/index.html</loc>
@@ -80,15 +86,6 @@
   </url>
   <url>
     <loc>https://nudcacode.github.io/nudca-main/api/index.html</loc>
-  </url>
-  <url>
-    <loc>https://nudcacode.github.io/nudca-main/api/decaydiagram/index.html</loc>
-  </url>
-  <url>
-    <loc>https://nudcacode.github.io/nudca-main/api/decaymatrix/index.html</loc>
-  </url>
-  <url>
-    <loc>https://nudcacode.github.io/nudca-main/api/nucleodecay/index.html</loc>
   </url>
   <url>
     <loc>https://nudcacode.github.io/nudca-main/references/index.html</loc>
